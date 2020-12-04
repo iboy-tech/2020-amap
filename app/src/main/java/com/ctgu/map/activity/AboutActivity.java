@@ -22,10 +22,8 @@ public class AboutActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_about);
         // 这句必须写，不写不调用onOptionsItemSelected
-
-
         if(NavUtils.getParentActivityName(AboutActivity.this)!=null){
-            getActionBar().setDisplayHomeAsUpEnabled(true);
+            getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         }
     }
     @Override
@@ -34,11 +32,11 @@ public class AboutActivity extends AppCompatActivity {
             case android.R.id.home:
                 // 点击返回按钮，退回上一层Activity
                 if (NavUtils.getParentActivityName(AboutActivity.this) != null) {
+                    finish();
                     // 启动父Activity
-                    NavUtils.navigateUpFromSameTask(AboutActivity.this);
+//                    NavUtils.navigateUpFromSameTask(AboutActivity.this);
                 }
                 return true;
-
             default:
                 return super.onOptionsItemSelected(item);
         }

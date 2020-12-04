@@ -305,12 +305,10 @@ public class MainActivity extends AppCompatActivity implements AMap.OnPOIClickLi
                 drawerLayout.closeDrawer(GravityCompat.START);
                 break;
             case R.id.map_log:
-                aMap.setMapType(AMap.MAP_TYPE_NIGHT);
-                drawerLayout.closeDrawer(GravityCompat.START);
+                startActivity(new Intent(getApplicationContext(),LogActivity.class));
                 break;
             case R.id.map_about:
-                Intent intent=new Intent(getApplicationContext(),AboutActivity.class);
-                startActivity(intent);
+                startActivity(new Intent(getApplicationContext(),AboutActivity.class));
                 break;
             default:
         }

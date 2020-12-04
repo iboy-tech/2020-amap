@@ -3,17 +3,40 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        tools:ignore="MissingConstraints">
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:background="@mipmap/ic_launcher_round2"
+            tools:ignore="MissingConstraints"
+            android:scaleType="centerInside"
+            android:foregroundGravity="center_horizontal"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:ignore="MissingConstraints"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:text="
+这是一个基于高德地图的APP，具有以下功能：\n
+1、	定位\n
+2、	添加标记\n
+3、	路线规划（步行、骑行、驾车）\n
+" android:textSize="25sp"
+            />
+    </LinearLayout>
 
-    <ImageView
-        android:layout_width="200dp"
-        android:layout_height="200dp"
-        android:background="@mipmap/ic_launcher_round2"
-        tools:ignore="MissingConstraints"></ImageView>
 
-    <TextView
+<TextView
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    tools:ignore="MissingConstraints"
-    android:text="地图"
-    ></TextView>
+    tools:ignore="MissingConstraints">
+
+</TextView>
 </android.support.constraint.ConstraintLayout>
