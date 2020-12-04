@@ -1,5 +1,5 @@
 #Internal package file, do not edit.
-#Fri Dec 04 23:49:14 SGT 2020
+#Fri Dec 04 23:54:19 SGT 2020
 56.path=lib/arm64-v8a/libGNaviSearch.so
 5.base=O\:\\AndroidStudioProjects\\TnboysMap\\app\\build\\intermediates\\transforms\\mergeJniLibs\\debug\\0
 42.base=O\:\\AndroidStudioProjects\\TnboysMap\\app\\build\\intermediates\\transforms\\mergeJniLibs\\debug\\0

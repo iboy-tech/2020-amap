@@ -172,8 +172,8 @@ public class MainActivity extends AppCompatActivity implements AMap.OnPOIClickLi
         }
         UiSettings uiSettings=aMap.getUiSettings();
         uiSettings.setMyLocationButtonEnabled(true);
-        uiSettings.setCompassEnabled(true);// 设置指南针是否显示
-        uiSettings.setZoomControlsEnabled(true);// 设置缩放按钮是否显示
+//        uiSettings.setCompassEnabled(true);// 设置指南针是否显示
+//        uiSettings.setZoomControlsEnabled(true);// 设置缩放按钮是否显示
 
 
         //定位蓝点

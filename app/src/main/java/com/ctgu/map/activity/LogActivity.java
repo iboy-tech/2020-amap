@@ -31,14 +31,12 @@ import java.util.Map;
  */
 
 public class LogActivity extends AppCompatActivity {
-    private DrawerLayout drawerLayout;
-    private NavigationView navigationView;
+
 
     private static final String[] logs={"1.0.0 显示静态地图","1.0.1 加入侧边栏","1.0.2 加入导航"};
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
-        drawerLayout = (DrawerLayout) findViewById(R.id.drawer_layout);
-        navigationView = (NavigationView) findViewById(R.id.navigate_view);
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_log);
         // 这句必须写，不写不调用onOptionsItemSelected
