@@ -51,7 +51,6 @@ import com.amap.api.services.route.RouteSearch;
 import com.amap.api.services.route.WalkRouteResult;
 import com.autonavi.tbt.TrafficFacilityInfo;
 import com.ctgu.map.R;
-import com.ctgu.map.adapter.BusPathAdapter;
 import com.ctgu.map.adapter.RouteDetailAdapter;
 import com.ctgu.map.utils.Constants;
 import com.ctgu.map.utils.MapUtils;
@@ -67,7 +66,7 @@ public class RouteActivity extends AppCompatActivity implements View.OnClickList
     private static final String MY_LOCATION="我的位置";
     private static final String DRIVE_TAB="驾驶";
     private static final String WALK_TAB="步行";
-    private static final String RIDE_TAB="骑车";
+    private static final String RIDE_TAB="骑行";
     private static final int DRIVE_MODE=0;
     private static final int WALK_MODE=1;
     private static final int RIDE_MODE=2;
@@ -369,26 +368,11 @@ public class RouteActivity extends AppCompatActivity implements View.OnClickList
     }
 
     //公交路线规划结果处理
+
+
     @Override
     public void onBusRouteSearched(BusRouteResult busRouteResult, int i) {
-        dismissLoadingDialog();
-        if(i==1000){
-            if(busRouteResult!=null&& busRouteResult.getPaths()!=null){
-                if(busRouteResult.getPaths().size()>0){
-                    BusPathAdapter adapter=new BusPathAdapter(this, busRouteResult.getPaths());
-                    busPathList.setAdapter(adapter);
-                    setBusRouteView();
-                } else {
-                    setNoResultView();
-                }
-            } else {
-                setNoResultView();
-            }
-        } else {
-            resetView();
-            Snackbar.make(mapView, "Route searching failed. Error code "+i,
-                    Snackbar.LENGTH_SHORT).show();
-        }
+
     }
 
     @Override

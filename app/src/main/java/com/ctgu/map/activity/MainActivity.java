@@ -47,16 +47,30 @@ import com.amap.api.services.poisearch.PoiSearch;
 import com.ctgu.map.R;
 import com.ctgu.map.utils.Constants;
 import com.ctgu.map.utils.MapUtils;
+import com.google.gson.Gson;
 
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Timer;
 import java.util.TimerTask;
 
+import okhttp3.Call;
+import okhttp3.Callback;
+import okhttp3.MediaType;
+import okhttp3.OkHttpClient;
+import okhttp3.Request;
+import okhttp3.RequestBody;
+import okhttp3.Response;
+
 public class MainActivity extends AppCompatActivity implements AMap.OnPOIClickListener,
         AMap.OnMyLocationChangeListener, View.OnClickListener,
         GeocodeSearch.OnGeocodeSearchListener, NavigationView.OnNavigationItemSelectedListener,
         PoiSearch.OnPoiSearchListener {
+
+    public static final MediaType JSON = MediaType
+            .parse("application/json; charset=utf-8");
+    private static final OkHttpClient client = new OkHttpClient();
 
     private Marker marker=null;
     private String marker_title=null;
@@ -89,7 +103,11 @@ public class MainActivity extends AppCompatActivity implements AMap.OnPOIClickLi
         setContentView(R.layout.activity_main);
         mapView = (MapView) findViewById(R.id.map_view);
         mapView.onCreate(savedInstanceState);
-        checkPermission();
+        try {
+            checkPermission();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
         /**
          LatLng latLng = new LatLng(22.56686, 114.170988);
          MarkerOptions markerOption = new MarkerOptions();
@@ -116,7 +134,7 @@ public class MainActivity extends AppCompatActivity implements AMap.OnPOIClickLi
     }
 
     //请求必要权限
-    private void checkPermission(){
+    private void checkPermission() throws IOException {
         List<String> permissionList=new ArrayList<>();
         if(ContextCompat.checkSelfPermission(MainActivity.this, Manifest.permission.
                 WRITE_EXTERNAL_STORAGE)!= PackageManager.PERMISSION_GRANTED){
@@ -142,13 +160,13 @@ public class MainActivity extends AppCompatActivity implements AMap.OnPOIClickLi
         }
     }
 
-    private void init(){
+    private void init() throws IOException {
         initLayout();
         initMap();
     }
 
     //初始化地图
-    private void initMap(){
+    private void initMap() {
         if(aMap==null){
             aMap=mapView.getMap();
         }
@@ -168,11 +186,15 @@ public class MainActivity extends AppCompatActivity implements AMap.OnPOIClickLi
         myLocationStyle.strokeColor(Color.argb(100, 255, 144, 147));// 设置圆形的边框颜色
 
         myLocationStyle.radiusFillColor(Color.argb(100, 255, 144, 233));// 设置圆形的填充颜色
+
+        myLocationStyle.interval(100000);
 //        精度圈边框宽度自定义方法如下
         myLocationStyle.strokeWidth(0.1f);
         aMap.setMyLocationStyle(myLocationStyle);
         registerMapListener();
         aMap.moveCamera(CameraUpdateFactory.zoomTo(17));
+
+
 
 
     }
@@ -282,13 +304,13 @@ public class MainActivity extends AppCompatActivity implements AMap.OnPOIClickLi
                 aMap.setMapType(AMap.MAP_TYPE_NORMAL);
                 drawerLayout.closeDrawer(GravityCompat.START);
                 break;
-            case R.id.map_night:
+            case R.id.map_log:
                 aMap.setMapType(AMap.MAP_TYPE_NIGHT);
                 drawerLayout.closeDrawer(GravityCompat.START);
                 break;
-            case R.id.map_satellite:
-                aMap.setMapType(AMap.MAP_TYPE_SATELLITE);
-                drawerLayout.closeDrawer(GravityCompat.START);
+            case R.id.map_about:
+                Intent intent=new Intent(getApplicationContext(),AboutActivity.class);
+                startActivity(intent);
                 break;
             default:
         }
@@ -320,6 +342,23 @@ public class MainActivity extends AppCompatActivity implements AMap.OnPOIClickLi
     //用户当前定位返回处理
     @Override
     public void onMyLocationChange(Location location) {
+        String json=new Gson().toJson(location);
+//        System.out.println("当前位置"+json);
+        /**
+        Request request = new Request.Builder().url("http://wechat.iboy.tech/location")
+                .post(RequestBody.create(JSON, json)).build();
+        Call call=client.newCall(request);
+        call.enqueue(new Callback() {
+            @Override
+            public void onFailure(Call call, IOException e) {
+                System.out.println("Fail");
+            }
+            @Override
+            public void onResponse(Call call, Response response) throws IOException {
+                System.out.println(response.body().string());
+            }
+        });
+         */
         if(location!=null&&location.getExtras().getInt("errorCode", 1)==0) {
             curLocation= MapUtils.convertToLatLng(location);
             if (isFirstLocate||isFirstLocateFailed) {
@@ -387,7 +426,11 @@ public class MainActivity extends AppCompatActivity implements AMap.OnPOIClickLi
                             return;
                         }
                     }
-                    init();
+                    try {
+                        init();
+                    } catch (IOException e) {
+                        e.printStackTrace();
+                    }
                 } else {
                     Toast.makeText(MainActivity.this, "Unknown mistake",
                             Toast.LENGTH_SHORT).show();
