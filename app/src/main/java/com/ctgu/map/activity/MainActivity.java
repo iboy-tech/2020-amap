@@ -33,7 +33,6 @@ import com.amap.api.maps.AMapUtils;
 import com.amap.api.maps.CameraUpdateFactory;
 import com.amap.api.maps.MapView;
 import com.amap.api.maps.UiSettings;
-import com.amap.api.maps.model.BitmapDescriptor;
 import com.amap.api.maps.model.BitmapDescriptorFactory;
 import com.amap.api.maps.model.LatLng;
 import com.amap.api.maps.model.Marker;
@@ -60,13 +59,8 @@ import java.util.List;
 import java.util.Timer;
 import java.util.TimerTask;
 
-import okhttp3.Call;
-import okhttp3.Callback;
 import okhttp3.MediaType;
 import okhttp3.OkHttpClient;
-import okhttp3.Request;
-import okhttp3.RequestBody;
-import okhttp3.Response;
 
 public class MainActivity extends AppCompatActivity implements AMap.OnPOIClickListener,
         AMap.OnMyLocationChangeListener, View.OnClickListener,
@@ -97,6 +91,7 @@ public class MainActivity extends AppCompatActivity implements AMap.OnPOIClickLi
     private FloatingActionButton locate;
     private FloatingActionButton plan;
     private TextView search;
+    private ImageButton searchIcon;
     private ImageButton menu;
     private NavigationView navigationView;
 
@@ -106,7 +101,7 @@ public class MainActivity extends AppCompatActivity implements AMap.OnPOIClickLi
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        mapView = (MapView) findViewById(R.id.map_view);
+        mapView = findViewById(R.id.map_view);
         mapView.onCreate(savedInstanceState);
         try {
             checkPermission();
@@ -136,6 +131,25 @@ public class MainActivity extends AppCompatActivity implements AMap.OnPOIClickLi
                 return true;
             }
         });*/
+
+        // 定义 Marker 点击事件监听
+//        AMap.OnMarkerClickListener markerClickListener = new AMap.OnMarkerClickListener() {
+//            // marker 对象被点击时回调的接口
+//            // 返回 true 则表示接口已响应事件，否则返回false
+//            @Override
+//            public boolean onMarkerClick(Marker marker) {
+//                System.out.println("点击标记点"+marker);
+//                if(marker!=null){
+//                    marker.showInfoWindow();
+//                    return true;
+//                }
+//                marker.setTitle("未知");
+//                marker.setSnippet("暂无");
+//                return true;
+//            }
+//        };
+//        // 绑定 Marker 被点击事件
+//        aMap.setOnMarkerClickListener(markerClickListener);
     }
 
     //请求必要权限
@@ -203,7 +217,7 @@ public class MainActivity extends AppCompatActivity implements AMap.OnPOIClickLi
         MyLocationStyle myLocationStyle=new MyLocationStyle();
         myLocationStyle.myLocationType(MyLocationStyle.LOCATION_TYPE_LOCATION_ROTATE);//连续定位、且将视角移动到地图中心点，定位点依照设备方向旋转，并且会跟随设备移动。（1秒1次定位）默认执行此种模式。
         Bitmap bitmap= BitmapFactory.decodeResource(getResources(),R.drawable.direction);
-        myLocationStyle.myLocationIcon(BitmapDescriptorFactory.fromBitmap(scaleBitmap(bitmap,0.15f)));
+        myLocationStyle.myLocationIcon(BitmapDescriptorFactory.fromBitmap(scaleBitmap(bitmap,0.12f)));
 //        myLocationStyle.myLocationType(MyLocationStyle.LOCATION_TYPE_LOCATION_ROTATE);//连续定位、且将视角移动到地图中心点，定位点依照设备方向旋转，并且会跟随设备移动。（1秒1次定位）默认执行此种模式。
 //        myLocationStyle.strokeColor(Color.argb(0,0,0,0)).radiusFillColor(Color.argb(0,255,192,203)).
 //                interval(10000);
@@ -211,38 +225,14 @@ public class MainActivity extends AppCompatActivity implements AMap.OnPOIClickLi
 
         myLocationStyle.radiusFillColor(Color.argb(100, 255, 144, 233));// 设置圆形的填充颜色
 
+        //频率
         myLocationStyle.interval(100000);
 //        精度圈边框宽度自定义方法如下
         myLocationStyle.strokeWidth(0.1f);
         aMap.setMyLocationStyle(myLocationStyle);
         registerMapListener();
         aMap.moveCamera(CameraUpdateFactory.zoomTo(17));
-
-
-
-
     }
-
-    //点击标记弹出框
-    //初始化界面
-    private void initLayout() {
-        getWindow().addFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS);
-        locate = (FloatingActionButton) findViewById(R.id.fab_locate);
-        plan = (FloatingActionButton) findViewById(R.id.fab_plan);
-        textName = (TextView) findViewById(R.id.text_name);
-        textName.setText("我的位置");
-        textDistance = (TextView) findViewById(R.id.text_distance);
-        bottomSheet = (NestedScrollView) findViewById(R.id.bottom_sheet_main);
-        BottomSheetBehavior bottomSheetBehavior = BottomSheetBehavior.from(bottomSheet);
-        bottomSheetBehavior.setState(BottomSheetBehavior.STATE_COLLAPSED);
-        search = (TextView) findViewById(R.id.search);
-        menu = (ImageButton) findViewById(R.id.expanded_menu);
-        drawerLayout = (DrawerLayout) findViewById(R.id.drawer_layout);
-        navigationView = (NavigationView) findViewById(R.id.navigate_view);
-        navigationView.setCheckedItem(R.id.map_standard);
-        registerLayoutListener();
-    }
-
     //为地图注册监听器
     private void registerMapListener(){
         aMap.setMyLocationEnabled(true);
@@ -257,10 +247,43 @@ public class MainActivity extends AppCompatActivity implements AMap.OnPOIClickLi
         search.setOnClickListener(this);
         menu.setOnClickListener(this);
         navigationView.setNavigationItemSelectedListener(this);
+        searchIcon.setOnClickListener(this);
     }
 
+    //点击标记弹出框
+    //初始化界面
+    private void initLayout() {
+        //沉浸式透明状态栏
+        getWindow().addFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS);
+        bindView();
+        registerLayoutListener();
+    }
+
+    //绑定组件
+    private void bindView(){
+        locate = findViewById(R.id.fab_locate);
+        plan = findViewById(R.id.fab_plan);
+//        textName = findViewById(R.id.text_name);
+//        textName.setText("我的位置");
+        textDistance = findViewById(R.id.text_distance);
+        bottomSheet = findViewById(R.id.bottom_sheet_main);
+//        BottomSheetBehavior bottomSheetBehavior = BottomSheetBehavior.from(bottomSheet);
+//        bottomSheetBehavior.setState(BottomSheetBehavior.STATE_COLLAPSED);
+        search = findViewById(R.id.search);
+
+        menu = findViewById(R.id.expanded_menu);
+        searchIcon=findViewById(R.id.search_ico);
+
+        drawerLayout = findViewById(R.id.drawer_layout);
+        navigationView = findViewById(R.id.navigate_view);
+        navigationView.setCheckedItem(R.id.map_standard);
+    }
+
+
     //在地图上设置标记
-    private void setMarkerLayout(LatLng location, String name){
+    private void setMarkerLayout(LatLng location, String name,String pid){
+
+        //移除之前的标记信息
         if (marker != null) {
             marker.remove();
 //            marker.showInfoWindow();
@@ -271,23 +294,42 @@ public class MainActivity extends AppCompatActivity implements AMap.OnPOIClickLi
 //        } else {
 //            marker.hideInfoWindow();
 //        }
-        marker = aMap.addMarker(new MarkerOptions().position(location).draggable(false));
-//        geocodeSearch(MapUtils.convertToLatLonPoint(location));
-        marker_title = name;
-        BottomSheetBehavior behavior = BottomSheetBehavior.from(bottomSheet);
-        if (behavior.getState() == BottomSheetBehavior.STATE_COLLAPSED) {
-            behavior.setState(BottomSheetBehavior.STATE_EXPANDED);
-        }
-        textName.setText(marker_title);
+        MarkerOptions markerOption = new MarkerOptions();
+        markerOption.position(location);
+//        textName.setText(marker_title);
+        String distanceStr="距离不详";
         if (curLocation != null) {
             float distance = AMapUtils.calculateLineDistance(curLocation, location);
-            textDistance.setText(String.format("%s",
-                    "距离" + MapUtils.getLengthStr(distance)));
-        } else {
-            textDistance.setText("距离不详");
+            distanceStr=String.format("%s",
+                    "距离你：" + MapUtils.getLengthStr(distance));
         }
+        markerOption.title( "编号："+pid+"\n名称："+name).snippet("经度："+ location.latitude+"\n维度："+location.longitude+"\n"+distanceStr);
+
+        markerOption.draggable(true);//设置Marker可拖动
+        markerOption.icon(BitmapDescriptorFactory.fromBitmap(BitmapFactory
+                .decodeResource(getResources(),R.drawable.location_marker)));
+        // 将Marker设置为贴地显示，可以双指下拉地图查看效果
+        markerOption.setFlat(false);//设置marker平贴地图效果
+        marker = aMap.addMarker(markerOption);
+        marker.showInfoWindow();
+//        geocodeSearch(MapUtils.convertToLatLonPoint(location));
+//        marker_title = name;
+//        BottomSheetBehavior behavior = BottomSheetBehavior.from(bottomSheet);
+//        if (behavior.getState() == BottomSheetBehavior.STATE_COLLAPSED) {
+//            behavior.setState(BottomSheetBehavior.STATE_EXPANDED);
+//        }
+//        textName.setText(marker_title);
+//        if (curLocation != null) {
+//            float distance = AMapUtils.calculateLineDistance(curLocation, location);
+//            textDistance.setText(String.format("%s",
+//                    "距离你：" + MapUtils.getLengthStr(distance)));
+//        } else {
+//            textDistance.setText("距离不详");
+//        }
 //        marker.showInfoWindow();
     }
+
+
 
 
     //开始地理位置逆编码
@@ -315,10 +357,10 @@ public class MainActivity extends AppCompatActivity implements AMap.OnPOIClickLi
 
     @Override
     public void onPoiSearched(PoiResult poiResult, int i) {
-
+        System.out.println("搜索记录"+poiResult);
     }
 
-    //侧边菜单栏菜单项选择事件处理（地图图层变换）
+    //侧边菜单栏菜单项选择事件处理
     @Override
     public boolean onNavigationItemSelected(@NonNull MenuItem item) {
         switch (item.getItemId()){
@@ -353,13 +395,21 @@ public class MainActivity extends AppCompatActivity implements AMap.OnPOIClickLi
     //点击地图上地点事件处理
     @Override
     public void onPOIClick(Poi poi) {
-        System.out.println("点击兴趣点："+poi);
-        setMarkerLayout(poi.getCoordinate(), poi.getName());
+        System.out.println("点击信息点："+poi);
+        if(marker!=null){
+//            marker.remove();
+            marker.showInfoWindow();
+        }
+
+        Toast.makeText(this,"你点击了"+poi.getName(),Toast.LENGTH_LONG);
+        //标记信息
+        setMarkerLayout(poi.getCoordinate(), poi.getName(),poi.getPoiId());
+        //将地图移动到定位点
         aMap.animateCamera(CameraUpdateFactory.newLatLng(new LatLng(poi.getCoordinate().latitude,
                 poi.getCoordinate().longitude)));
     }
 
-    //用户当前定位返回处理
+    //监听用户位置的改变
     @Override
     public void onMyLocationChange(Location location) {
         String json=new Gson().toJson(location);
@@ -504,13 +554,13 @@ public class MainActivity extends AppCompatActivity implements AMap.OnPOIClickLi
                     if(data.getIntExtra("resultType", 1)==Constants.RESULT_TIP) {
                         Tip tip=data.getParcelableExtra("result");
                         POIIdSearch(tip.getPoiID());
-                        setMarkerLayout(MapUtils.convertToLatLng(tip.getPoint()), tip.getName());
+                        setMarkerLayout(MapUtils.convertToLatLng(tip.getPoint()), tip.getName(),tip.getPoiID());
                         isOnResultBack=true;
                     } else {
                         PoiItem poiItem=data.getParcelableExtra("result");
                         city=poiItem.getCityName();
                         setMarkerLayout(MapUtils.convertToLatLng(poiItem.getLatLonPoint()),
-                                poiItem.getTitle());
+                                poiItem.getTitle(),poiItem.getPoiId());
                         isOnResultBack=true;
                     }
                 }

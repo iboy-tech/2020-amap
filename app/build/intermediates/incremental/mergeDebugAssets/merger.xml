@@ -1,2 +1,2 @@
 <?xml version="1.0" encoding="utf-8"?>
-<merger version="3"><dataSet config="main"><source path="O:\AndroidStudioProjects\TnboysMap\app\src\main\assets"/><source path="O:\AndroidStudioProjects\TnboysMap\app\build\generated\assets\shaders\debug"/></dataSet><dataSet config="debug"><source path="O:\AndroidStudioProjects\TnboysMap\app\src\debug\assets"/></dataSet></merger>
+<merger version="3"><dataSet config="main"><source path="O:\AndroidStudioProjects\AMap\app\src\main\assets"/><source path="O:\AndroidStudioProjects\AMap\app\build\generated\assets\shaders\debug"/></dataSet><dataSet config="debug"><source path="O:\AndroidStudioProjects\AMap\app\src\debug\assets"/></dataSet></merger>
