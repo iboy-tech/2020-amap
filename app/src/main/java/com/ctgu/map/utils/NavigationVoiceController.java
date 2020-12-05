@@ -33,8 +33,8 @@ public class NavigationVoiceController implements AMapNaviListener, SynthesizerL
         InitListener {
 
     private Context context;
-    private static NavigationVoiceController controller=null;
-    private SpeechSynthesizer synthesizer=null;
+    private static NavigationVoiceController controller;
+    private SpeechSynthesizer synthesizer;
 
     private NavigationVoiceController(Context context){
         this.context=context;

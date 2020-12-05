@@ -1,0 +1,18 @@
+[
+    {
+        "merged": "O:\\AndroidStudioProjects\\TnboysMap\\app\\build\\intermediates\\res\\merged\\debug\\layout-v21\\notification_action.xml",
+        "source": "E:\\Android\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-27.1.1.aar\\044139be73193d502fae0a576eef912b\\res\\layout-v21\\notification_action.xml"
+    },
+    {
+        "merged": "O:\\AndroidStudioProjects\\TnboysMap\\app\\build\\intermediates\\res\\merged\\debug\\layout-v21\\notification_template_custom_big.xml",
+        "source": "E:\\Android\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-27.1.1.aar\\044139be73193d502fae0a576eef912b\\res\\layout-v21\\notification_template_custom_big.xml"
+    },
+    {
+        "merged": "O:\\AndroidStudioProjects\\TnboysMap\\app\\build\\intermediates\\res\\merged\\debug\\layout-v21\\notification_action_tombstone.xml",
+        "source": "E:\\Android\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-27.1.1.aar\\044139be73193d502fae0a576eef912b\\res\\layout-v21\\notification_action_tombstone.xml"
+    },
+    {
+        "merged": "O:\\AndroidStudioProjects\\TnboysMap\\app\\build\\intermediates\\res\\merged\\debug\\layout-v21\\notification_template_icon_group.xml",
+        "source": "E:\\Android\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-27.1.1.aar\\044139be73193d502fae0a576eef912b\\res\\layout-v21\\notification_template_icon_group.xml"
+    }
+]

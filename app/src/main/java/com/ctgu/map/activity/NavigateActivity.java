@@ -13,9 +13,9 @@ import com.ctgu.map.utils.NavigationVoiceController;
 
 public class NavigateActivity extends AppCompatActivity implements AMapNaviViewListener {
 
-    private AMapNaviView aMapNaviView=null;
-    private AMapNavi aMapNavi=null;
-    private NavigationVoiceController controller=null;
+    private AMapNaviView aMapNaviView;
+    private AMapNavi aMapNavi;
+    private NavigationVoiceController controller;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

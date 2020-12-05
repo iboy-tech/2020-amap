@@ -1,0 +1,42 @@
+[
+    {
+        "merged": "O:\\AndroidStudioProjects\\TnboysMap\\app\\build\\intermediates\\res\\merged\\debug\\color-v23\\abc_color_highlight_material.xml",
+        "source": "E:\\Android\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\6f9c160f01baa4d2264506229d2995fb\\res\\color-v23\\abc_color_highlight_material.xml"
+    },
+    {
+        "merged": "O:\\AndroidStudioProjects\\TnboysMap\\app\\build\\intermediates\\res\\merged\\debug\\color-v23\\abc_btn_colored_borderless_text_material.xml",
+        "source": "E:\\Android\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\6f9c160f01baa4d2264506229d2995fb\\res\\color-v23\\abc_btn_colored_borderless_text_material.xml"
+    },
+    {
+        "merged": "O:\\AndroidStudioProjects\\TnboysMap\\app\\build\\intermediates\\res\\merged\\debug\\color-v23\\abc_tint_spinner.xml",
+        "source": "E:\\Android\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\6f9c160f01baa4d2264506229d2995fb\\res\\color-v23\\abc_tint_spinner.xml"
+    },
+    {
+        "merged": "O:\\AndroidStudioProjects\\TnboysMap\\app\\build\\intermediates\\res\\merged\\debug\\color-v23\\abc_tint_default.xml",
+        "source": "E:\\Android\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\6f9c160f01baa4d2264506229d2995fb\\res\\color-v23\\abc_tint_default.xml"
+    },
+    {
+        "merged": "O:\\AndroidStudioProjects\\TnboysMap\\app\\build\\intermediates\\res\\merged\\debug\\color-v23\\abc_tint_switch_track.xml",
+        "source": "E:\\Android\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\6f9c160f01baa4d2264506229d2995fb\\res\\color-v23\\abc_tint_switch_track.xml"
+    },
+    {
+        "merged": "O:\\AndroidStudioProjects\\TnboysMap\\app\\build\\intermediates\\res\\merged\\debug\\color-v23\\abc_tint_btn_checkable.xml",
+        "source": "E:\\Android\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\6f9c160f01baa4d2264506229d2995fb\\res\\color-v23\\abc_tint_btn_checkable.xml"
+    },
+    {
+        "merged": "O:\\AndroidStudioProjects\\TnboysMap\\app\\build\\intermediates\\res\\merged\\debug\\color-v23\\design_tint_password_toggle.xml",
+        "source": "E:\\Android\\.gradle\\caches\\transforms-1\\files-1.1\\design-27.1.1.aar\\b52749b60a3cefce0ba14dc6344fd02b\\res\\color-v23\\design_tint_password_toggle.xml"
+    },
+    {
+        "merged": "O:\\AndroidStudioProjects\\TnboysMap\\app\\build\\intermediates\\res\\merged\\debug\\color-v23\\abc_tint_edittext.xml",
+        "source": "E:\\Android\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\6f9c160f01baa4d2264506229d2995fb\\res\\color-v23\\abc_tint_edittext.xml"
+    },
+    {
+        "merged": "O:\\AndroidStudioProjects\\TnboysMap\\app\\build\\intermediates\\res\\merged\\debug\\color-v23\\abc_tint_seek_thumb.xml",
+        "source": "E:\\Android\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\6f9c160f01baa4d2264506229d2995fb\\res\\color-v23\\abc_tint_seek_thumb.xml"
+    },
+    {
+        "merged": "O:\\AndroidStudioProjects\\TnboysMap\\app\\build\\intermediates\\res\\merged\\debug\\color-v23\\abc_btn_colored_text_material.xml",
+        "source": "E:\\Android\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\6f9c160f01baa4d2264506229d2995fb\\res\\color-v23\\abc_btn_colored_text_material.xml"
+    }
+]

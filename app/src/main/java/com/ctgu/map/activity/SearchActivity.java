@@ -30,17 +30,17 @@ import java.util.List;
 public class SearchActivity extends AppCompatActivity implements PoiSearch.OnPoiSearchListener,
         Inputtips.InputtipsListener, SearchView.OnQueryTextListener{
 
-    private String city=null;
+    private String city;
 
-    private RecyclerView recyclerView=null;
-    private List<Tip> tipList=null;
-    private List<PoiItem> poiItemList=null;
-    private TipAdapter tipAdapter=null;
-    private PoiItemAdapter poiItemAdapter=null;
+    private RecyclerView recyclerView;
+    private List<Tip> tipList;
+    private List<PoiItem> poiItemList;
+    private TipAdapter tipAdapter;
+    private PoiItemAdapter poiItemAdapter;
 
-    private ProgressDialog loadingDialog=null;
-    private SearchView searchView=null;
-    private TextView noResult=null;
+    private ProgressDialog loadingDialog;
+    private SearchView searchView;
+    private TextView noResult;
 
     //活动跳转函数
     public static void startActivity(AppCompatActivity activity, int REQUEST_CODE, String city){

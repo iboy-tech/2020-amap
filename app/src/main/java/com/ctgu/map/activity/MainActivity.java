@@ -77,28 +77,28 @@ public class MainActivity extends AppCompatActivity implements AMap.OnPOIClickLi
             .parse("application/json; charset=utf-8");
     private static final OkHttpClient client = new OkHttpClient();
 
-    private Marker marker=null;
-    private String marker_title=null;
+    private Marker marker;
+    private String marker_title;
     private String city=Constants.DEFAULT_CITY;
-    private LatLng curLocation=null;
+    private LatLng curLocation;
 
     private boolean isFirstLocate=true;
     private boolean isFirstLocateFailed=false;
     private boolean isBackClickOnce=false;
     private boolean isOnResultBack=false;
 
-    private MapView mapView=null;
-    private AMap aMap=null;
+    private MapView mapView;
+    private AMap aMap;
 
-    private NestedScrollView bottomSheet=null;
-    private TextView textName=null;
-    private TextView textDistance=null;
-    private DrawerLayout drawerLayout=null;
-    private FloatingActionButton locate=null;
-    private FloatingActionButton plan=null;
-    private TextView search=null;
-    private ImageButton menu=null;
-    private NavigationView navigationView=null;
+    private NestedScrollView bottomSheet;
+    private TextView textName;
+    private TextView textDistance;
+    private DrawerLayout drawerLayout;
+    private FloatingActionButton locate;
+    private FloatingActionButton plan;
+    private TextView search;
+    private ImageButton menu;
+    private NavigationView navigationView;
 
 
 

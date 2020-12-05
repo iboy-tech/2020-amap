@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "O:\\AndroidStudioProjects\\TnboysMap\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi-v4\\ic_launcher_round.png",
+        "source": "O:\\AndroidStudioProjects\\TnboysMap\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "O:\\AndroidStudioProjects\\TnboysMap\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi-v4\\ic_launcher.png",
+        "source": "O:\\AndroidStudioProjects\\TnboysMap\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher.png"
+    }
+]

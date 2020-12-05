@@ -74,30 +74,30 @@ public class RouteActivity extends AppCompatActivity implements View.OnClickList
 
     private int isSearchingText= R.id.text_destination;
     private int curMode=0;
-    private String city=null;
+    private String city;
 
-    private NaviLatLng locationDeparture=null;
-    private NaviLatLng locationDestination=null;
+    private NaviLatLng locationDeparture;
+    private NaviLatLng locationDestination;
     private List<NaviLatLng> from=new ArrayList<>();
     private List<NaviLatLng> to=new ArrayList<>();
     private List<NaviLatLng> wayPoints=new ArrayList<>();
-    private RouteOverLay routeOverLay=null;
-    private RouteSearch routeSearch=null;
+    private RouteOverLay routeOverLay;
+    private RouteSearch routeSearch;
 
-    private TextView textDeparture=null;
-    private TextView textDestination=null;
-    private MapView mapView=null;
-    private AMap aMap=null;
-    private AMapNavi aMapNavi=null;
-    private ProgressDialog loadingDialog=null;
-    private TextView textEmpty=null;
-    private TextView textDistance=null;
-    private TextView textTime=null;
-    private LinearLayout bottomSheet=null;
-    private FloatingActionButton navigate=null;
-    private ImageButton swap=null;
-    private RecyclerView busPathList=null;
-    private RecyclerView detailList=null;
+    private TextView textDeparture;
+    private TextView textDestination;
+    private MapView mapView;
+    private AMap aMap;
+    private AMapNavi aMapNavi;
+    private ProgressDialog loadingDialog;
+    private TextView textEmpty;
+    private TextView textDistance;
+    private TextView textTime;
+    private LinearLayout bottomSheet;
+    private FloatingActionButton navigate;
+    private ImageButton swap;
+    private RecyclerView busPathList;
+    private RecyclerView detailList;
 
     //活动跳转函数
     public static void startActivity(Context context, LatLng curLocation,
