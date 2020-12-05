@@ -14,6 +14,21 @@
                     }
                 }
             ]
+        },
+        {
+            "outputFile": "O:\\AndroidStudioProjects\\TnboysMap\\app\\build\\intermediates\\res\\merged\\debug\\values-port\\values-port.xml",
+            "map": [
+                {
+                    "source": "E:\\Android\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\6f9c160f01baa4d2264506229d2995fb\\res\\values-port\\values-port.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "55",
+                        "endOffsets": "106"
+                    }
+                }
+            ]
         }
     ]
 }

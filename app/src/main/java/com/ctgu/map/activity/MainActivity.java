@@ -3,7 +3,10 @@ package com.ctgu.map.activity;
 import android.Manifest;
 import android.content.Intent;
 import android.content.pm.PackageManager;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
 import android.graphics.Color;
+import android.graphics.Matrix;
 import android.location.Location;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
@@ -30,6 +33,8 @@ import com.amap.api.maps.AMapUtils;
 import com.amap.api.maps.CameraUpdateFactory;
 import com.amap.api.maps.MapView;
 import com.amap.api.maps.UiSettings;
+import com.amap.api.maps.model.BitmapDescriptor;
+import com.amap.api.maps.model.BitmapDescriptorFactory;
 import com.amap.api.maps.model.LatLng;
 import com.amap.api.maps.model.Marker;
 import com.amap.api.maps.model.MarkerOptions;
@@ -165,21 +170,40 @@ public class MainActivity extends AppCompatActivity implements AMap.OnPOIClickLi
         initMap();
     }
 
+    //自定义导航图标
+    private Bitmap scaleBitmap(Bitmap origin, float ratio) {
+        if (origin == null) {
+            return null;
+        }
+        int width = origin.getWidth();
+        int height = origin.getHeight();
+        Matrix matrix = new Matrix();
+        matrix.preScale(ratio, ratio);
+        Bitmap newBM = Bitmap.createBitmap(origin, 0, 0, width, height, matrix, false);
+        if (newBM.equals(origin)) {
+            return newBM;
+        }
+        origin.recycle();
+        return newBM;
+    }
+
+
+
     //初始化地图
     private void initMap() {
         if(aMap==null){
             aMap=mapView.getMap();
         }
         UiSettings uiSettings=aMap.getUiSettings();
-        uiSettings.setMyLocationButtonEnabled(true);
-//        uiSettings.setCompassEnabled(true);// 设置指南针是否显示
-//        uiSettings.setZoomControlsEnabled(true);// 设置缩放按钮是否显示
-
+        uiSettings.setMyLocationButtonEnabled(false); //我的位置
+        uiSettings.setCompassEnabled(false);// 设置指南针是否显示
+        uiSettings.setZoomControlsEnabled(false);// 设置缩放按钮是否显示
 
         //定位蓝点
         MyLocationStyle myLocationStyle=new MyLocationStyle();
         myLocationStyle.myLocationType(MyLocationStyle.LOCATION_TYPE_LOCATION_ROTATE);//连续定位、且将视角移动到地图中心点，定位点依照设备方向旋转，并且会跟随设备移动。（1秒1次定位）默认执行此种模式。
-
+        Bitmap bitmap= BitmapFactory.decodeResource(getResources(),R.drawable.direction);
+        myLocationStyle.myLocationIcon(BitmapDescriptorFactory.fromBitmap(scaleBitmap(bitmap,0.15f)));
 //        myLocationStyle.myLocationType(MyLocationStyle.LOCATION_TYPE_LOCATION_ROTATE);//连续定位、且将视角移动到地图中心点，定位点依照设备方向旋转，并且会跟随设备移动。（1秒1次定位）默认执行此种模式。
 //        myLocationStyle.strokeColor(Color.argb(0,0,0,0)).radiusFillColor(Color.argb(0,255,192,203)).
 //                interval(10000);
@@ -200,8 +224,6 @@ public class MainActivity extends AppCompatActivity implements AMap.OnPOIClickLi
     }
 
     //点击标记弹出框
-
-
     //初始化界面
     private void initLayout() {
         getWindow().addFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS);
