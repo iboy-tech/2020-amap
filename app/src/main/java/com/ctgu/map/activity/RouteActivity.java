@@ -109,6 +109,7 @@ public class RouteActivity extends AppCompatActivity implements View.OnClickList
         } else {
             intent.putExtra("hasCur", false);
         }
+        //已经有目的地了
         if(targetLocation!=null){
             intent.putExtra("hasTarget", true);
             intent.putExtra("targetLocation", targetLocation);
@@ -124,7 +125,7 @@ public class RouteActivity extends AppCompatActivity implements View.OnClickList
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_route);
-        mapView=(MapView)findViewById(R.id.map_view_route);
+        mapView= findViewById(R.id.map_view_route);
         mapView.onCreate(savedInstanceState);
         initMap();
         initLayout();
@@ -210,7 +211,7 @@ public class RouteActivity extends AppCompatActivity implements View.OnClickList
         if(loadingDialog==null){
             loadingDialog=new ProgressDialog(this);
             loadingDialog.setTitle("请稍等");
-            loadingDialog.setMessage("Loading...");
+            loadingDialog.setMessage("加载中...");
             loadingDialog.setCancelable(true);
             loadingDialog.show();
         }

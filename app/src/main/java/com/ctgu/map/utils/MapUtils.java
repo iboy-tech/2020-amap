@@ -70,53 +70,6 @@ public class MapUtils {
         return second + "秒";
     }
 
-    public static String getBusPathTitle(BusPath path){
-        String empty="";
-        if(path==null){
-            return empty;
-        }
-        List<BusStep> busStepList=path.getSteps();
-        if(busStepList==null){
-            return empty;
-        }
-
-        StringBuilder title=new StringBuilder();
-        for(BusStep step:busStepList){
-            StringBuilder subTitle=new StringBuilder();
-            if(step.getBusLines().size()>0){
-                for(RouteBusLineItem busLineItem:step.getBusLines()){
-                    if(busLineItem!=null){
-                        String name=busLineItem.getBusLineName();
-                        if(name!=null){
-                            subTitle.append(name.replaceAll("\\(.*\\)", ""));
-                            subTitle.append(" / ");
-                        }
-                    }
-                }
-                title.append(subTitle.substring(0, subTitle.length()-3));
-                title.append(" > ");
-            }
-            if(step.getRailway()!=null){
-                RouteRailwayItem routeRailwayItem=step.getRailway();
-                title.append(routeRailwayItem.getTrip()+"("+
-                        routeRailwayItem.getDeparturestop().getName()+" - "+
-                        routeRailwayItem.getArrivalstop().getName());
-                title.append(" > ");
-            }
-        }
-        return title.substring(0, title.length()-3);
-    }
-
-    public static String getBusPathInfo(BusPath path){
-        String empty="";
-        if(path==null){
-            return empty;
-        }
-        return MapUtils.getTimeStr(path.getDuration())+" | "+
-                MapUtils.getLengthStr(path.getDistance())+" | 步行"+
-                MapUtils.getLengthStr(path.getWalkDistance())+" | 花费"+
-                path.getCost()+"元";
-    }
 
     public static String getActionStr(int iconType){
         switch (iconType){

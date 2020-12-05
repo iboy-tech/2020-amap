@@ -16,7 +16,10 @@ import com.ctgu.map.utils.Constants;
 import java.util.List;
 
 /**
- * Created by ctgu
+ * FileName: AboutActivity
+ * Author: Admin
+ * Date: 2020/12/5 11:24
+ * Description: POI适配器，容纳搜索结果
  */
 
 public class PoiItemAdapter extends RecyclerView.Adapter<PoiItemAdapter.ViewHolder>{
@@ -33,8 +36,8 @@ public class PoiItemAdapter extends RecyclerView.Adapter<PoiItemAdapter.ViewHold
         public ViewHolder(View view){
             super(view);
             poiItemView=view;
-            poiItemName=(TextView)view.findViewById(R.id.name);
-            poiItemAddress=(TextView)view.findViewById(R.id.address);
+            poiItemName= view.findViewById(R.id.name);
+            poiItemAddress= view.findViewById(R.id.address);
         }
     }
 

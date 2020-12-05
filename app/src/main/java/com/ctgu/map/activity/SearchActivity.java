@@ -9,9 +9,13 @@ import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.SearchView;
 import android.support.v7.widget.Toolbar;
+import android.text.Editable;
+import android.text.TextWatcher;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.EditText;
+import android.widget.ImageButton;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -25,10 +29,12 @@ import com.ctgu.map.R;
 import com.ctgu.map.adapter.PoiItemAdapter;
 import com.ctgu.map.adapter.TipAdapter;
 
+import org.apache.commons.lang3.StringUtils;
+
 import java.util.List;
 
 public class SearchActivity extends AppCompatActivity implements PoiSearch.OnPoiSearchListener,
-        Inputtips.InputtipsListener, SearchView.OnQueryTextListener{
+        Inputtips.InputtipsListener{
 
     private String city;
 
@@ -42,10 +48,15 @@ public class SearchActivity extends AppCompatActivity implements PoiSearch.OnPoi
     private SearchView searchView;
     private TextView noResult;
 
-    //活动跳转函数
+    private ImageButton imageButton;
+
+    private EditText editText;
+
+    //从main跳转活动跳转函数
     public static void startActivity(AppCompatActivity activity, int REQUEST_CODE, String city){
         Intent intent=new Intent(activity, SearchActivity.class);
         intent.putExtra("city", city);
+        //获取搜索结果
         activity.startActivityForResult(intent, REQUEST_CODE);
     }
 
@@ -54,15 +65,62 @@ public class SearchActivity extends AppCompatActivity implements PoiSearch.OnPoi
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_search);
         city=getIntent().getStringExtra("city");
+        editText=findViewById(R.id.search);
+        imageButton=findViewById(R.id.search_ico);
 
-        searchView=(SearchView)findViewById(R.id.search_view);
-        searchView.setOnQueryTextListener(this);
-        searchView.onActionViewExpanded();
-        searchView.setSubmitButtonEnabled(true);
-        noResult=(TextView)findViewById(R.id.text_no_result);
-        recyclerView=(RecyclerView)findViewById(R.id.recyclerView_tip);
+        imageButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                String keyword=editText.getText().toString();
+                if(keyword=="" || keyword==null || StringUtils.isAllBlank(keyword)){
+                    Toast.makeText(getApplicationContext(),"搜索内容不能为空",Toast.LENGTH_LONG).show();
+                }else{
+                    searchPOI(keyword);
+                }
+            }
+        });
+
+
+        //监听搜索文本变化
+        editText.addTextChangedListener(new TextWatcher() {
+            @Override
+            public void beforeTextChanged(CharSequence s, int start, int count, int after) {
+                if(tipList!=null){
+                    tipList.clear();
+                }
+            }
+
+            @Override
+            public void onTextChanged(CharSequence s, int start, int before, int count) {
+                if(tipList!=null){
+                    tipList.clear();
+                }
+            }
+
+            @Override
+            public void afterTextChanged(Editable s) {
+                String newText=s.toString();
+                System.out.println("搜索内容变为："+s);
+                //输入了有效的目标地点
+                if(newText!=null&&!newText.equals("")){
+                    InputtipsQuery inputtipsQuery = new InputtipsQuery(newText, city);
+                    Inputtips inputTips = new Inputtips(SearchActivity.this.getApplicationContext(),
+                            inputtipsQuery);
+                    inputTips.setInputtipsListener(SearchActivity.this);
+                    inputTips.requestInputtipsAsyn();
+                } else {
+                    if (tipAdapter != null && tipList != null) {
+                        tipList.clear();
+                        tipAdapter.notifyDataSetChanged();
+                    }
+                }
+            }
+        });
+
+        noResult= findViewById(R.id.text_no_result);
+        recyclerView= findViewById(R.id.recyclerView_tip);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
-        Toolbar toolbar=(Toolbar)findViewById(R.id.toolbar_search);
+        Toolbar toolbar= findViewById(R.id.toolbar_search);
         setSupportActionBar(toolbar);
         ActionBar actionBar=getSupportActionBar();
         if(actionBar!=null) {
@@ -75,6 +133,7 @@ public class SearchActivity extends AppCompatActivity implements PoiSearch.OnPoi
     public void setQuery(String keyword){
         searchView.setQuery(keyword, true);
     }
+
 
     //开始地点搜索
     private void searchPOI(String keyword){
@@ -92,7 +151,7 @@ public class SearchActivity extends AppCompatActivity implements PoiSearch.OnPoi
         if(loadingDialog==null){
             loadingDialog=new ProgressDialog(this);
             loadingDialog.setTitle("请稍等");
-            loadingDialog.setMessage("Loading...");
+            loadingDialog.setMessage("加载中...");
             loadingDialog.setCancelable(true);
             loadingDialog.show();
         }
@@ -111,30 +170,9 @@ public class SearchActivity extends AppCompatActivity implements PoiSearch.OnPoi
         super.addContentView(view, params);
     }
 
-    //搜索框开始搜索事件处理
-    @Override
-    public boolean onQueryTextSubmit(String query) {
-        searchPOI(query);
-        return false;
-    }
 
-    //搜索框内文本改变事件处理
-    @Override
-    public boolean onQueryTextChange(String newText) {
-        if(newText!=null&&!newText.equals("")){
-            InputtipsQuery inputtipsQuery = new InputtipsQuery(newText, city);
-            Inputtips inputTips = new Inputtips(SearchActivity.this.getApplicationContext(),
-                    inputtipsQuery);
-            inputTips.setInputtipsListener(this);
-            inputTips.requestInputtipsAsyn();
-        } else {
-            if (tipAdapter != null && tipList != null) {
-                tipList.clear();
-                tipAdapter.notifyDataSetChanged();
-            }
-        }
-        return false;
-    }
+
+
 
     //获取关键词搜索结果
     @Override
@@ -160,6 +198,7 @@ public class SearchActivity extends AppCompatActivity implements PoiSearch.OnPoi
     public void onPoiSearched(PoiResult poiResult, int i) {
         dismissLoadingDialog();
         if(i==1000){
+            //渲染结果
             if(poiResult!=null&&poiResult.getQuery()!=null&&poiResult.getPois()!=null){
                 poiItemList=poiResult.getPois();
                 poiItemAdapter=new PoiItemAdapter(poiItemList, this);

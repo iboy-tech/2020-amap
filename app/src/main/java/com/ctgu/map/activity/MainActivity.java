@@ -28,9 +28,13 @@ import android.widget.ImageButton;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.amap.api.location.AMapLocationClient;
+import com.amap.api.location.AMapLocationClientOption;
+import com.amap.api.location.AMapLocationListener;
 import com.amap.api.maps.AMap;
 import com.amap.api.maps.AMapUtils;
 import com.amap.api.maps.CameraUpdateFactory;
+import com.amap.api.maps.LocationSource;
 import com.amap.api.maps.MapView;
 import com.amap.api.maps.UiSettings;
 import com.amap.api.maps.model.BitmapDescriptorFactory;
@@ -62,10 +66,10 @@ import java.util.TimerTask;
 import okhttp3.MediaType;
 import okhttp3.OkHttpClient;
 
-public class MainActivity extends AppCompatActivity implements AMap.OnPOIClickListener,
+public class MainActivity extends AppCompatActivity implements LocationSource, AMap.OnPOIClickListener,
         AMap.OnMyLocationChangeListener, View.OnClickListener,
         GeocodeSearch.OnGeocodeSearchListener, NavigationView.OnNavigationItemSelectedListener,
-        PoiSearch.OnPoiSearchListener {
+        PoiSearch.OnPoiSearchListener{
 
     public static final MediaType JSON = MediaType
             .parse("application/json; charset=utf-8");
@@ -80,6 +84,10 @@ public class MainActivity extends AppCompatActivity implements AMap.OnPOIClickLi
     private boolean isFirstLocateFailed=false;
     private boolean isBackClickOnce=false;
     private boolean isOnResultBack=false;
+
+    OnLocationChangedListener mListener;
+    AMapLocationClient mlocationClient;
+    AMapLocationClientOption mLocationOption;
 
     private MapView mapView;
     private AMap aMap;
@@ -108,6 +116,7 @@ public class MainActivity extends AppCompatActivity implements AMap.OnPOIClickLi
         } catch (IOException e) {
             e.printStackTrace();
         }
+
         /**
          LatLng latLng = new LatLng(22.56686, 114.170988);
          MarkerOptions markerOption = new MarkerOptions();
@@ -208,6 +217,7 @@ public class MainActivity extends AppCompatActivity implements AMap.OnPOIClickLi
         if(aMap==null){
             aMap=mapView.getMap();
         }
+
         UiSettings uiSettings=aMap.getUiSettings();
         uiSettings.setMyLocationButtonEnabled(false); //我的位置
         uiSettings.setCompassEnabled(false);// 设置指南针是否显示
@@ -224,6 +234,8 @@ public class MainActivity extends AppCompatActivity implements AMap.OnPOIClickLi
         myLocationStyle.strokeColor(Color.argb(100, 255, 144, 147));// 设置圆形的边框颜色
 
         myLocationStyle.radiusFillColor(Color.argb(100, 255, 144, 233));// 设置圆形的填充颜色
+
+
 
         //频率
         myLocationStyle.interval(100000);
@@ -282,18 +294,11 @@ public class MainActivity extends AppCompatActivity implements AMap.OnPOIClickLi
 
     //在地图上设置标记
     private void setMarkerLayout(LatLng location, String name,String pid){
-
         //移除之前的标记信息
         if (marker != null) {
             marker.remove();
-//            marker.showInfoWindow();
         }
 
-//        if (!marker.isInfoWindowShown()) {
-//            marker.showInfoWindow();
-//        } else {
-//            marker.hideInfoWindow();
-//        }
         MarkerOptions markerOption = new MarkerOptions();
         markerOption.position(location);
 //        textName.setText(marker_title);
@@ -304,33 +309,14 @@ public class MainActivity extends AppCompatActivity implements AMap.OnPOIClickLi
                     "距离你：" + MapUtils.getLengthStr(distance));
         }
         markerOption.title( "编号："+pid+"\n名称："+name).snippet("经度："+ location.latitude+"\n维度："+location.longitude+"\n"+distanceStr);
-
-        markerOption.draggable(true);//设置Marker可拖动
+        markerOption.draggable(false);//设置Marker可拖动
         markerOption.icon(BitmapDescriptorFactory.fromBitmap(BitmapFactory
                 .decodeResource(getResources(),R.drawable.location_marker)));
         // 将Marker设置为贴地显示，可以双指下拉地图查看效果
         markerOption.setFlat(false);//设置marker平贴地图效果
         marker = aMap.addMarker(markerOption);
         marker.showInfoWindow();
-//        geocodeSearch(MapUtils.convertToLatLonPoint(location));
-//        marker_title = name;
-//        BottomSheetBehavior behavior = BottomSheetBehavior.from(bottomSheet);
-//        if (behavior.getState() == BottomSheetBehavior.STATE_COLLAPSED) {
-//            behavior.setState(BottomSheetBehavior.STATE_EXPANDED);
-//        }
-//        textName.setText(marker_title);
-//        if (curLocation != null) {
-//            float distance = AMapUtils.calculateLineDistance(curLocation, location);
-//            textDistance.setText(String.format("%s",
-//                    "距离你：" + MapUtils.getLengthStr(distance)));
-//        } else {
-//            textDistance.setText("距离不详");
-//        }
-//        marker.showInfoWindow();
     }
-
-
-
 
     //开始地理位置逆编码
     private void geocodeSearch(LatLonPoint location){
@@ -369,10 +355,10 @@ public class MainActivity extends AppCompatActivity implements AMap.OnPOIClickLi
                 drawerLayout.closeDrawer(GravityCompat.START);
                 break;
             case R.id.map_log:
-                startActivity(new Intent(getApplicationContext(),LogActivity.class));
+                startActivity(new Intent(this,LogActivity.class));
                 break;
             case R.id.map_about:
-                startActivity(new Intent(getApplicationContext(),AboutActivity.class));
+                startActivity(new Intent(this,AboutActivity.class));
                 break;
             default:
         }
@@ -396,12 +382,8 @@ public class MainActivity extends AppCompatActivity implements AMap.OnPOIClickLi
     @Override
     public void onPOIClick(Poi poi) {
         System.out.println("点击信息点："+poi);
-        if(marker!=null){
-//            marker.remove();
-            marker.showInfoWindow();
-        }
-
-        Toast.makeText(this,"你点击了"+poi.getName(),Toast.LENGTH_LONG);
+        Toast.makeText(this,poi.getName(),Toast.LENGTH_LONG).show();
+        marker_title=poi.getName();
         //标记信息
         setMarkerLayout(poi.getCoordinate(), poi.getName(),poi.getPoiId());
         //将地图移动到定位点
@@ -458,21 +440,25 @@ public class MainActivity extends AppCompatActivity implements AMap.OnPOIClickLi
                     aMap.animateCamera(CameraUpdateFactory.newLatLng(curLocation));
                     geocodeSearch(MapUtils.convertToLatLonPoint(curLocation));
                 } else {
-                    Snackbar.make(mapView, "Locating failed. Please check your settings.",
+                    Snackbar.make(mapView, "定位失败",
                             Snackbar.LENGTH_SHORT).show();
                 }
                 break;
             case R.id.fab_plan:
+                //路径规划
                 if(marker!=null) {
+                    //标记点目的地
                     RouteActivity.startActivity(this, curLocation, marker.getPosition(),
                             marker_title, city);
                 } else {
+                    //空白的路径，需要先进行搜索
                     RouteActivity.startActivity(MainActivity.this, curLocation, null, null, city);
                 }
                 break;
             //路径规划
             case R.id.search:
             case R.id.search_ico:
+                //调用静态方法搜索
                 SearchActivity.startActivity(MainActivity.this,
                         Constants.REQUEST_MAIN_ACTIVITY, city);
                 break;
@@ -595,5 +581,39 @@ public class MainActivity extends AppCompatActivity implements AMap.OnPOIClickLi
     protected void onSaveInstanceState(Bundle outState) {
         super.onSaveInstanceState(outState);
         mapView.onSaveInstanceState(outState);
+    }
+
+    @Override
+    public void activate(OnLocationChangedListener listener) {
+        mListener = listener;
+        if (mlocationClient == null) {
+            //初始化定位
+            mlocationClient = new AMapLocationClient(this);
+            //初始化定位参数
+            mLocationOption = new AMapLocationClientOption();
+            //设置定位回调监听
+            mlocationClient.setLocationListener((AMapLocationListener) this);
+            //设置为高精度定位模式
+            mLocationOption.setLocationMode(AMapLocationClientOption.AMapLocationMode.Hight_Accuracy);
+            //该方法默认为false，true表示只定位一次
+            mLocationOption.setOnceLocation(true);
+            //设置定位参数
+            mlocationClient.setLocationOption(mLocationOption);
+            // 此方法为每隔固定时间会发起一次定位请求，为了减少电量消耗或网络流量消耗，
+            // 注意设置合适的定位时间的间隔（最小间隔支持为2000ms），并且在合适时间调用stopLocation()方法来取消定位请求
+            // 在定位结束后，在合适的生命周期调用onDestroy()方法
+            // 在单次定位情况下，定位无论成功与否，都无需调用stopLocation()方法移除请求，定位sdk内部会移除
+            mlocationClient.startLocation();//启动定位
+        }
+    }
+
+    @Override
+    public void deactivate() {
+        mListener = null;
+        if (mlocationClient != null) {
+            mlocationClient.stopLocation();
+            mlocationClient.onDestroy();
+        }
+        mlocationClient = null;
     }
 }

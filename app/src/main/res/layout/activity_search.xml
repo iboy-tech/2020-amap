@@ -15,26 +15,42 @@
                 android:id="@+id/toolbar_search"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"/>
-
-            <android.support.v7.widget.SearchView
-                android:id="@+id/search_view"
-                android:layout_marginStart="54dp"
-                android:layout_marginLeft="54dp"
-                android:layout_marginEnd="10dp"
-                android:layout_marginRight="10dp"
-                android:layout_marginTop="8dp"
-                android:layout_marginBottom="8dp"
+            <!--        搜索框-->
+            <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:background="#FFFFFF"
-                android:maxLines="1"
-                android:iconifiedByDefault="false"
-                android:queryHint="请输入地点"/>
-
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/border">
+                <EditText
+                    android:id="@+id/search"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:clickable="true"
+                    android:hint="请输入地点"
+                    android:inputType="textNoSuggestions"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginStart="5dp"
+                    android:textSize="20sp"
+                    android:background="@null"
+                    android:padding="10dp" />
+                <ImageButton
+                    android:id="@+id/search_ico"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:scaleType="fitXY"
+                    android:layout_gravity="center_vertical"
+                    android:layout_margin="8dp"
+                    android:background="@drawable/search"/>
+            </LinearLayout>
         </FrameLayout>
 
     </android.support.design.widget.AppBarLayout>
 
+<!--    搜索结果-->
     <android.support.v7.widget.RecyclerView
         android:id="@+id/recyclerView_tip"
         android:layout_width="match_parent"

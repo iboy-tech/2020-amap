@@ -14,36 +14,6 @@
                     }
                 }
             ]
-        },
-        {
-            "outputFile": "O:\\AndroidStudioProjects\\TnboysMap\\app\\build\\intermediates\\res\\merged\\debug\\values-v18\\values-v18.xml",
-            "map": [
-                {
-                    "source": "E:\\Android\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\6f9c160f01baa4d2264506229d2995fb\\res\\values-v18\\values-v18.xml",
-                    "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endColumns": "48",
-                        "endOffsets": "99"
-                    }
-                }
-            ]
-        },
-        {
-            "outputFile": "O:\\AndroidStudioProjects\\TnboysMap\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v18\\values-v18.xml",
-            "map": [
-                {
-                    "source": "E:\\Android\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\6f9c160f01baa4d2264506229d2995fb\\res\\values-v18\\values-v18.xml",
-                    "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endColumns": "48",
-                        "endOffsets": "99"
-                    }
-                }
-            ]
         }
     ]
 }
