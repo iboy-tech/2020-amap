@@ -29,7 +29,7 @@
                 android:background="#FFFFFF"
                 android:maxLines="1"
                 android:iconifiedByDefault="false"
-                android:queryHint="Enter search content"/>
+                android:queryHint="请输入地点"/>
 
         </FrameLayout>
 

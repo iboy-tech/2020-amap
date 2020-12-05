@@ -59,12 +59,9 @@
                     android:ellipsize="end"/>
 
             </LinearLayout>
-
         </android.support.v4.widget.NestedScrollView>
 
-
-
-
+<!--        定位按钮-->
         <android.support.design.widget.FloatingActionButton
             android:id="@+id/fab_locate"
             android:layout_width="wrap_content"
@@ -76,6 +73,7 @@
             android:layout_marginEnd="16dp"
             android:layout_marginRight="16dp"
             android:src="@drawable/my_location"/>
+<!--        路径规划按钮-->
         <android.support.design.widget.FloatingActionButton
             android:id="@+id/fab_plan"
             android:layout_width="wrap_content"
@@ -87,6 +85,7 @@
             android:layout_marginEnd="16dp"
             android:layout_marginRight="16dp"
             android:src="@drawable/route_search" />
+<!--        搜索框-->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -103,7 +102,6 @@
                 android:scaleType="fitXY"
                 android:layout_margin="8dp"
                 android:background="@drawable/menu"/>
-
             <TextView
                 android:id="@+id/search"
                 android:layout_weight="1"
@@ -115,7 +113,13 @@
                 android:layout_marginStart="5dp"
                 android:textSize="20sp"
                 android:padding="10dp" />
-
+            <ImageButton
+                android:id="@+id/search_ico"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:scaleType="fitXY"
+                android:layout_margin="8dp"
+                android:background="@drawable/search"/>
         </LinearLayout>
 
     </android.support.design.widget.CoordinatorLayout>

@@ -960,6 +960,10 @@
         "source": "E:\\Android\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\6f9c160f01baa4d2264506229d2995fb\\res\\drawable-xxxhdpi-v4\\abc_ic_star_half_black_48dp.png"
     },
     {
+        "merged": "O:\\AndroidStudioProjects\\TnboysMap\\app\\build\\intermediates\\res\\merged\\debug\\drawable_search.png.flat",
+        "source": "O:\\AndroidStudioProjects\\TnboysMap\\app\\src\\main\\res\\drawable\\search.png"
+    },
+    {
         "merged": "O:\\AndroidStudioProjects\\TnboysMap\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_list_pressed_holo_light.9.png.flat",
         "source": "E:\\Android\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\6f9c160f01baa4d2264506229d2995fb\\res\\drawable-mdpi-v4\\abc_list_pressed_holo_light.9.png"
     },
@@ -1466,10 +1470,6 @@
     {
         "merged": "O:\\AndroidStudioProjects\\TnboysMap\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_list_longpressed_holo.9.png.flat",
         "source": "E:\\Android\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\6f9c160f01baa4d2264506229d2995fb\\res\\drawable-hdpi-v4\\abc_list_longpressed_holo.9.png"
-    },
-    {
-        "merged": "O:\\AndroidStudioProjects\\TnboysMap\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_directions_white_48dp1.png.flat",
-        "source": "O:\\AndroidStudioProjects\\TnboysMap\\app\\src\\main\\res\\drawable\\ic_directions_white_48dp1.png"
     },
     {
         "merged": "O:\\AndroidStudioProjects\\TnboysMap\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_switch_track_mtrl_alpha.9.png.flat",

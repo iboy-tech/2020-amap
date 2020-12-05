@@ -420,7 +420,9 @@ public class MainActivity extends AppCompatActivity implements AMap.OnPOIClickLi
                     RouteActivity.startActivity(MainActivity.this, curLocation, null, null, city);
                 }
                 break;
+            //路径规划
             case R.id.search:
+            case R.id.search_ico:
                 SearchActivity.startActivity(MainActivity.this,
                         Constants.REQUEST_MAIN_ACTIVITY, city);
                 break;
