@@ -95,6 +95,9 @@ public class RouteActivity extends AppCompatActivity implements View.OnClickList
     private LinearLayout bottomSheet;
     private FloatingActionButton navigate;
     private RecyclerView detailList;
+    private RecyclerView busPathList;
+
+
 
     //活动跳转函数
     public static void startActivity(Context context, LatLng curLocation,
@@ -125,6 +128,8 @@ public class RouteActivity extends AppCompatActivity implements View.OnClickList
         setContentView(R.layout.activity_route);
         mapView= findViewById(R.id.map_view_route);
         mapView.onCreate(savedInstanceState);
+        busPathList=(RecyclerView)findViewById(R.id.recyclerView_route);
+        busPathList.setLayoutManager(new LinearLayoutManager(this));
         initMap();
         initLayout();
         Intent intent=getIntent();
@@ -175,12 +180,12 @@ public class RouteActivity extends AppCompatActivity implements View.OnClickList
         tabLayout.addTab(tabLayout.newTab().setIcon(R.drawable.walk).setTag(WALK_TAB));
         tabLayout.addTab(tabLayout.newTab().setIcon(R.drawable.ride).setTag(RIDE_TAB));
 
-
         tabLayout.addOnTabSelectedListener(this);
         TabLayout.Tab firstTab=tabLayout.getTabAt(0);
         if(firstTab!=null){
             firstTab.select();
         }
+
         navigate= findViewById(R.id.fab_navigate);
 //        navigate.setVisibility(View.GONE);
         textDistance= findViewById(R.id.text_distance);
@@ -222,6 +227,8 @@ public class RouteActivity extends AppCompatActivity implements View.OnClickList
             loadingDialog=null;
         }
     }
+
+
 
     //开始路线规划
     private void calculateRoute(){
@@ -287,17 +294,28 @@ public class RouteActivity extends AppCompatActivity implements View.OnClickList
     }
 
 
+    //将界面设置为公交路线模式
+    private void setBusRouteView(){
+        busPathList.setVisibility(View.VISIBLE);
+        mapView.setVisibility(View.GONE);
+        bottomSheet.setVisibility(View.GONE);
+        navigate.setVisibility(View.GONE);
+        textEmpty.setVisibility(View.GONE);
+    }
+
     //将界面设置为地图显示路线规划模式
     private void setMapRouteView(){
         navigate.setVisibility(View.VISIBLE);
         mapView.setVisibility(View.VISIBLE);
         bottomSheet.setVisibility(View.VISIBLE);
         textEmpty.setVisibility(View.GONE);
+        busPathList.setVisibility(View.GONE);
     }
 
     //将界面设置为查找无结果模式
     private void setNoResultView(){
         mapView.setVisibility(View.GONE);
+        busPathList.setVisibility(View.GONE);
         bottomSheet.setVisibility(View.GONE);
         navigate.setVisibility(View.GONE);
         textEmpty.setVisibility(View.VISIBLE);
@@ -306,11 +324,11 @@ public class RouteActivity extends AppCompatActivity implements View.OnClickList
     //将界面设置为初始状态
     private void resetView(){
         mapView.setVisibility(View.GONE);
+        busPathList.setVisibility(View.GONE);
         bottomSheet.setVisibility(View.GONE);
         navigate.setVisibility(View.GONE);
         textEmpty.setVisibility(View.GONE);
     }
-
     //通过传入id搜索对应的地点
     private void POIIdSearch(String id){
         final PoiSearch poiSearch=new PoiSearch(this, null);

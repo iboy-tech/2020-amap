@@ -6,13 +6,8 @@ import com.amap.api.maps.model.LatLng;
 import com.amap.api.navi.enums.IconType;
 import com.amap.api.navi.model.NaviLatLng;
 import com.amap.api.services.core.LatLonPoint;
-import com.amap.api.services.route.BusPath;
-import com.amap.api.services.route.BusStep;
-import com.amap.api.services.route.RouteBusLineItem;
-import com.amap.api.services.route.RouteRailwayItem;
 
 import java.text.DecimalFormat;
-import java.util.List;
 
 
 
