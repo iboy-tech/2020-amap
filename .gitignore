@@ -18,3 +18,4 @@ AndroidManifest.xml
 /app/src/main/jniLibs
 *.apk
 /.idea
+*.class

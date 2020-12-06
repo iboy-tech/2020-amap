@@ -1,4 +1,4 @@
-package com.ctgu.map.activity;
+   package com.ctgu.map.activity;
 
 import android.app.ProgressDialog;
 import android.content.Context;
@@ -171,16 +171,15 @@ public class RouteActivity extends AppCompatActivity implements View.OnClickList
 
         //初始化Tab栏
         TabLayout tabLayout= findViewById(R.id.tabs);
-        tabLayout.addTab(tabLayout.newTab().setIcon(R.drawable.drive).setTag(DRIVE_MODE));
-        tabLayout.addTab(tabLayout.newTab().setIcon(R.drawable.walk).setTag(WALK_MODE));
-        tabLayout.addTab(tabLayout.newTab().setIcon(R.drawable.ride).setTag(RIDE_MODE));
+        tabLayout.addTab(tabLayout.newTab().setIcon(R.drawable.drive).setTag(DRIVE_TAB));
+        tabLayout.addTab(tabLayout.newTab().setIcon(R.drawable.walk).setTag(WALK_TAB));
+        tabLayout.addTab(tabLayout.newTab().setIcon(R.drawable.ride).setTag(RIDE_TAB));
 
 
         tabLayout.addOnTabSelectedListener(this);
         TabLayout.Tab firstTab=tabLayout.getTabAt(0);
         if(firstTab!=null){
             firstTab.select();
-
         }
         navigate= findViewById(R.id.fab_navigate);
 //        navigate.setVisibility(View.GONE);
@@ -352,8 +351,6 @@ public class RouteActivity extends AppCompatActivity implements View.OnClickList
     }
 
     //公交路线规划结果处理
-
-
     @Override
     public void onBusRouteSearched(BusRouteResult busRouteResult, int i) {
 
@@ -374,6 +371,8 @@ public class RouteActivity extends AppCompatActivity implements View.OnClickList
 
     }
 
+
+    //TAB的回调方法
     @Override
     public void onTabReselected(TabLayout.Tab tab) {
 
@@ -382,7 +381,8 @@ public class RouteActivity extends AppCompatActivity implements View.OnClickList
     //Tab被选中逻辑处理
     @Override
     public void onTabSelected(TabLayout.Tab tab) {
-        if(tab.getTag().toString().equals(DRIVE_TAB)){
+        System.out.println("被选中的TAB"+tab.getTag());
+        if(tab!=null && tab.getTag().toString().equals(DRIVE_TAB)){
             System.out.println("驾驶模式");
             if(curMode!=DRIVE_MODE){
                 curMode=DRIVE_MODE;
@@ -390,7 +390,7 @@ public class RouteActivity extends AppCompatActivity implements View.OnClickList
                     calculateRoute();
                 }
             }
-        } else if(tab.getTag().toString().equals(WALK_TAB)){
+        } else if(tab!=null  && tab.getTag().toString().equals(WALK_TAB)){
             System.out.println("步行模式");
             if(curMode!=WALK_MODE){
                 curMode=WALK_MODE;
@@ -398,7 +398,7 @@ public class RouteActivity extends AppCompatActivity implements View.OnClickList
                     calculateRoute();
                 }
             }
-        } else if(tab.getTag().toString().equals(RIDE_TAB)){
+        } else if(tab!=null && tab.getTag().toString().equals(RIDE_TAB)){
             System.out.println("骑行模式");
             if(curMode!=RIDE_MODE){
                 curMode=RIDE_MODE;
@@ -413,24 +413,15 @@ public class RouteActivity extends AppCompatActivity implements View.OnClickList
     public void onTabUnselected(TabLayout.Tab tab) {
 
     }
+//TAB的回调方法
 
-    //toolbar菜单项被选中逻辑处理
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        switch (item.getItemId()){
-            case android.R.id.home:
-                finish();
-                break;
-            default:
-        }
-        return true;
-    }
 
     //界面中按钮被点击逻辑处理
     @Override
     public void onClick(View v) {
         switch (v.getId()){
             case R.id.fab_navigate:
+                //导航按钮
                 startNavigate();
                 break;
             case R.id.text_departure:
@@ -447,15 +438,18 @@ public class RouteActivity extends AppCompatActivity implements View.OnClickList
         }
     }
 
-    //跳转活动返回数据处理
+
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+
+        //获取的搜素结果
         switch (requestCode){
             case Constants.REQUEST_ROUTE_ACTIVITY:
                 if(resultCode==RESULT_OK){
                     if(data.getIntExtra("resultType", 1)==Constants.RESULT_TIP) {
                         Tip tip=data.getParcelableExtra("result");
                         POIIdSearch(tip.getPoiID());
+                        //根据搜索结果设置目的地
                         setSearchingResult(MapUtils.convertToNaviLatLng(tip.getPoint()),
                                 tip.getName());
 
