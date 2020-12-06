@@ -1,6 +1,12 @@
 package com.ctgu.map.utils;
 
 
+/**
+ * FileName: Constants
+ * Author: Admin
+ * Date: 2020/12/3 10:24
+ * Description: 存放全局常量
+ */
 
 public abstract class Constants {
 

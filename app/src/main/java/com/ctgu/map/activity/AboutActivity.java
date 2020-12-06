@@ -1,4 +1,4 @@
-package com.ctgu.map.activity;
+  package com.ctgu.map.activity;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;

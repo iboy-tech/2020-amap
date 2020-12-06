@@ -16,7 +16,7 @@ import com.ctgu.map.utils.Constants;
 import java.util.List;
 
 /**
- * FileName: AboutActivity
+ * FileName: PoiItemAdapter
  * Author: Admin
  * Date: 2020/12/5 11:24
  * Description: POI适配器，容纳搜索结果
@@ -61,6 +61,7 @@ public class PoiItemAdapter extends RecyclerView.Adapter<PoiItemAdapter.ViewHold
                 intent.putExtra("result", poiItem);
                 activity.setResult(AppCompatActivity.RESULT_OK, intent);
                 activity.finish();
+                System.out.println("点击了搜索结果"+poiItem);
             }
         });
         return holder;

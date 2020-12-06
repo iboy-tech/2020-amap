@@ -70,7 +70,6 @@ public class RouteActivity extends AppCompatActivity implements View.OnClickList
     private static final int DRIVE_MODE=0;
     private static final int WALK_MODE=1;
     private static final int RIDE_MODE=2;
-    private static final int BUS_MODE=3;
 
     private int isSearchingText= R.id.text_destination;
     private int curMode=0;
@@ -95,7 +94,6 @@ public class RouteActivity extends AppCompatActivity implements View.OnClickList
     private TextView textTime;
     private LinearLayout bottomSheet;
     private FloatingActionButton navigate;
-    private ImageButton swap;
     private RecyclerView busPathList;
     private RecyclerView detailList;
 
@@ -104,6 +102,7 @@ public class RouteActivity extends AppCompatActivity implements View.OnClickList
                                      LatLng targetLocation, String targetName, String city){
         Intent intent=new Intent(context, RouteActivity.class);
         if(curLocation!=null){
+            //已经获取当前位置
             intent.putExtra("hasCur", true);
             intent.putExtra("curLocation", curLocation);
         } else {
@@ -158,38 +157,44 @@ public class RouteActivity extends AppCompatActivity implements View.OnClickList
         UiSettings uiSettings=aMap.getUiSettings();
         uiSettings.setMyLocationButtonEnabled(false);
         uiSettings.setZoomPosition(AMapOptions.ZOOM_POSITION_RIGHT_CENTER);
-        uiSettings.setAllGesturesEnabled(false);
+//        uiSettings.setAllGesturesEnabled(false);
+        uiSettings.setZoomGesturesEnabled(true); //允许手势缩放
+        uiSettings.setCompassEnabled(true);// 设置指南针是否显示
+        uiSettings.setZoomControlsEnabled(false);// 设置缩放按钮是否显示
     }
 
     //初始化界面
     private void initLayout(){
-        Toolbar toolbar=(Toolbar)findViewById(R.id.toolbar_route);
+        Toolbar toolbar= findViewById(R.id.toolbar_route);
         setSupportActionBar(toolbar);
         ActionBar actionBar=getSupportActionBar();
         if(actionBar!=null) {
             actionBar.setDisplayHomeAsUpEnabled(true);
             actionBar.setDisplayShowTitleEnabled(false);
         }
-        TabLayout tabLayout=(TabLayout)findViewById(R.id.tabs);
+
+        //初始化Tab栏
+        TabLayout tabLayout= findViewById(R.id.tabs);
         tabLayout.addTab(tabLayout.newTab().setText(DRIVE_TAB));
         tabLayout.addTab(tabLayout.newTab().setText(WALK_TAB));
         tabLayout.addTab(tabLayout.newTab().setText(RIDE_TAB));
+
+
         tabLayout.addOnTabSelectedListener(this);
         TabLayout.Tab firstTab=tabLayout.getTabAt(0);
         if(firstTab!=null){
             firstTab.select();
         }
-        navigate=(FloatingActionButton)findViewById(R.id.fab_navigate);
+        navigate= findViewById(R.id.fab_navigate);
 //        navigate.setVisibility(View.GONE);
-        textDistance=(TextView)findViewById(R.id.text_distance);
-        textTime=(TextView)findViewById(R.id.text_time);
+        textDistance= findViewById(R.id.text_distance);
+        textTime= findViewById(R.id.text_time);
         bottomSheet=(LinearLayout)findViewById(R.id.bottom_sheet_route);
 //        bottomSheet.setVisibility(View.GONE);
         textEmpty=(TextView)findViewById(R.id.text_empty);
         textEmpty.setText(String.format("%s", "No viable route. Please try other ways."));
         textDeparture=(TextView)findViewById(R.id.text_departure);
         textDestination=(TextView)findViewById(R.id.text_destination);
-        swap=(ImageButton)findViewById(R.id.button_swap);
         busPathList=(RecyclerView)findViewById(R.id.recyclerView_route);
         busPathList.setLayoutManager(new LinearLayoutManager(this));
         detailList=(RecyclerView)findViewById(R.id.recyclerView_detail);
@@ -203,7 +208,6 @@ public class RouteActivity extends AppCompatActivity implements View.OnClickList
         navigate.setOnClickListener(this);
         textDeparture.setOnClickListener(this);
         textDestination.setOnClickListener(this);
-        swap.setOnClickListener(this);
     }
 
     //显示等待对话框
@@ -229,7 +233,9 @@ public class RouteActivity extends AppCompatActivity implements View.OnClickList
     private void calculateRoute(){
         showLoadingDialog();
         switch (curMode) {
+            //路径规划
             case DRIVE_MODE:
+                //规划的策略
                 int strategy = 0;
                 try {
                     strategy = aMapNavi.strategyConvert(false, false, false, false, false);
@@ -245,13 +251,6 @@ public class RouteActivity extends AppCompatActivity implements View.OnClickList
                 break;
             case RIDE_MODE:
                 aMapNavi.calculateRideRoute(locationDeparture, locationDestination);
-                break;
-            case BUS_MODE:
-                RouteSearch.BusRouteQuery query=new RouteSearch.BusRouteQuery(
-                        new RouteSearch.FromAndTo(MapUtils.convertToLatLonPoint(locationDeparture),
-                                MapUtils.convertToLatLonPoint(locationDestination)),
-                        RouteSearch.BUS_DEFAULT, city, 0);
-                routeSearch.calculateBusRouteAsyn(query);
                 break;
             default:
         }
@@ -293,14 +292,6 @@ public class RouteActivity extends AppCompatActivity implements View.OnClickList
         }
     }
 
-    //将界面设置为公交路线模式
-    private void setBusRouteView(){
-        busPathList.setVisibility(View.VISIBLE);
-        mapView.setVisibility(View.GONE);
-        bottomSheet.setVisibility(View.GONE);
-        navigate.setVisibility(View.GONE);
-        textEmpty.setVisibility(View.GONE);
-    }
 
     //将界面设置为地图显示路线规划模式
     private void setMapRouteView(){
@@ -444,17 +435,6 @@ public class RouteActivity extends AppCompatActivity implements View.OnClickList
     @Override
     public void onClick(View v) {
         switch (v.getId()){
-            case R.id.button_swap:
-                String tmp=textDestination.getText().toString();
-                textDestination.setText(textDeparture.getText());
-                textDeparture.setText(tmp);
-                NaviLatLng tmp_location=locationDeparture;
-                locationDeparture=locationDestination;
-                locationDestination=tmp_location;
-                if(locationDeparture!=null&locationDestination!=null){
-                    calculateRoute();
-                }
-                break;
             case R.id.fab_navigate:
                 startNavigate();
                 break;

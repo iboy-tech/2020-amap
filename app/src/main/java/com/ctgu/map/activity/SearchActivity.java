@@ -7,11 +7,9 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
-import android.support.v7.widget.SearchView;
 import android.support.v7.widget.Toolbar;
 import android.text.Editable;
 import android.text.TextWatcher;
-import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.EditText;
@@ -32,7 +30,12 @@ import com.ctgu.map.adapter.TipAdapter;
 import org.apache.commons.lang3.StringUtils;
 
 import java.util.List;
-
+/**
+ * FileName: SearchActivity
+ * Author: Admin
+ * Date: 2020/12/5 16:57
+ * Description: 信息点搜索选择
+ */
 public class SearchActivity extends AppCompatActivity implements PoiSearch.OnPoiSearchListener,
         Inputtips.InputtipsListener{
 
@@ -45,7 +48,6 @@ public class SearchActivity extends AppCompatActivity implements PoiSearch.OnPoi
     private PoiItemAdapter poiItemAdapter;
 
     private ProgressDialog loadingDialog;
-    private SearchView searchView;
     private TextView noResult;
 
     private ImageButton imageButton;
@@ -64,10 +66,12 @@ public class SearchActivity extends AppCompatActivity implements PoiSearch.OnPoi
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_search);
+
         city=getIntent().getStringExtra("city");
         editText=findViewById(R.id.search);
         imageButton=findViewById(R.id.search_ico);
 
+        //搜索按钮添加单单击
         imageButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -129,10 +133,6 @@ public class SearchActivity extends AppCompatActivity implements PoiSearch.OnPoi
         }
     }
 
-    //设置搜索框的文本并直接开始搜索
-    public void setQuery(String keyword){
-        searchView.setQuery(keyword, true);
-    }
 
 
     //开始地点搜索
@@ -169,9 +169,6 @@ public class SearchActivity extends AppCompatActivity implements PoiSearch.OnPoi
     public void addContentView(View view, ViewGroup.LayoutParams params) {
         super.addContentView(view, params);
     }
-
-
-
 
 
     //获取关键词搜索结果
@@ -223,15 +220,8 @@ public class SearchActivity extends AppCompatActivity implements PoiSearch.OnPoi
 
     }
 
-    //toolbar菜单项被选中事件处理
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        switch (item.getItemId()){
-            case android.R.id.home:
-                finish();
-                break;
-            default:
-        }
-        return true;
+
+    public void setQuery(String name) {
+//        this.keyword=name;
     }
 }

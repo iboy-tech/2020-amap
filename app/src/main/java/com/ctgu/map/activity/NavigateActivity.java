@@ -21,7 +21,7 @@ public class NavigateActivity extends AppCompatActivity implements AMapNaviViewL
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_navigate);
-        aMapNaviView=(AMapNaviView)findViewById(R.id.navigate_view);
+        aMapNaviView= findViewById(R.id.navigate_view);
         aMapNaviView.onCreate(savedInstanceState);
         aMapNaviView.setAMapNaviViewListener(this);
         AMapNaviViewOptions options=new AMapNaviViewOptions();

@@ -17,6 +17,12 @@ import java.util.List;
 
 
 
+/**
+ * FileName: PoiItemAdapter
+ * Author: Admin
+ * Date: 2020/12/5 18:45
+ * Description: 自动搜索提示
+ */
 public class TipAdapter extends RecyclerView.Adapter<TipAdapter.ViewHolder> {
 
     private List<Tip> tipList;
@@ -58,6 +64,7 @@ public class TipAdapter extends RecyclerView.Adapter<TipAdapter.ViewHolder> {
                     activity.setResult(AppCompatActivity.RESULT_OK, intent);
                     activity.finish();
                 } else {
+                    //点击了搜索结果，将目的地传过去
                     activity.setQuery(tip.getName());
                 }
             }
