@@ -2,6 +2,7 @@ package com.ctgu.map.activity;
 
 import android.app.ProgressDialog;
 import android.content.Intent;
+import android.support.v4.app.NavUtils;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -66,7 +67,9 @@ public class SearchActivity extends AppCompatActivity implements PoiSearch.OnPoi
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_search);
-
+        if(NavUtils.getParentActivityName(SearchActivity.this)!=null){
+            getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        }
         city=getIntent().getStringExtra("city");
         editText=findViewById(R.id.search);
         imageButton=findViewById(R.id.search_ico);
@@ -124,13 +127,7 @@ public class SearchActivity extends AppCompatActivity implements PoiSearch.OnPoi
         noResult= findViewById(R.id.text_no_result);
         recyclerView= findViewById(R.id.recyclerView_tip);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
-        Toolbar toolbar= findViewById(R.id.toolbar_search);
-        setSupportActionBar(toolbar);
-        ActionBar actionBar=getSupportActionBar();
-        if(actionBar!=null) {
-            actionBar.setDisplayHomeAsUpEnabled(true);
-            actionBar.setDisplayShowTitleEnabled(false);
-        }
+
     }
 
 

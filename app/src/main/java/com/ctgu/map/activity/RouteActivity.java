@@ -3,13 +3,14 @@ package com.ctgu.map.activity;
 import android.app.ProgressDialog;
 import android.content.Context;
 import android.content.Intent;
+import android.os.Bundle;
 import android.support.design.widget.BottomSheetBehavior;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
 import android.support.design.widget.TabLayout;
+import android.support.v4.app.NavUtils;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
@@ -17,7 +18,6 @@ import android.view.KeyEvent;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ImageButton;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
@@ -40,6 +40,7 @@ import com.amap.api.navi.model.AimLessModeCongestionInfo;
 import com.amap.api.navi.model.AimLessModeStat;
 import com.amap.api.navi.model.NaviInfo;
 import com.amap.api.navi.model.NaviLatLng;
+import com.amap.api.navi.view.RouteOverLay;
 import com.amap.api.services.core.PoiItem;
 import com.amap.api.services.help.Tip;
 import com.amap.api.services.poisearch.PoiResult;
@@ -54,7 +55,6 @@ import com.ctgu.map.R;
 import com.ctgu.map.adapter.RouteDetailAdapter;
 import com.ctgu.map.utils.Constants;
 import com.ctgu.map.utils.MapUtils;
-import com.amap.api.navi.view.RouteOverLay;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -94,7 +94,6 @@ public class RouteActivity extends AppCompatActivity implements View.OnClickList
     private TextView textTime;
     private LinearLayout bottomSheet;
     private FloatingActionButton navigate;
-    private RecyclerView busPathList;
     private RecyclerView detailList;
 
     //活动跳转函数
@@ -165,39 +164,35 @@ public class RouteActivity extends AppCompatActivity implements View.OnClickList
 
     //初始化界面
     private void initLayout(){
-        Toolbar toolbar= findViewById(R.id.toolbar_route);
-        setSupportActionBar(toolbar);
-        ActionBar actionBar=getSupportActionBar();
-        if(actionBar!=null) {
-            actionBar.setDisplayHomeAsUpEnabled(true);
-            actionBar.setDisplayShowTitleEnabled(false);
+
+        if(NavUtils.getParentActivityName(RouteActivity.this)!=null){
+            getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         }
 
         //初始化Tab栏
         TabLayout tabLayout= findViewById(R.id.tabs);
-        tabLayout.addTab(tabLayout.newTab().setText(DRIVE_TAB));
-        tabLayout.addTab(tabLayout.newTab().setText(WALK_TAB));
-        tabLayout.addTab(tabLayout.newTab().setText(RIDE_TAB));
+        tabLayout.addTab(tabLayout.newTab().setIcon(R.drawable.drive).setTag(DRIVE_MODE));
+        tabLayout.addTab(tabLayout.newTab().setIcon(R.drawable.walk).setTag(WALK_MODE));
+        tabLayout.addTab(tabLayout.newTab().setIcon(R.drawable.ride).setTag(RIDE_MODE));
 
 
         tabLayout.addOnTabSelectedListener(this);
         TabLayout.Tab firstTab=tabLayout.getTabAt(0);
         if(firstTab!=null){
             firstTab.select();
+
         }
         navigate= findViewById(R.id.fab_navigate);
 //        navigate.setVisibility(View.GONE);
         textDistance= findViewById(R.id.text_distance);
         textTime= findViewById(R.id.text_time);
-        bottomSheet=(LinearLayout)findViewById(R.id.bottom_sheet_route);
+        bottomSheet= findViewById(R.id.bottom_sheet_route);
 //        bottomSheet.setVisibility(View.GONE);
-        textEmpty=(TextView)findViewById(R.id.text_empty);
+        textEmpty= findViewById(R.id.text_empty);
         textEmpty.setText(String.format("%s", "No viable route. Please try other ways."));
-        textDeparture=(TextView)findViewById(R.id.text_departure);
-        textDestination=(TextView)findViewById(R.id.text_destination);
-        busPathList=(RecyclerView)findViewById(R.id.recyclerView_route);
-        busPathList.setLayoutManager(new LinearLayoutManager(this));
-        detailList=(RecyclerView)findViewById(R.id.recyclerView_detail);
+        textDeparture= findViewById(R.id.text_departure);
+        textDestination= findViewById(R.id.text_destination);
+        detailList= findViewById(R.id.recyclerView_detail);
         LinearLayoutManager layoutManager=new LinearLayoutManager(this);
         detailList.setLayoutManager(layoutManager);
         registerListener();
@@ -299,13 +294,11 @@ public class RouteActivity extends AppCompatActivity implements View.OnClickList
         mapView.setVisibility(View.VISIBLE);
         bottomSheet.setVisibility(View.VISIBLE);
         textEmpty.setVisibility(View.GONE);
-        busPathList.setVisibility(View.GONE);
     }
 
     //将界面设置为查找无结果模式
     private void setNoResultView(){
         mapView.setVisibility(View.GONE);
-        busPathList.setVisibility(View.GONE);
         bottomSheet.setVisibility(View.GONE);
         navigate.setVisibility(View.GONE);
         textEmpty.setVisibility(View.VISIBLE);
@@ -314,7 +307,6 @@ public class RouteActivity extends AppCompatActivity implements View.OnClickList
     //将界面设置为初始状态
     private void resetView(){
         mapView.setVisibility(View.GONE);
-        busPathList.setVisibility(View.GONE);
         bottomSheet.setVisibility(View.GONE);
         navigate.setVisibility(View.GONE);
         textEmpty.setVisibility(View.GONE);
@@ -390,21 +382,24 @@ public class RouteActivity extends AppCompatActivity implements View.OnClickList
     //Tab被选中逻辑处理
     @Override
     public void onTabSelected(TabLayout.Tab tab) {
-        if(tab.getText()!=null && tab.getText().equals(DRIVE_TAB)){
+        if(tab.getTag().toString().equals(DRIVE_TAB)){
+            System.out.println("驾驶模式");
             if(curMode!=DRIVE_MODE){
                 curMode=DRIVE_MODE;
                 if(locationDeparture!=null&&locationDestination!=null){
                     calculateRoute();
                 }
             }
-        } else if(tab.getText().equals(WALK_TAB)){
+        } else if(tab.getTag().toString().equals(WALK_TAB)){
+            System.out.println("步行模式");
             if(curMode!=WALK_MODE){
                 curMode=WALK_MODE;
                 if(locationDeparture!=null&&locationDestination!=null){
                     calculateRoute();
                 }
             }
-        } else if(tab.getText().equals(RIDE_TAB)){
+        } else if(tab.getTag().toString().equals(RIDE_TAB)){
+            System.out.println("骑行模式");
             if(curMode!=RIDE_MODE){
                 curMode=RIDE_MODE;
                 if(locationDeparture!=null&&locationDestination!=null){
