@@ -9,6 +9,7 @@ import com.amap.api.navi.AMapNavi;
 import com.amap.api.navi.AMapNaviListener;
 import com.amap.api.navi.AMapNaviView;
 import com.amap.api.navi.AMapNaviViewListener;
+import com.amap.api.navi.AMapNaviViewOptions;
 import com.amap.api.navi.enums.NaviType;
 import com.amap.api.navi.model.AMapCalcRouteResult;
 import com.amap.api.navi.model.AMapLaneInfo;
@@ -27,6 +28,7 @@ import com.ctgu.map.util.TTSController;
 
 
 public class RouteNaviActivity extends Activity implements AMapNaviListener, AMapNaviViewListener {
+
     TTSController controller;
     AMapNaviView mAMapNaviView;
     AMapNavi mAMapNavi;
@@ -37,18 +39,30 @@ public class RouteNaviActivity extends Activity implements AMapNaviListener, AMa
         requestWindowFeature(Window.FEATURE_NO_TITLE);
         setContentView(R.layout.activity_basic_navi);
 
-        mAMapNaviView = (AMapNaviView) findViewById(R.id.navi_view);
+        mAMapNaviView = findViewById(R.id.navi_view);
         mAMapNaviView.onCreate(savedInstanceState);
         mAMapNaviView.setAMapNaviViewListener(this);
 
         mAMapNavi = AMapNavi.getInstance(getApplicationContext());
         mAMapNavi.addAMapNaviListener(this);
-        mAMapNavi.setUseInnerVoice(true,true);
+
+        //禁用导航自带语音
+        mAMapNavi.setUseInnerVoice(false,true);
+
+
         mAMapNavi.setEmulatorNaviSpeed(60);
-        boolean gps = getIntent().getBooleanExtra("gps", true);
+        boolean gps = getIntent().getBooleanExtra("gps", false);
+
         controller= TTSController.getInstance(getApplicationContext());
         mAMapNavi= AMapNavi.getInstance(getApplicationContext());
         mAMapNavi.addAMapNaviListener(controller);
+
+        //导航选项
+        AMapNaviViewOptions options=new AMapNaviViewOptions();
+        options.setAutoDrawRoute(true);
+        options.setScreenAlwaysBright(true);
+        mAMapNaviView.setViewOptions(options);
+        //导航选项
         AMapNavi.setTtsPlaying(false);
         if (gps) {
             mAMapNavi.startNavi(NaviType.GPS);

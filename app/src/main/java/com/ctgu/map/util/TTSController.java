@@ -34,8 +34,6 @@ public class TTSController implements AMapNaviListener, ICallBack {
         }
     }
 
-
-
     public static enum TTSType {
         /**
          * 讯飞语音

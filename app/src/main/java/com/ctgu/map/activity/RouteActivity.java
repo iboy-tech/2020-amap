@@ -284,10 +284,10 @@
         Intent intent = new Intent(getApplicationContext(), RouteNaviActivity.class);
         intent.putExtra("gps", true);
 
-        Map<String, NaviLatLng> map=new HashMap<>();
-        map.put("start",locationDeparture);
-        map.put("end",locationDestination);
-        intent.putExtra("location",  new Gson().toJson(map));
+//        Map<String, NaviLatLng> map=new HashMap<>();
+//        map.put("start",locationDeparture);
+//        map.put("end",locationDestination);
+//        intent.putExtra("location",  new Gson().toJson(map));
         startActivity(intent);
 //        intent.putExtra("useInnerVoice", true);
 //        startActivity(intent);
