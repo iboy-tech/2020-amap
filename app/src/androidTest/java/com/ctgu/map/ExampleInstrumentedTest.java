@@ -21,6 +21,6 @@ public class ExampleInstrumentedTest {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getTargetContext();
 
-        assertEquals("com.ctgu.tnboysmap", appContext.getPackageName());
+        assertEquals("com.ctgu.map", appContext.getPackageName());
     }
 }

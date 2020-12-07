@@ -1,63 +1,61 @@
    package com.ctgu.map.activity;
 
-import android.app.ProgressDialog;
-import android.content.Context;
-import android.content.Intent;
-import android.os.Bundle;
-import android.support.design.widget.BottomSheetBehavior;
-import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
-import android.support.design.widget.TabLayout;
-import android.support.v4.app.NavUtils;
-import android.support.v7.app.ActionBar;
-import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.LinearLayoutManager;
-import android.support.v7.widget.RecyclerView;
-import android.support.v7.widget.Toolbar;
-import android.view.KeyEvent;
-import android.view.MenuItem;
-import android.view.View;
-import android.view.ViewGroup;
-import android.widget.LinearLayout;
-import android.widget.TextView;
+   import android.app.ProgressDialog;
+   import android.content.Context;
+   import android.content.Intent;
+   import android.os.Bundle;
+   import android.support.design.widget.BottomSheetBehavior;
+   import android.support.design.widget.FloatingActionButton;
+   import android.support.design.widget.Snackbar;
+   import android.support.design.widget.TabLayout;
+   import android.support.v4.app.NavUtils;
+   import android.support.v7.app.AppCompatActivity;
+   import android.support.v7.widget.LinearLayoutManager;
+   import android.support.v7.widget.RecyclerView;
+   import android.view.KeyEvent;
+   import android.view.View;
+   import android.view.ViewGroup;
+   import android.widget.LinearLayout;
+   import android.widget.TextView;
 
-import com.amap.api.maps.AMap;
-import com.amap.api.maps.AMapOptions;
-import com.amap.api.maps.MapView;
-import com.amap.api.maps.UiSettings;
-import com.amap.api.maps.model.LatLng;
-import com.amap.api.navi.AMapNavi;
-import com.amap.api.navi.AMapNaviListener;
-import com.amap.api.navi.model.AMapLaneInfo;
-import com.amap.api.navi.model.AMapNaviCameraInfo;
-import com.amap.api.navi.model.AMapNaviCross;
-import com.amap.api.navi.model.AMapNaviInfo;
-import com.amap.api.navi.model.AMapNaviLocation;
-import com.amap.api.navi.model.AMapNaviPath;
-import com.amap.api.navi.model.AMapNaviTrafficFacilityInfo;
-import com.amap.api.navi.model.AMapServiceAreaInfo;
-import com.amap.api.navi.model.AimLessModeCongestionInfo;
-import com.amap.api.navi.model.AimLessModeStat;
-import com.amap.api.navi.model.NaviInfo;
-import com.amap.api.navi.model.NaviLatLng;
-import com.amap.api.navi.view.RouteOverLay;
-import com.amap.api.services.core.PoiItem;
-import com.amap.api.services.help.Tip;
-import com.amap.api.services.poisearch.PoiResult;
-import com.amap.api.services.poisearch.PoiSearch;
-import com.amap.api.services.route.BusRouteResult;
-import com.amap.api.services.route.DriveRouteResult;
-import com.amap.api.services.route.RideRouteResult;
-import com.amap.api.services.route.RouteSearch;
-import com.amap.api.services.route.WalkRouteResult;
-import com.autonavi.tbt.TrafficFacilityInfo;
-import com.ctgu.map.R;
-import com.ctgu.map.adapter.RouteDetailAdapter;
-import com.ctgu.map.utils.Constants;
-import com.ctgu.map.utils.MapUtils;
+   import com.amap.api.maps.AMap;
+   import com.amap.api.maps.AMapOptions;
+   import com.amap.api.maps.MapView;
+   import com.amap.api.maps.UiSettings;
+   import com.amap.api.maps.model.LatLng;
+   import com.amap.api.navi.AMapNavi;
+   import com.amap.api.navi.AMapNaviListener;
+   import com.amap.api.navi.model.AMapCalcRouteResult;
+   import com.amap.api.navi.model.AMapLaneInfo;
+   import com.amap.api.navi.model.AMapModelCross;
+   import com.amap.api.navi.model.AMapNaviCameraInfo;
+   import com.amap.api.navi.model.AMapNaviCross;
+   import com.amap.api.navi.model.AMapNaviLocation;
+   import com.amap.api.navi.model.AMapNaviPath;
+   import com.amap.api.navi.model.AMapNaviRouteNotifyData;
+   import com.amap.api.navi.model.AMapNaviTrafficFacilityInfo;
+   import com.amap.api.navi.model.AMapServiceAreaInfo;
+   import com.amap.api.navi.model.AimLessModeCongestionInfo;
+   import com.amap.api.navi.model.AimLessModeStat;
+   import com.amap.api.navi.model.NaviInfo;
+   import com.amap.api.navi.model.NaviLatLng;
+   import com.amap.api.navi.view.RouteOverLay;
+   import com.amap.api.services.core.PoiItem;
+   import com.amap.api.services.help.Tip;
+   import com.amap.api.services.poisearch.PoiResult;
+   import com.amap.api.services.poisearch.PoiSearch;
+   import com.amap.api.services.route.BusRouteResult;
+   import com.amap.api.services.route.DriveRouteResult;
+   import com.amap.api.services.route.RideRouteResult;
+   import com.amap.api.services.route.RouteSearch;
+   import com.amap.api.services.route.WalkRouteResult;
+   import com.ctgu.map.R;
+   import com.ctgu.map.adapter.RouteDetailAdapter;
+   import com.ctgu.map.utils.Constants;
+   import com.ctgu.map.utils.MapUtils;
 
-import java.util.ArrayList;
-import java.util.List;
+   import java.util.ArrayList;
+   import java.util.List;
 
 public class RouteActivity extends AppCompatActivity implements View.OnClickListener,
         AMapNaviListener, TabLayout.OnTabSelectedListener, RouteSearch.OnRouteSearchListener,
@@ -75,13 +73,13 @@ public class RouteActivity extends AppCompatActivity implements View.OnClickList
     private int curMode=0;
     private String city;
 
+    //起点和目的地
     private NaviLatLng locationDeparture;
     private NaviLatLng locationDestination;
-    private List<NaviLatLng> from=new ArrayList<>();
-    private List<NaviLatLng> to=new ArrayList<>();
-    private List<NaviLatLng> wayPoints=new ArrayList<>();
+    private final List<NaviLatLng> from=new ArrayList<>();
+    private final List<NaviLatLng> to=new ArrayList<>();
+    private final List<NaviLatLng> wayPoints=new ArrayList<>();
     private RouteOverLay routeOverLay;
-    private RouteSearch routeSearch;
 
     private TextView textDeparture;
     private TextView textDestination;
@@ -95,7 +93,7 @@ public class RouteActivity extends AppCompatActivity implements View.OnClickList
     private LinearLayout bottomSheet;
     private FloatingActionButton navigate;
     private RecyclerView detailList;
-    private RecyclerView busPathList;
+
 
 
 
@@ -128,8 +126,7 @@ public class RouteActivity extends AppCompatActivity implements View.OnClickList
         setContentView(R.layout.activity_route);
         mapView= findViewById(R.id.map_view_route);
         mapView.onCreate(savedInstanceState);
-        busPathList=(RecyclerView)findViewById(R.id.recyclerView_route);
-        busPathList.setLayoutManager(new LinearLayoutManager(this));
+
         initMap();
         initLayout();
         Intent intent=getIntent();
@@ -144,7 +141,7 @@ public class RouteActivity extends AppCompatActivity implements View.OnClickList
                     (LatLng)intent.getParcelableExtra("curLocation"));
         }
         city=getIntent().getStringExtra("city");
-        routeSearch=new RouteSearch(this);
+        RouteSearch routeSearch = new RouteSearch(this);
         routeSearch.setRouteSearchListener(this);
         if(locationDeparture!=null&&locationDestination!=null) {
             aMapNavi = AMapNavi.getInstance(getApplicationContext());
@@ -274,7 +271,9 @@ public class RouteActivity extends AppCompatActivity implements View.OnClickList
 
     //开始导航
     private void startNavigate(){
-        Intent intent = new Intent(getApplicationContext(), NavigateActivity.class);
+        Intent intent = new Intent(RouteActivity.this, EmulatorActivity.class);
+        //不使用内置语音导航
+        intent.putExtra("useInnerVoice", false);
         startActivity(intent);
     }
 
@@ -294,14 +293,7 @@ public class RouteActivity extends AppCompatActivity implements View.OnClickList
     }
 
 
-    //将界面设置为公交路线模式
-    private void setBusRouteView(){
-        busPathList.setVisibility(View.VISIBLE);
-        mapView.setVisibility(View.GONE);
-        bottomSheet.setVisibility(View.GONE);
-        navigate.setVisibility(View.GONE);
-        textEmpty.setVisibility(View.GONE);
-    }
+
 
     //将界面设置为地图显示路线规划模式
     private void setMapRouteView(){
@@ -309,13 +301,11 @@ public class RouteActivity extends AppCompatActivity implements View.OnClickList
         mapView.setVisibility(View.VISIBLE);
         bottomSheet.setVisibility(View.VISIBLE);
         textEmpty.setVisibility(View.GONE);
-        busPathList.setVisibility(View.GONE);
     }
 
     //将界面设置为查找无结果模式
     private void setNoResultView(){
         mapView.setVisibility(View.GONE);
-        busPathList.setVisibility(View.GONE);
         bottomSheet.setVisibility(View.GONE);
         navigate.setVisibility(View.GONE);
         textEmpty.setVisibility(View.VISIBLE);
@@ -324,7 +314,6 @@ public class RouteActivity extends AppCompatActivity implements View.OnClickList
     //将界面设置为初始状态
     private void resetView(){
         mapView.setVisibility(View.GONE);
-        busPathList.setVisibility(View.GONE);
         bottomSheet.setVisibility(View.GONE);
         navigate.setVisibility(View.GONE);
         textEmpty.setVisibility(View.GONE);
@@ -547,6 +536,11 @@ public class RouteActivity extends AppCompatActivity implements View.OnClickList
     }
 
     @Override
+    public void onGetNavigationText(String s) {
+
+    }
+
+    @Override
     public void onEndEmulatorNavi() {
 
     }
@@ -556,29 +550,7 @@ public class RouteActivity extends AppCompatActivity implements View.OnClickList
 
     }
 
-    //路线规划成功处理（驾车、骑行、步行）
-    @Override
-    public void onCalculateRouteSuccess() {
-        dismissLoadingDialog();
-        if(curMode==DRIVE_MODE) {
-            to.clear();
-            from.clear();
-        }
-        AMapNaviPath path=aMapNavi.getNaviPath();
-        if(path!=null){
-            clearOverLay();
-            drawOverLay(path);
-            String distanceStr=MapUtils.getLengthStr(path.getAllLength());
-            String timeStr=MapUtils.getTimeStr(path.getAllTime());
-            textDistance.setText(distanceStr);
-            textTime.setText(timeStr);
-            RouteDetailAdapter adapter=new RouteDetailAdapter(aMapNavi.getNaviGuideList());
-            detailList.setAdapter(adapter);
-            setMapRouteView();
-        } else {
-            setNoResultView();
-        }
-    }
+
 
     //路线规划失败处理
     @Override
@@ -614,13 +586,15 @@ public class RouteActivity extends AppCompatActivity implements View.OnClickList
 
     }
 
+
+
     @Override
-    public void onNaviInfoUpdated(AMapNaviInfo aMapNaviInfo) {
+    public void updateCameraInfo(AMapNaviCameraInfo[] aMapNaviCameraInfos) {
 
     }
 
     @Override
-    public void updateCameraInfo(AMapNaviCameraInfo[] aMapNaviCameraInfos) {
+    public void updateIntervalCameraInfo(AMapNaviCameraInfo aMapNaviCameraInfo, AMapNaviCameraInfo aMapNaviCameraInfo1, int i) {
 
     }
 
@@ -640,7 +614,22 @@ public class RouteActivity extends AppCompatActivity implements View.OnClickList
     }
 
     @Override
+    public void showModeCross(AMapModelCross aMapModelCross) {
+
+    }
+
+    @Override
+    public void hideModeCross() {
+
+    }
+
+    @Override
     public void showLaneInfo(AMapLaneInfo[] aMapLaneInfos, byte[] bytes, byte[] bytes1) {
+
+    }
+
+    @Override
+    public void showLaneInfo(AMapLaneInfo aMapLaneInfo) {
 
     }
 
@@ -650,9 +639,29 @@ public class RouteActivity extends AppCompatActivity implements View.OnClickList
     }
 
     @Override
-    public void onCalculateMultipleRoutesSuccess(int[] ints) {
-
+    public void onCalculateRouteSuccess(int[] ints) {
+        //路线规划成功处理（驾车、骑行、步行）
+        dismissLoadingDialog();
+        if(curMode==DRIVE_MODE) {
+            to.clear();
+            from.clear();
+        }
+        AMapNaviPath path=aMapNavi.getNaviPath();
+        if(path!=null){
+            clearOverLay();
+            drawOverLay(path);
+            String distanceStr=MapUtils.getLengthStr(path.getAllLength());
+            String timeStr=MapUtils.getTimeStr(path.getAllTime());
+            textDistance.setText(distanceStr);
+            textTime.setText(timeStr);
+            RouteDetailAdapter adapter=new RouteDetailAdapter(aMapNavi.getNaviGuideList());
+            detailList.setAdapter(adapter);
+            setMapRouteView();
+        } else {
+            setNoResultView();
+        }
     }
+
 
     @Override
     public void notifyParallelRoad(int i) {
@@ -671,10 +680,7 @@ public class RouteActivity extends AppCompatActivity implements View.OnClickList
 
     }
 
-    @Override
-    public void OnUpdateTrafficFacility(TrafficFacilityInfo trafficFacilityInfo) {
 
-    }
 
     @Override
     public void updateAimlessModeStatistics(AimLessModeStat aimLessModeStat) {
@@ -689,6 +695,27 @@ public class RouteActivity extends AppCompatActivity implements View.OnClickList
 
     @Override
     public void onPlayRing(int i) {
+
+    }
+
+    @Override
+    public void onCalculateRouteSuccess(AMapCalcRouteResult aMapCalcRouteResult) {
+
+    }
+
+
+    @Override
+    public void onCalculateRouteFailure(AMapCalcRouteResult aMapCalcRouteResult) {
+
+    }
+
+    @Override
+    public void onNaviRouteNotify(AMapNaviRouteNotifyData aMapNaviRouteNotifyData) {
+
+    }
+
+    @Override
+    public void onGpsSignalWeak(boolean b) {
 
     }
 }

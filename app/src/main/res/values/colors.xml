@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
   <color name="primary">#009688</color>
+
   <color name="primary_dark">#009688</color>
   <color name="primary_light">#F5F5F5</color>
   <color name="accent">#2196F3</color>
@@ -13,4 +14,18 @@
   <color name="teal_700">#FF018786</color>
   <color name="black">#FF000000</color>
   <color name="white">#FFFFFFFF</color>
+  <color name="darkgrey">#C0C0C0</color>
+  <color name="darkyellow">#FFCC33</color>
+
+  <color name="colorPrimary">#3F51B5</color>
+  <color name="colorPrimaryDark">#303F9F</color>
+  <color name="colorAccent">#FF4081</color>
+  <color name="grey">#ebebeb</color>
+
+  <color name="red">#FF0000</color>
+  <color name="blue">#4287FF</color>
+  <color name="gray">#ddd</color>
+
+  <color name="gray_black">#88000000</color>
+  <color name="soft_black">#cc000000</color>
 </resources>

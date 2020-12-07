@@ -6,17 +6,18 @@ import android.os.Environment;
 import android.widget.Toast;
 
 import com.amap.api.navi.AMapNaviListener;
+import com.amap.api.navi.model.AMapCalcRouteResult;
 import com.amap.api.navi.model.AMapLaneInfo;
+import com.amap.api.navi.model.AMapModelCross;
 import com.amap.api.navi.model.AMapNaviCameraInfo;
 import com.amap.api.navi.model.AMapNaviCross;
-import com.amap.api.navi.model.AMapNaviInfo;
 import com.amap.api.navi.model.AMapNaviLocation;
+import com.amap.api.navi.model.AMapNaviRouteNotifyData;
 import com.amap.api.navi.model.AMapNaviTrafficFacilityInfo;
 import com.amap.api.navi.model.AMapServiceAreaInfo;
 import com.amap.api.navi.model.AimLessModeCongestionInfo;
 import com.amap.api.navi.model.AimLessModeStat;
 import com.amap.api.navi.model.NaviInfo;
-import com.autonavi.tbt.TrafficFacilityInfo;
 import com.iflytek.cloud.ErrorCode;
 import com.iflytek.cloud.InitListener;
 import com.iflytek.cloud.SpeechConstant;
@@ -25,13 +26,16 @@ import com.iflytek.cloud.SpeechSynthesizer;
 import com.iflytek.cloud.SpeechUtility;
 import com.iflytek.cloud.SynthesizerListener;
 
+
 /**
- * Created by miku on 2017/6/2 0002.
+ * FileName: NavigationVoiceController
+ * Author: Admin
+ * Date: 2020/12/4 13:24
+ * Description: 语音导航
  */
 
-public class NavigationVoiceController implements AMapNaviListener, SynthesizerListener,
-        InitListener {
-
+public class NavigationVoiceController {
+/**
     private Context context;
     private static NavigationVoiceController controller;
     private SpeechSynthesizer synthesizer;
@@ -49,7 +53,10 @@ public class NavigationVoiceController implements AMapNaviListener, SynthesizerL
     }
 
     public void init(){
-        SpeechUtility.createUtility(context, SpeechConstant.APPID +"=/*input your iFLY");
+//        讯飞语音SpeechUtility.createUtility
+// 将“12345678”替换成您申请的APPID，申请地址：http://www.xfyun.cn
+// 请勿在“=”与appid之间添加任何空字符或者转义符
+        SpeechUtility.createUtility(context, SpeechConstant.APPID +"=5fcd9de9");
         synthesizer=SpeechSynthesizer.createSynthesizer(context, this);
         synthesizer.setParameter(SpeechConstant.VOICE_NAME, "xiaoyan");
         synthesizer.setParameter(SpeechConstant.SPEED, "50");
@@ -149,7 +156,14 @@ public class NavigationVoiceController implements AMapNaviListener, SynthesizerL
 
     @Override
     public void onGetNavigationText(int i, String s) {
+//        amapTTSController.onGetNavigationText(s);
+
         startSpeaking(s);
+    }
+
+    @Override
+    public void onGetNavigationText(String s) {
+
     }
 
     @Override
@@ -208,6 +222,11 @@ public class NavigationVoiceController implements AMapNaviListener, SynthesizerL
     }
 
     @Override
+    public void updateIntervalCameraInfo(AMapNaviCameraInfo aMapNaviCameraInfo, AMapNaviCameraInfo aMapNaviCameraInfo1, int i) {
+
+    }
+
+    @Override
     public void onServiceAreaUpdate(AMapServiceAreaInfo[] aMapServiceAreaInfos) {
 
     }
@@ -223,12 +242,32 @@ public class NavigationVoiceController implements AMapNaviListener, SynthesizerL
     }
 
     @Override
+    public void showModeCross(AMapModelCross aMapModelCross) {
+
+    }
+
+    @Override
+    public void hideModeCross() {
+
+    }
+
+    @Override
     public void showLaneInfo(AMapLaneInfo[] aMapLaneInfos, byte[] bytes, byte[] bytes1) {
 
     }
 
     @Override
+    public void showLaneInfo(AMapLaneInfo aMapLaneInfo) {
+
+    }
+
+    @Override
     public void hideLaneInfo() {
+
+    }
+
+    @Override
+    public void onCalculateRouteSuccess(int[] ints) {
 
     }
 
@@ -271,4 +310,25 @@ public class NavigationVoiceController implements AMapNaviListener, SynthesizerL
     public void onPlayRing(int i) {
 
     }
+
+    @Override
+    public void onCalculateRouteSuccess(AMapCalcRouteResult aMapCalcRouteResult) {
+
+    }
+
+    @Override
+    public void onCalculateRouteFailure(AMapCalcRouteResult aMapCalcRouteResult) {
+
+    }
+
+    @Override
+    public void onNaviRouteNotify(AMapNaviRouteNotifyData aMapNaviRouteNotifyData) {
+
+    }
+
+    @Override
+    public void onGpsSignalWeak(boolean b) {
+
+    }
+    */
 }
