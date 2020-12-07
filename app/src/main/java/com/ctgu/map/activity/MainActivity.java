@@ -53,8 +53,8 @@ import com.amap.api.services.help.Tip;
 import com.amap.api.services.poisearch.PoiResult;
 import com.amap.api.services.poisearch.PoiSearch;
 import com.ctgu.map.R;
-import com.ctgu.map.utils.Constants;
-import com.ctgu.map.utils.MapUtils;
+import com.ctgu.map.util.Constants;
+import com.ctgu.map.util.MapUtils;
 import com.google.gson.Gson;
 
 import java.io.IOException;

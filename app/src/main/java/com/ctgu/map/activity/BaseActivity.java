@@ -25,7 +25,7 @@ import com.amap.api.navi.model.AimLessModeCongestionInfo;
 import com.amap.api.navi.model.AimLessModeStat;
 import com.amap.api.navi.model.NaviInfo;
 import com.amap.api.navi.model.NaviLatLng;
-import  com.ctgu.map.utils.TTSController;
+import  com.ctgu.map.util.TTSController;
 
 import java.util.ArrayList;
 import java.util.List;

@@ -23,10 +23,11 @@ import com.amap.api.navi.model.AimLessModeCongestionInfo;
 import com.amap.api.navi.model.AimLessModeStat;
 import com.amap.api.navi.model.NaviInfo;
 import com.ctgu.map.R;
+import com.ctgu.map.util.TTSController;
 
 
 public class RouteNaviActivity extends Activity implements AMapNaviListener, AMapNaviViewListener {
-
+    TTSController controller;
     AMapNaviView mAMapNaviView;
     AMapNavi mAMapNavi;
 
@@ -42,9 +43,13 @@ public class RouteNaviActivity extends Activity implements AMapNaviListener, AMa
 
         mAMapNavi = AMapNavi.getInstance(getApplicationContext());
         mAMapNavi.addAMapNaviListener(this);
-        mAMapNavi.setUseInnerVoice(true);
+        mAMapNavi.setUseInnerVoice(true,true);
         mAMapNavi.setEmulatorNaviSpeed(60);
-        boolean gps = getIntent().getBooleanExtra("gps", false);
+        boolean gps = getIntent().getBooleanExtra("gps", true);
+        controller= TTSController.getInstance(getApplicationContext());
+        mAMapNavi= AMapNavi.getInstance(getApplicationContext());
+        mAMapNavi.addAMapNaviListener(controller);
+        AMapNavi.setTtsPlaying(false);
         if (gps) {
             mAMapNavi.startNavi(NaviType.GPS);
         } else {

@@ -3,7 +3,9 @@
    import android.app.ProgressDialog;
    import android.content.Context;
    import android.content.Intent;
+   import android.location.Location;
    import android.os.Bundle;
+   import android.os.Parcelable;
    import android.support.design.widget.BottomSheetBehavior;
    import android.support.design.widget.FloatingActionButton;
    import android.support.design.widget.Snackbar;
@@ -51,13 +53,16 @@
    import com.amap.api.services.route.WalkRouteResult;
    import com.ctgu.map.R;
    import com.ctgu.map.adapter.RouteDetailAdapter;
-   import com.ctgu.map.utils.Constants;
-   import com.ctgu.map.utils.MapUtils;
+   import com.ctgu.map.util.Constants;
+   import com.ctgu.map.util.MapUtils;
+   import com.google.gson.Gson;
 
    import java.util.ArrayList;
+   import java.util.HashMap;
    import java.util.List;
+   import java.util.Map;
 
-public class RouteActivity extends AppCompatActivity implements View.OnClickListener,
+   public class RouteActivity extends AppCompatActivity implements View.OnClickListener,
         AMapNaviListener, TabLayout.OnTabSelectedListener, RouteSearch.OnRouteSearchListener,
         PoiSearch.OnPoiSearchListener{
 
@@ -271,13 +276,24 @@ public class RouteActivity extends AppCompatActivity implements View.OnClickList
 
     //开始导航
     private void startNavigate(){
-        Intent intent = new Intent(RouteActivity.this, EmulatorActivity.class);
+
+//        Intent intent = new Intent(RouteActivity.this, EmulatorActivity.class);
+//        Intent intent = new Intent(RouteActivity.this, AllCustomNaviActivity.class);
+        //将目的地的经纬度传递过去
         //不使用内置语音导航
-        intent.putExtra("useInnerVoice", false);
+        Intent intent = new Intent(getApplicationContext(), RouteNaviActivity.class);
+        intent.putExtra("gps", true);
+
+        Map<String, NaviLatLng> map=new HashMap<>();
+        map.put("start",locationDeparture);
+        map.put("end",locationDestination);
+        intent.putExtra("location",  new Gson().toJson(map));
         startActivity(intent);
+//        intent.putExtra("useInnerVoice", true);
+//        startActivity(intent);
     }
 
-    //根据由地点搜索回调的数据，对界面反馈进行设置
+    //根据由地点搜索回调的数，对界面反馈进行设置
     private void setSearchingResult(NaviLatLng location, String name){
         switch (isSearchingText){
             case R.id.text_departure:
@@ -649,6 +665,7 @@ public class RouteActivity extends AppCompatActivity implements View.OnClickList
         AMapNaviPath path=aMapNavi.getNaviPath();
         if(path!=null){
             clearOverLay();
+            //绘制路径
             drawOverLay(path);
             String distanceStr=MapUtils.getLengthStr(path.getAllLength());
             String timeStr=MapUtils.getTimeStr(path.getAllTime());

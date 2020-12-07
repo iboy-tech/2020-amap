@@ -11,7 +11,7 @@ import android.widget.TextView;
 import com.amap.api.services.help.Tip;
 import com.ctgu.map.R;
 import com.ctgu.map.activity.SearchActivity;
-import com.ctgu.map.utils.Constants;
+import com.ctgu.map.util.Constants;
 
 import java.util.List;
 

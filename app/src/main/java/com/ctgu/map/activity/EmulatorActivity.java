@@ -1,33 +1,72 @@
 package com.ctgu.map.activity;
 
+import android.content.Intent;
 import android.os.Bundle;
 
-import com.amap.api.navi.AMapNaviView;
+import com.amap.api.navi.AMapNavi;
+import com.amap.api.navi.AMapNaviViewOptions;
 import com.amap.api.navi.enums.NaviType;
 import com.amap.api.navi.model.AMapCalcRouteResult;
+import com.amap.api.navi.model.NaviLatLng;
 import com.ctgu.map.R;
+import com.ctgu.map.util.TTSController;
+import com.google.gson.Gson;
+import com.google.gson.reflect.TypeToken;
+
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 
 
 public class EmulatorActivity extends BaseActivity {
-
+    private TTSController controller;
+    protected NaviLatLng mEndLatlng = new NaviLatLng(40.084894,116.603039);
+    protected NaviLatLng mStartLatlng = new NaviLatLng(39.825934,116.342972);
+    protected final List<NaviLatLng> sList = new ArrayList<NaviLatLng>();
+    protected final List<NaviLatLng> eList = new ArrayList<NaviLatLng>();
+    protected List<NaviLatLng> mWayPointList = new ArrayList<NaviLatLng>();
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        Intent intent=getIntent();
+        Map<String,NaviLatLng> map = new Gson().fromJson(intent.getStringExtra("location"), new TypeToken<HashMap<String,NaviLatLng>>(){}.getType());
+
+        Map<String, NaviLatLng> hashMap=map;
+        System.out.println("获取的map"+hashMap);
+        mStartLatlng= hashMap.get("start");
+        mEndLatlng= hashMap.get("end");
+
+        System.out.println("导航页的起点位置信息"+mStartLatlng);
+        System.out.println("导航页的终点位置信息"+mEndLatlng);
 
         setContentView(R.layout.activity_basic_navi);
         mAMapNaviView = findViewById(R.id.navi_view);
         mAMapNaviView.onCreate(savedInstanceState);
         mAMapNaviView.setAMapNaviViewListener(this);
 
-        boolean isUseInnerVoice = getIntent().getBooleanExtra("useInnerVoice", false);
+        boolean isUseInnerVoice = getIntent().getBooleanExtra("useInnerVoice", true);
 
         if (isUseInnerVoice) {
             /**
              * 设置使用内部语音播报，
              * 使用内部语音播报，用户注册的AMapNaviListener中的onGetNavigationText 方法将不再回调
              */
-            mAMapNavi.setUseInnerVoice(isUseInnerVoice);
+            mAMapNavi.setUseInnerVoice(isUseInnerVoice,true);
         }
+
+//        AMapNaviViewOptions options=new AMapNaviViewOptions();
+//        options.setAutoDrawRoute(true);
+//        options.setScreenAlwaysBright(true);
+//        mAMapNaviView.setViewOptions(options);
+        controller= TTSController.getInstance(getApplicationContext());
+        mAMapNavi= AMapNavi.getInstance(getApplicationContext());
+        mAMapNavi.addAMapNaviListener(controller);
+        AMapNavi.setTtsPlaying(false);
+        //设置模拟导航的行车速度
+        mAMapNavi.setEmulatorNaviSpeed(75);
+        sList.add(mStartLatlng);
+        eList.add(mEndLatlng);
     }
 
     @Override
@@ -59,7 +98,9 @@ public class EmulatorActivity extends BaseActivity {
 
     @Override
     public void onCalculateRouteSuccess(AMapCalcRouteResult aMapCalcRouteResult) {
+        //路径规划成功之后开始导航
         super.onCalculateRouteSuccess(aMapCalcRouteResult);
-        mAMapNavi.startNavi(NaviType.EMULATOR);
+//        mAMapNavi.startNavi(NaviType.EMULATOR);
+        mAMapNavi.startNavi(NaviType.GPS);
     }
 }

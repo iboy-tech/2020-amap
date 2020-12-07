@@ -26,7 +26,7 @@ import com.amap.api.navi.model.AimLessModeStat;
 import com.amap.api.navi.model.NaviInfo;
 import com.amap.api.navi.model.NaviLatLng;
 import com.ctgu.map.R;
-import com.ctgu.map.utils.TTSController;
+import com.ctgu.map.util.TTSController;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -167,6 +167,7 @@ public class IflyVoiceActivity extends Activity implements AMapNaviListener, Par
     @Override
     public void onGetNavigationText(int type, String text) {
         //播报类型和播报文字回调
+
     }
 
     @Override

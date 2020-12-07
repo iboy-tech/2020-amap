@@ -9,7 +9,7 @@ import android.widget.TextView;
 
 import com.amap.api.navi.model.AMapNaviGuide;
 import com.ctgu.map.R;
-import com.ctgu.map.utils.MapUtils;
+import com.ctgu.map.util.MapUtils;
 
 import java.util.List;
 
