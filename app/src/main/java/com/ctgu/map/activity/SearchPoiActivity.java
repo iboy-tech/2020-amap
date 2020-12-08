@@ -81,7 +81,7 @@ public class SearchPoiActivity extends Activity implements TextWatcher,
                 String newText = s.toString().trim();
                 if (!TextUtils.isEmpty(newText)) {
                     setLoadingVisible(true);
-                    //地点关键字输入提示 本变化自动搜索，在宜昌范围内进行搜索
+                    //地点关键字输入提示变化自动搜索
                     InputtipsQuery inputquery = new InputtipsQuery(newText, city);
                     Inputtips inputTips = new Inputtips(getApplicationContext(), inputquery);
                     inputTips.setInputtipsListener(this);
