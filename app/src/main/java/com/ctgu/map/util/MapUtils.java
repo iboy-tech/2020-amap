@@ -10,7 +10,12 @@ import com.amap.api.services.core.LatLonPoint;
 import java.text.DecimalFormat;
 
 
-
+/**
+ * FileName: MapUtils
+ * Author: Admin
+ * Date: 2020/12/1 8:55
+ * Description: 工具类，获取距离、经纬度坐标等信息
+ */
 public class MapUtils {
 
     public static LatLng convertToLatLng(Location location){

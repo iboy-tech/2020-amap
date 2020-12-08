@@ -21,9 +21,7 @@ android {
 
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
-    implementation files('libs\\Sunflower.jar')
     implementation files('libs\\AMap3DMap_7.7.0_AMapNavi_7.7.1_AMapSearch_7.7.0_AMapLocation_5.2.0_20201113.jar')
-    implementation files('libs\\Msc.jar')
     androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
         exclude group: 'com.android.support', module: 'support-annotations'
     })

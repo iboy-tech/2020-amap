@@ -42,7 +42,7 @@ public class SearchPoiActivity extends Activity implements TextWatcher,
     private ProgressBar loadingBar;
     private TextView tvMsg;
     private String city = "宜昌";
-    private int pointType;
+//    private int pointType;
     //从main跳转活动跳转函数
     public static void startActivity(AppCompatActivity activity, int REQUEST_CODE, String city){
         Intent intent=new Intent(activity, SearchPoiActivity.class);
@@ -61,8 +61,8 @@ public class SearchPoiActivity extends Activity implements TextWatcher,
         tvMsg.setVisibility(View.GONE);
         mKeywordText.addTextChangedListener(this);
         mKeywordText.requestFocus();
-        Bundle bundle = getIntent().getExtras();
-        pointType = bundle.getInt("pointType", -1);
+//        Bundle bundle = getIntent().getExtras();
+//        pointType = bundle.getInt("pointType", -1);
     }
 
 

@@ -104,7 +104,7 @@
 
     //活动跳转函数
     public static void startActivity(Context context, LatLng curLocation,
-                                     LatLng targetLocation, String targetName, String city){
+                                     LatLng targetLocation, String targetName){
         Intent intent=new Intent(context, RouteActivity.class);
         if(curLocation!=null){
             //已经获取当前位置
@@ -121,7 +121,7 @@
         } else {
             intent.putExtra("hasTarget", false);
         }
-        intent.putExtra("city", city);
+//        intent.putExtra("city", city);
         context.startActivity(intent);
     }
 
@@ -475,11 +475,6 @@
                         setSearchingResult(MapUtils.convertToNaviLatLng(tip.getPoint()),
                                 tip.getName());
 
-                    } else {
-                        PoiItem poiItem=data.getParcelableExtra("result");
-                        city=poiItem.getCityName();
-                        setSearchingResult(MapUtils.convertToNaviLatLng(poiItem.getLatLonPoint()),
-                                poiItem.getTitle());
                     }
                 }
                 break;
