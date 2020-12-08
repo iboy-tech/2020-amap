@@ -1,4 +1,4 @@
-#Tue Dec 08 11:27:55 SGT 2020
+#Tue Dec 08 15:44:49 SGT 2020
 base.0=O\:\\AndroidStudioProjects\\AMap\\app\\build\\intermediates\\transforms\\dex\\release\\0
 path.0=classes.dex
 renamed.0=classes.dex

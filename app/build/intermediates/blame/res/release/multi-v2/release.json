@@ -445,6 +445,38 @@
             ]
         },
         {
+            "outputFile": "O:\\AndroidStudioProjects\\AMap\\app\\build\\intermediates\\res\\merged\\release\\values-es-rUS_values-es-rUS.arsc.flat",
+            "map": [
+                {
+                    "source": "E:\\Android\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-27.1.1.aar\\044139be73193d502fae0a576eef912b\\res\\values-es-rUS\\values-es-rUS.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "100",
+                        "endOffsets": "151"
+                    },
+                    "to": {
+                        "startLines": "20",
+                        "startColumns": "4",
+                        "startOffsets": "1976",
+                        "endColumns": "100",
+                        "endOffsets": "2072"
+                    }
+                },
+                {
+                    "source": "E:\\Android\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\6f9c160f01baa4d2264506229d2995fb\\res\\values-es-rUS\\values-es-rUS.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "105,225,334,442,527,628,751,836,918,1000,1112,1212,1313,1421,1528,1635,1794,1894",
+                        "endColumns": "119,108,107,84,100,122,84,81,81,111,99,100,107,106,106,158,99,81",
+                        "endOffsets": "220,329,437,522,623,746,831,913,995,1107,1207,1308,1416,1523,1630,1789,1889,1971"
+                    }
+                }
+            ]
+        },
+        {
             "outputFile": "O:\\AndroidStudioProjects\\AMap\\app\\build\\intermediates\\res\\merged\\release\\values-v26_values-v26.arsc.flat",
             "map": [
                 {
@@ -483,38 +515,6 @@
                         "endLines": "2,3,7,11,15,20",
                         "endColumns": "74,86,12,12,12,92",
                         "endOffsets": "125,212,426,652,891,1228"
-                    }
-                }
-            ]
-        },
-        {
-            "outputFile": "O:\\AndroidStudioProjects\\AMap\\app\\build\\intermediates\\res\\merged\\release\\values-es-rUS_values-es-rUS.arsc.flat",
-            "map": [
-                {
-                    "source": "E:\\Android\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-27.1.1.aar\\044139be73193d502fae0a576eef912b\\res\\values-es-rUS\\values-es-rUS.xml",
-                    "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endColumns": "100",
-                        "endOffsets": "151"
-                    },
-                    "to": {
-                        "startLines": "20",
-                        "startColumns": "4",
-                        "startOffsets": "1976",
-                        "endColumns": "100",
-                        "endOffsets": "2072"
-                    }
-                },
-                {
-                    "source": "E:\\Android\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\6f9c160f01baa4d2264506229d2995fb\\res\\values-es-rUS\\values-es-rUS.xml",
-                    "from": {
-                        "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19",
-                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "105,225,334,442,527,628,751,836,918,1000,1112,1212,1313,1421,1528,1635,1794,1894",
-                        "endColumns": "119,108,107,84,100,122,84,81,81,111,99,100,107,106,106,158,99,81",
-                        "endOffsets": "220,329,437,522,623,746,831,913,995,1107,1207,1308,1416,1523,1630,1789,1889,1971"
                     }
                 }
             ]
@@ -1099,6 +1099,21 @@
             ]
         },
         {
+            "outputFile": "O:\\AndroidStudioProjects\\AMap\\app\\build\\intermediates\\res\\merged\\release\\values-ldltr-v21_values-ldltr-v21.arsc.flat",
+            "map": [
+                {
+                    "source": "E:\\Android\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\6f9c160f01baa4d2264506229d2995fb\\res\\values-ldltr-v21\\values-ldltr-v21.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "112",
+                        "endOffsets": "163"
+                    }
+                }
+            ]
+        },
+        {
             "outputFile": "O:\\AndroidStudioProjects\\AMap\\app\\build\\intermediates\\res\\merged\\release\\values-vi_values-vi.arsc.flat",
             "map": [
                 {
@@ -1126,21 +1141,6 @@
                         "startOffsets": "105,219,327,436,520,623,742,819,896,980,1084,1193,1294,1399,1513,1618,1775,1874",
                         "endColumns": "113,107,108,83,102,118,76,76,83,103,108,100,104,113,104,156,98,83",
                         "endOffsets": "214,322,431,515,618,737,814,891,975,1079,1188,1289,1394,1508,1613,1770,1869,1953"
-                    }
-                }
-            ]
-        },
-        {
-            "outputFile": "O:\\AndroidStudioProjects\\AMap\\app\\build\\intermediates\\res\\merged\\release\\values-ldltr-v21_values-ldltr-v21.arsc.flat",
-            "map": [
-                {
-                    "source": "E:\\Android\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\6f9c160f01baa4d2264506229d2995fb\\res\\values-ldltr-v21\\values-ldltr-v21.xml",
-                    "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endColumns": "112",
-                        "endOffsets": "163"
                     }
                 }
             ]

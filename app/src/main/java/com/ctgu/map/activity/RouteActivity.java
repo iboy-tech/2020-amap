@@ -3,12 +3,9 @@
    import android.app.ProgressDialog;
    import android.content.Context;
    import android.content.Intent;
-   import android.location.Location;
    import android.os.Bundle;
-   import android.os.Parcelable;
    import android.support.design.widget.BottomSheetBehavior;
    import android.support.design.widget.FloatingActionButton;
-   import android.support.design.widget.Snackbar;
    import android.support.design.widget.TabLayout;
    import android.support.v4.app.NavUtils;
    import android.support.v7.app.AppCompatActivity;
@@ -19,6 +16,7 @@
    import android.view.ViewGroup;
    import android.widget.LinearLayout;
    import android.widget.TextView;
+   import android.widget.Toast;
 
    import com.amap.api.maps.AMap;
    import com.amap.api.maps.AMapOptions;
@@ -55,16 +53,13 @@
    import com.ctgu.map.adapter.RouteDetailAdapter;
    import com.ctgu.map.util.Constants;
    import com.ctgu.map.util.MapUtils;
-   import com.google.gson.Gson;
 
    import java.util.ArrayList;
-   import java.util.HashMap;
    import java.util.List;
-   import java.util.Map;
 
    public class RouteActivity extends AppCompatActivity implements View.OnClickListener,
-        AMapNaviListener, TabLayout.OnTabSelectedListener, RouteSearch.OnRouteSearchListener,
-        PoiSearch.OnPoiSearchListener{
+        AMapNaviListener, TabLayout.OnTabSelectedListener, RouteSearch.OnRouteSearchListener
+        {
 
     private static final String MY_LOCATION="我的位置";
     private static final String DRIVE_TAB="驾驶";
@@ -74,6 +69,7 @@
     private static final int WALK_MODE=1;
     private static final int RIDE_MODE=2;
 
+    //当前搜索的是起点还是目的地
     private int isSearchingText= R.id.text_destination;
     private int curMode=0;
     private String city;
@@ -81,9 +77,12 @@
     //起点和目的地
     private NaviLatLng locationDeparture;
     private NaviLatLng locationDestination;
+
     private final List<NaviLatLng> from=new ArrayList<>();
     private final List<NaviLatLng> to=new ArrayList<>();
+    //途经地点
     private final List<NaviLatLng> wayPoints=new ArrayList<>();
+    //绘制路径
     private RouteOverLay routeOverLay;
 
     private TextView textDeparture;
@@ -97,10 +96,8 @@
     private TextView textTime;
     private LinearLayout bottomSheet;
     private FloatingActionButton navigate;
+    //路径详情
     private RecyclerView detailList;
-
-
-
 
     //活动跳转函数
     public static void startActivity(Context context, LatLng curLocation,
@@ -121,7 +118,6 @@
         } else {
             intent.putExtra("hasTarget", false);
         }
-//        intent.putExtra("city", city);
         context.startActivity(intent);
     }
 
@@ -148,6 +144,7 @@
         }
         city=getIntent().getStringExtra("city");
         RouteSearch routeSearch = new RouteSearch(this);
+        //设置路径规划结果的监听器
         routeSearch.setRouteSearchListener(this);
         if(locationDeparture!=null&&locationDestination!=null) {
             aMapNavi = AMapNavi.getInstance(getApplicationContext());
@@ -157,14 +154,12 @@
 
     //初始化地图
     private void initMap(){
-//        mapView.setVisibility(View.GONE);
         if(aMap==null){
             aMap=mapView.getMap();
         }
         UiSettings uiSettings=aMap.getUiSettings();
         uiSettings.setMyLocationButtonEnabled(false);
         uiSettings.setZoomPosition(AMapOptions.ZOOM_POSITION_RIGHT_CENTER);
-//        uiSettings.setAllGesturesEnabled(false);
         uiSettings.setZoomGesturesEnabled(true); //允许手势缩放
         uiSettings.setCompassEnabled(true);// 设置指南针是否显示
         uiSettings.setZoomControlsEnabled(false);// 设置缩放按钮是否显示
@@ -172,11 +167,9 @@
 
     //初始化界面
     private void initLayout(){
-
         if(NavUtils.getParentActivityName(RouteActivity.this)!=null){
             getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         }
-
         //初始化Tab栏
         TabLayout tabLayout= findViewById(R.id.tabs);
         tabLayout.addTab(tabLayout.newTab().setIcon(R.drawable.drive).setTag(DRIVE_TAB));
@@ -184,19 +177,18 @@
         tabLayout.addTab(tabLayout.newTab().setIcon(R.drawable.ride).setTag(RIDE_TAB));
 
         tabLayout.addOnTabSelectedListener(this);
+        //设置默认选中的Tab
         TabLayout.Tab firstTab=tabLayout.getTabAt(0);
         if(firstTab!=null){
             firstTab.select();
         }
 
         navigate= findViewById(R.id.fab_navigate);
-//        navigate.setVisibility(View.GONE);
         textDistance= findViewById(R.id.text_distance);
         textTime= findViewById(R.id.text_time);
         bottomSheet= findViewById(R.id.bottom_sheet_route);
-//        bottomSheet.setVisibility(View.GONE);
         textEmpty= findViewById(R.id.text_empty);
-        textEmpty.setText(String.format("%s", "No viable route. Please try other ways."));
+        textEmpty.setText("没有可达路径，请尝试其他路径");
         textDeparture= findViewById(R.id.text_departure);
         textDestination= findViewById(R.id.text_destination);
         detailList= findViewById(R.id.recyclerView_detail);
@@ -231,13 +223,10 @@
         }
     }
 
-
-
-    //开始路线规划
+    //路径规划
     private void calculateRoute(){
         showLoadingDialog();
         switch (curMode) {
-            //路径规划
             case DRIVE_MODE:
                 //规划的策略
                 int strategy = 0;
@@ -246,6 +235,7 @@
                 } catch (Exception e) {
                     e.printStackTrace();
                 }
+                //添加起点和目的地
                 from.add(locationDeparture);
                 to.add(locationDestination);
                 aMapNavi.calculateDriveRoute(from, to, wayPoints, strategy);
@@ -277,24 +267,11 @@
 
     //开始导航
     private void startNavigate(){
-
-//        Intent intent = new Intent(RouteActivity.this, EmulatorActivity.class);
-//        Intent intent = new Intent(RouteActivity.this, AllCustomNaviActivity.class);
-        //将目的地的经纬度传递过去
-        //不使用内置语音导航
         Intent intent = new Intent(getApplicationContext(), RouteNaviActivity.class);
-        intent.putExtra("gps", true);
-
-//        Map<String, NaviLatLng> map=new HashMap<>();
-//        map.put("start",locationDeparture);
-//        map.put("end",locationDestination);
-//        intent.putExtra("location",  new Gson().toJson(map));
         startActivity(intent);
-//        intent.putExtra("useInnerVoice", true);
-//        startActivity(intent);
     }
 
-    //根据由地点搜索回调的数，对界面反馈进行设置
+    //通过搜索设置起点和目的
     private void setSearchingResult(NaviLatLng location, String name){
         switch (isSearchingText){
             case R.id.text_departure:
@@ -308,9 +285,6 @@
             default:
         }
     }
-
-
-
 
     //将界面设置为地图显示路线规划模式
     private void setMapRouteView(){
@@ -335,12 +309,8 @@
         navigate.setVisibility(View.GONE);
         textEmpty.setVisibility(View.GONE);
     }
-    //通过传入id搜索对应的地点
-    private void POIIdSearch(String id){
-        final PoiSearch poiSearch=new PoiSearch(this, null);
-        poiSearch.setOnPoiSearchListener(this);
-        poiSearch.searchPOIIdAsyn(id);
-    }
+
+
 
     //返回键按下逻辑处理
     @Override
@@ -356,18 +326,7 @@
         return false;
     }
 
-    //根据id搜索对应地点的搜索结果处理
-    @Override
-    public void onPoiItemSearched(PoiItem poiItem, int i) {
-        if(i==1000&&poiItem!=null){
-            city=poiItem.getCityName();
-        }
-    }
 
-    @Override
-    public void onPoiSearched(PoiResult poiResult, int i) {
-
-    }
 
     @Override
     public void addContentView(View view, ViewGroup.LayoutParams params) {
@@ -447,11 +406,13 @@
                 startNavigate();
                 break;
             case R.id.text_departure:
+                //手动设置起点
                 isSearchingText=R.id.text_departure;
                 SearchPoiActivity.startActivity(RouteActivity.this,
                         Constants.REQUEST_ROUTE_ACTIVITY, city);
                 break;
             case R.id.text_destination:
+                //手动设置目的地
                 isSearchingText=R.id.text_destination;
                 SearchPoiActivity.startActivity(RouteActivity.this,
                         Constants.REQUEST_ROUTE_ACTIVITY, city);
@@ -463,18 +424,15 @@
 
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
-
         //获取的搜素结果
         switch (requestCode){
             case Constants.REQUEST_ROUTE_ACTIVITY:
                 if(resultCode==RESULT_OK){
                     if(data.getIntExtra("resultType", 1)==Constants.RESULT_TIP) {
                         Tip tip=data.getParcelableExtra("result");
-                        POIIdSearch(tip.getPoiID());
                         //根据搜索结果设置目的地
                         setSearchingResult(MapUtils.convertToNaviLatLng(tip.getPoint()),
                                 tip.getName());
-
                     }
                 }
                 break;
@@ -560,14 +518,39 @@
 
     }
 
-
+       @Override
+       public void onCalculateRouteSuccess(int[] ints) {
+           //路线规划成功处理的回调（驾车、骑行、步行）
+           dismissLoadingDialog();
+           if(curMode==DRIVE_MODE) {
+               to.clear();
+               from.clear();
+           }
+           //获取规划的线路
+           AMapNaviPath path=aMapNavi.getNaviPath();
+           if(path!=null){
+               clearOverLay();
+               //绘制路径
+               drawOverLay(path);
+               //计算距离和时间
+               String distanceStr=MapUtils.getLengthStr(path.getAllLength());
+               String timeStr=MapUtils.getTimeStr(path.getAllTime());
+               textDistance.setText(distanceStr);
+               textTime.setText(timeStr);
+               //渲染出行方案详情
+               RouteDetailAdapter adapter=new RouteDetailAdapter(aMapNavi.getNaviGuideList());
+               detailList.setAdapter(adapter);
+               setMapRouteView();
+           } else {
+               setNoResultView();
+           }
+       }
 
     //路线规划失败处理
     @Override
     public void onCalculateRouteFailure(int i) {
         dismissLoadingDialog();
-        Snackbar.make(mapView, "Route searching failed. Error code "+i,
-                Snackbar.LENGTH_SHORT).show();
+        Toast.makeText(this,"模式选择不合理，请选择其他模式",Toast.LENGTH_LONG).show();
         resetView();
     }
 
@@ -648,30 +631,7 @@
 
     }
 
-    @Override
-    public void onCalculateRouteSuccess(int[] ints) {
-        //路线规划成功处理（驾车、骑行、步行）
-        dismissLoadingDialog();
-        if(curMode==DRIVE_MODE) {
-            to.clear();
-            from.clear();
-        }
-        AMapNaviPath path=aMapNavi.getNaviPath();
-        if(path!=null){
-            clearOverLay();
-            //绘制路径
-            drawOverLay(path);
-            String distanceStr=MapUtils.getLengthStr(path.getAllLength());
-            String timeStr=MapUtils.getTimeStr(path.getAllTime());
-            textDistance.setText(distanceStr);
-            textTime.setText(timeStr);
-            RouteDetailAdapter adapter=new RouteDetailAdapter(aMapNavi.getNaviGuideList());
-            detailList.setAdapter(adapter);
-            setMapRouteView();
-        } else {
-            setNoResultView();
-        }
-    }
+
 
 
     @Override

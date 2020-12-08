@@ -83,6 +83,7 @@ public class TTSController implements AMapNaviListener, ICallBack {
         tts.setCallback(this);
     }
 
+    //实例化
     private TTSController(Context context) {
         mContext = context.getApplicationContext();
         systemTTS = SystemTTS.getInstance(mContext);
@@ -151,6 +152,7 @@ public class TTSController implements AMapNaviListener, ICallBack {
     @Override
     public void onGetNavigationText(int arg0, String arg1) {
         System.out.println("语音导航的地点："+arg1);
+        //设置语音导航的类型
         tts.playText(arg1);
     }
 

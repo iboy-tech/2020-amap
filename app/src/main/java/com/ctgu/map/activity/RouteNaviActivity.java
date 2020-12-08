@@ -29,7 +29,8 @@ import com.ctgu.map.util.TTSController;
 
 public class RouteNaviActivity extends Activity implements AMapNaviListener, AMapNaviViewListener {
 
-    TTSController controller;
+//    语音对象
+    TTSController ttsManager;
     AMapNaviView mAMapNaviView;
     AMapNavi mAMapNavi;
 
@@ -38,41 +39,33 @@ public class RouteNaviActivity extends Activity implements AMapNaviListener, AMa
         super.onCreate(savedInstanceState);
         requestWindowFeature(Window.FEATURE_NO_TITLE);
         setContentView(R.layout.activity_basic_navi);
-
+        //导航布局
         mAMapNaviView = findViewById(R.id.navi_view);
         mAMapNaviView.onCreate(savedInstanceState);
         mAMapNaviView.setAMapNaviViewListener(this);
-
         mAMapNavi = AMapNavi.getInstance(getApplicationContext());
         mAMapNavi.addAMapNaviListener(this);
-
-        //禁用导航自带语音
+        //不使用SDK自带语音，显示文本回调
         mAMapNavi.setUseInnerVoice(false,true);
-
-
+        //设置模拟导航的行车速度
         mAMapNavi.setEmulatorNaviSpeed(60);
-        boolean gps = getIntent().getBooleanExtra("gps", false);
+        // 实例化语音引擎
+        ttsManager= TTSController.getInstance(getApplicationContext());
 
-        controller= TTSController.getInstance(getApplicationContext());
         mAMapNavi= AMapNavi.getInstance(getApplicationContext());
-        mAMapNavi.addAMapNaviListener(controller);
-
-        //导航选项
+        //将语音导航加入导航回调监听中
+        mAMapNavi.addAMapNaviListener(ttsManager);
+        //自定义导航选项
         AMapNaviViewOptions options=new AMapNaviViewOptions();
-        options.setAutoDrawRoute(true);
+        //保持屏幕常亮
         options.setScreenAlwaysBright(true);
         mAMapNaviView.setViewOptions(options);
         //导航选项
         AMapNavi.setTtsPlaying(false);
-        if (gps) {
-            mAMapNavi.startNavi(NaviType.GPS);
-        } else {
-            mAMapNavi.startNavi(NaviType.EMULATOR);
-        }
-
-
+        //实时导航
+        mAMapNavi.startNavi(NaviType.GPS);
     }
-
+    //重新生命周期
     @Override
     protected void onResume() {
         super.onResume();

@@ -88,7 +88,7 @@ public class SearchPoiActivity extends Activity implements TextWatcher,
                 String newText = s.toString().trim();
                 if (!TextUtils.isEmpty(newText)) {
                     setLoadingVisible(true);
-//                    文本变化自动搜索
+//                    文本变化自动搜索，在宜昌范围内进行搜索
                     InputtipsQuery inputquery = new InputtipsQuery(newText, city);
                     Inputtips inputTips = new Inputtips(getApplicationContext(), inputquery);
                     inputTips.setInputtipsListener(this);
@@ -124,8 +124,8 @@ public class SearchPoiActivity extends Activity implements TextWatcher,
             Intent intent=new Intent();
             intent.putExtra("resultType", Constants.RESULT_TIP);
             intent.putExtra("result", tip);
-            this.setResult(AppCompatActivity.RESULT_OK, intent);
-            this.finish();
+            setResult(AppCompatActivity.RESULT_OK, intent);
+            finish();
             }
         }
 

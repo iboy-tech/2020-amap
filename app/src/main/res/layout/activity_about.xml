@@ -5,38 +5,34 @@
     android:layout_height="match_parent">
     <LinearLayout
         android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        ><LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
+        android:layout_marginTop="50dp"
         android:gravity="center_horizontal"
         tools:ignore="MissingConstraints">
         <ImageView
-            android:layout_width="200dp"
-            android:layout_height="200dp"
+            android:layout_width="130dp"
+            android:layout_height="130dp"
             android:background="@drawable/school"
             tools:ignore="MissingConstraints"
             android:scaleType="centerInside"
-            android:foregroundGravity="center_horizontal"
+            android:foregroundGravity="center_vertical"
             />
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             tools:ignore="MissingConstraints"
-            android:gravity="center_horizontal"
+            android:gravity="center_vertical"
             android:layout_marginTop="10dp"
             android:text="
-这是一个基于高德地图的APP，具有以下功能：\n
-1、	定位\n
-2、	添加标记\n
-3、	路线规划（步行、骑行、驾车）\n
-" android:textSize="25sp"
+        这是一个基于高德地图SDK开发的，具有定位、标记、路线规划（步行、骑行、驾车）语音导航的简单的地图APP，因为和高德地图相比，它的功能很简陋，就叫缺德地图吧！
+" android:textSize="20sp"
             />
-    </LinearLayout>
+    </LinearLayout></LinearLayout>
 
 
-<TextView
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    tools:ignore="MissingConstraints">
-
-</TextView>
 </android.support.constraint.ConstraintLayout>

@@ -272,7 +272,7 @@ public class MainActivity extends AppCompatActivity implements AMap.OnPOIClickLi
         marker_title=poi.getName();
         //标记信息
         setMarkerLayout(poi.getCoordinate(), poi.getName(),poi.getPoiId());
-        //将地图移动到定位点
+        //将地图移动到信息点
         aMap.animateCamera(CameraUpdateFactory.newLatLng(new LatLng(poi.getCoordinate().latitude,
                 poi.getCoordinate().longitude)));
     }
@@ -283,6 +283,7 @@ public class MainActivity extends AppCompatActivity implements AMap.OnPOIClickLi
         if(location!=null&&location.getExtras().getInt("errorCode", 1)==0) {
             //获取当前位置的经纬度
             curLocation= MapUtils.convertToLatLng(location);
+            //如果是首次定位，或者之前定位失败，就重新将地图移动到当前位置
             if (isFirstLocate||isFirstLocateFailed) {
                 isFirstLocate = false;
                 isFirstLocateFailed=false;
@@ -291,6 +292,7 @@ public class MainActivity extends AppCompatActivity implements AMap.OnPOIClickLi
                                 location.getLongitude()), 16f));
             }
         } else {
+
             if(isFirstLocate) {
                 isFirstLocate=false;
                 isFirstLocateFailed=true;
@@ -325,7 +327,7 @@ public class MainActivity extends AppCompatActivity implements AMap.OnPOIClickLi
                     RouteActivity.startActivity(MainActivity.this, curLocation, null, null);
                 }
                 break;
-            //路径规划
+            //地点搜索
             case R.id.search:
             case R.id.search_ico:
                 //调用静态方法搜索
