@@ -134,6 +134,7 @@
 
         initMap();
         initLayout();
+        //获取目的地和
         Intent intent=getIntent();
         if(intent.getBooleanExtra("hasTarget", false)){
             textDestination.setText(intent.getStringExtra("name"));
@@ -437,8 +438,6 @@
 
     }
 //TAB的回调方法
-
-
     //界面中按钮被点击逻辑处理
     @Override
     public void onClick(View v) {
@@ -449,12 +448,12 @@
                 break;
             case R.id.text_departure:
                 isSearchingText=R.id.text_departure;
-                SearchActivity.startActivity(RouteActivity.this,
+                SearchPoiActivity.startActivity(RouteActivity.this,
                         Constants.REQUEST_ROUTE_ACTIVITY, city);
                 break;
             case R.id.text_destination:
                 isSearchingText=R.id.text_destination;
-                SearchActivity.startActivity(RouteActivity.this,
+                SearchPoiActivity.startActivity(RouteActivity.this,
                         Constants.REQUEST_ROUTE_ACTIVITY, city);
                 break;
             default:

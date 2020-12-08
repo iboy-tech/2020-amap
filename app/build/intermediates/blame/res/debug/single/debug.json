@@ -8,28 +8,16 @@
         "source": "E:\\Android\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\6f9c160f01baa4d2264506229d2995fb\\res\\layout\\abc_screen_simple.xml"
     },
     {
-        "merged": "O:\\AndroidStudioProjects\\AMap\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4_abc_btn_switch_to_on_mtrl_00012.9.png.flat",
-        "source": "E:\\Android\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\6f9c160f01baa4d2264506229d2995fb\\res\\drawable-xxxhdpi-v4\\abc_btn_switch_to_on_mtrl_00012.9.png"
-    },
-    {
         "merged": "O:\\AndroidStudioProjects\\AMap\\app\\build\\intermediates\\res\\merged\\debug\\drawable_abc_spinner_textfield_background_material.xml.flat",
         "source": "E:\\Android\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\6f9c160f01baa4d2264506229d2995fb\\res\\drawable\\abc_spinner_textfield_background_material.xml"
     },
     {
-        "merged": "O:\\AndroidStudioProjects\\AMap\\app\\build\\intermediates\\res\\merged\\debug\\drawable_car.png.flat",
-        "source": "O:\\AndroidStudioProjects\\AMap\\app\\src\\main\\res\\drawable\\car.png"
+        "merged": "O:\\AndroidStudioProjects\\AMap\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4_abc_btn_switch_to_on_mtrl_00012.9.png.flat",
+        "source": "E:\\Android\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\6f9c160f01baa4d2264506229d2995fb\\res\\drawable-xxxhdpi-v4\\abc_btn_switch_to_on_mtrl_00012.9.png"
     },
     {
         "merged": "O:\\AndroidStudioProjects\\AMap\\app\\build\\intermediates\\res\\merged\\debug\\drawable_location.png.flat",
         "source": "O:\\AndroidStudioProjects\\AMap\\app\\src\\main\\res\\drawable\\location.png"
-    },
-    {
-        "merged": "O:\\AndroidStudioProjects\\AMap\\app\\build\\intermediates\\res\\merged\\debug\\drawable_lane5f.png.flat",
-        "source": "O:\\AndroidStudioProjects\\AMap\\app\\src\\main\\res\\drawable\\lane5f.png"
-    },
-    {
-        "merged": "O:\\AndroidStudioProjects\\AMap\\app\\build\\intermediates\\res\\merged\\debug\\drawable_action8.png.flat",
-        "source": "O:\\AndroidStudioProjects\\AMap\\app\\src\\main\\res\\drawable\\action8.png"
     },
     {
         "merged": "O:\\AndroidStudioProjects\\AMap\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_notification_bg_low_pressed.9.png.flat",
@@ -52,36 +40,12 @@
         "source": "E:\\Android\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\6f9c160f01baa4d2264506229d2995fb\\res\\drawable-xxhdpi-v4\\abc_list_longpressed_holo.9.png"
     },
     {
-        "merged": "O:\\AndroidStudioProjects\\AMap\\app\\build\\intermediates\\res\\merged\\debug\\drawable_edog_camera_right.png.flat",
-        "source": "O:\\AndroidStudioProjects\\AMap\\app\\src\\main\\res\\drawable\\edog_camera_right.png"
-    },
-    {
-        "merged": "O:\\AndroidStudioProjects\\AMap\\app\\build\\intermediates\\res\\merged\\debug\\drawable_landback_3.png.flat",
-        "source": "O:\\AndroidStudioProjects\\AMap\\app\\src\\main\\res\\drawable\\landback_3.png"
-    },
-    {
         "merged": "O:\\AndroidStudioProjects\\AMap\\app\\build\\intermediates\\res\\merged\\debug\\layout_abc_expanded_menu_layout.xml.flat",
         "source": "E:\\Android\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\6f9c160f01baa4d2264506229d2995fb\\res\\layout\\abc_expanded_menu_layout.xml"
     },
     {
         "merged": "O:\\AndroidStudioProjects\\AMap\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_btn_switch_to_on_mtrl_00001.9.png.flat",
         "source": "E:\\Android\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\6f9c160f01baa4d2264506229d2995fb\\res\\drawable-xhdpi-v4\\abc_btn_switch_to_on_mtrl_00001.9.png"
-    },
-    {
-        "merged": "O:\\AndroidStudioProjects\\AMap\\app\\build\\intermediates\\res\\merged\\debug\\drawable_whitedownborder.xml.flat",
-        "source": "O:\\AndroidStudioProjects\\AMap\\app\\src\\main\\res\\drawable\\whitedownborder.xml"
-    },
-    {
-        "merged": "O:\\AndroidStudioProjects\\AMap\\app\\build\\intermediates\\res\\merged\\debug\\drawable_landfront_73.png.flat",
-        "source": "O:\\AndroidStudioProjects\\AMap\\app\\src\\main\\res\\drawable\\landfront_73.png"
-    },
-    {
-        "merged": "O:\\AndroidStudioProjects\\AMap\\app\\build\\intermediates\\res\\merged\\debug\\drawable_landfront_i3.png.flat",
-        "source": "O:\\AndroidStudioProjects\\AMap\\app\\src\\main\\res\\drawable\\landfront_i3.png"
-    },
-    {
-        "merged": "O:\\AndroidStudioProjects\\AMap\\app\\build\\intermediates\\res\\merged\\debug\\drawable_landfront_aa.png.flat",
-        "source": "O:\\AndroidStudioProjects\\AMap\\app\\src\\main\\res\\drawable\\landfront_aa.png"
     },
     {
         "merged": "O:\\AndroidStudioProjects\\AMap\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_scrubber_control_off_mtrl_alpha.png.flat",
@@ -98,10 +62,6 @@
     {
         "merged": "O:\\AndroidStudioProjects\\AMap\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_btn_check_to_on_mtrl_000.png.flat",
         "source": "E:\\Android\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\6f9c160f01baa4d2264506229d2995fb\\res\\drawable-xhdpi-v4\\abc_btn_check_to_on_mtrl_000.png"
-    },
-    {
-        "merged": "O:\\AndroidStudioProjects\\AMap\\app\\build\\intermediates\\res\\merged\\debug\\drawable_landfront_jj.png.flat",
-        "source": "O:\\AndroidStudioProjects\\AMap\\app\\src\\main\\res\\drawable\\landfront_jj.png"
     },
     {
         "merged": "O:\\AndroidStudioProjects\\AMap\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_btn_radio_to_on_mtrl_015.png.flat",
@@ -124,12 +84,12 @@
         "source": "E:\\Android\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\6f9c160f01baa4d2264506229d2995fb\\res\\anim\\abc_grow_fade_in_from_bottom.xml"
     },
     {
-        "merged": "O:\\AndroidStudioProjects\\AMap\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_ic_menu_copy_mtrl_am_alpha.png.flat",
-        "source": "E:\\Android\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\6f9c160f01baa4d2264506229d2995fb\\res\\drawable-xhdpi-v4\\abc_ic_menu_copy_mtrl_am_alpha.png"
-    },
-    {
         "merged": "O:\\AndroidStudioProjects\\AMap\\app\\build\\intermediates\\res\\merged\\debug\\layout_abc_list_menu_item_checkbox.xml.flat",
         "source": "E:\\Android\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\6f9c160f01baa4d2264506229d2995fb\\res\\layout\\abc_list_menu_item_checkbox.xml"
+    },
+    {
+        "merged": "O:\\AndroidStudioProjects\\AMap\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_ic_menu_copy_mtrl_am_alpha.png.flat",
+        "source": "E:\\Android\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\6f9c160f01baa4d2264506229d2995fb\\res\\drawable-xhdpi-v4\\abc_ic_menu_copy_mtrl_am_alpha.png"
     },
     {
         "merged": "O:\\AndroidStudioProjects\\AMap\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_notification_bg_low_pressed.9.png.flat",
@@ -140,24 +100,12 @@
         "source": "E:\\Android\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-27.1.1.aar\\044139be73193d502fae0a576eef912b\\res\\drawable-mdpi-v4\\notification_bg_normal_pressed.9.png"
     },
     {
-        "merged": "O:\\AndroidStudioProjects\\AMap\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_all_custom_next_road_info_view.xml.flat",
-        "source": "O:\\AndroidStudioProjects\\AMap\\app\\src\\main\\res\\layout\\activity_all_custom_next_road_info_view.xml"
-    },
-    {
         "merged": "O:\\AndroidStudioProjects\\AMap\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_btn_switch_to_on_mtrl_00001.9.png.flat",
         "source": "E:\\Android\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\6f9c160f01baa4d2264506229d2995fb\\res\\drawable-hdpi-v4\\abc_btn_switch_to_on_mtrl_00001.9.png"
     },
     {
-        "merged": "O:\\AndroidStudioProjects\\AMap\\app\\build\\intermediates\\res\\merged\\debug\\drawable_landfront_66.png.flat",
-        "source": "O:\\AndroidStudioProjects\\AMap\\app\\src\\main\\res\\drawable\\landfront_66.png"
-    },
-    {
         "merged": "O:\\AndroidStudioProjects\\AMap\\app\\build\\intermediates\\res\\merged\\debug\\color-v23_abc_tint_default.xml.flat",
         "source": "E:\\Android\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\6f9c160f01baa4d2264506229d2995fb\\res\\color-v23\\abc_tint_default.xml"
-    },
-    {
-        "merged": "O:\\AndroidStudioProjects\\AMap\\app\\build\\intermediates\\res\\merged\\debug\\drawable_landfront_21.png.flat",
-        "source": "O:\\AndroidStudioProjects\\AMap\\app\\src\\main\\res\\drawable\\landfront_21.png"
     },
     {
         "merged": "O:\\AndroidStudioProjects\\AMap\\app\\build\\intermediates\\res\\merged\\debug\\color_abc_tint_btn_checkable.xml.flat",
@@ -166,10 +114,6 @@
     {
         "merged": "O:\\AndroidStudioProjects\\AMap\\app\\build\\intermediates\\res\\merged\\debug\\color-v23_abc_btn_colored_text_material.xml.flat",
         "source": "E:\\Android\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\6f9c160f01baa4d2264506229d2995fb\\res\\color-v23\\abc_btn_colored_text_material.xml"
-    },
-    {
-        "merged": "O:\\AndroidStudioProjects\\AMap\\app\\build\\intermediates\\res\\merged\\debug\\drawable_action6.png.flat",
-        "source": "O:\\AndroidStudioProjects\\AMap\\app\\src\\main\\res\\drawable\\action6.png"
     },
     {
         "merged": "O:\\AndroidStudioProjects\\AMap\\app\\build\\intermediates\\res\\merged\\debug\\layout_abc_search_dropdown_item_icons_2line.xml.flat",
@@ -184,40 +128,16 @@
         "source": "O:\\AndroidStudioProjects\\AMap\\app\\src\\main\\res\\drawable\\walk.png"
     },
     {
-        "merged": "O:\\AndroidStudioProjects\\AMap\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_swap_vert_white_48dp.png.flat",
-        "source": "O:\\AndroidStudioProjects\\AMap\\app\\src\\main\\res\\drawable\\ic_swap_vert_white_48dp.png"
-    },
-    {
-        "merged": "O:\\AndroidStudioProjects\\AMap\\app\\build\\intermediates\\res\\merged\\debug\\drawable_navi_direction.png.flat",
-        "source": "O:\\AndroidStudioProjects\\AMap\\app\\src\\main\\res\\drawable\\navi_direction.png"
-    },
-    {
-        "merged": "O:\\AndroidStudioProjects\\AMap\\app\\build\\intermediates\\res\\merged\\debug\\drawable_landfront_g5.png.flat",
-        "source": "O:\\AndroidStudioProjects\\AMap\\app\\src\\main\\res\\drawable\\landfront_g5.png"
-    },
-    {
         "merged": "O:\\AndroidStudioProjects\\AMap\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21_notification_action_background.xml.flat",
         "source": "E:\\Android\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-27.1.1.aar\\044139be73193d502fae0a576eef912b\\res\\drawable-v21\\notification_action_background.xml"
-    },
-    {
-        "merged": "O:\\AndroidStudioProjects\\AMap\\app\\build\\intermediates\\res\\merged\\debug\\drawable_landback_5.png.flat",
-        "source": "O:\\AndroidStudioProjects\\AMap\\app\\src\\main\\res\\drawable\\landback_5.png"
     },
     {
         "merged": "O:\\AndroidStudioProjects\\AMap\\app\\build\\intermediates\\res\\merged\\debug\\layout_support_simple_spinner_dropdown_item.xml.flat",
         "source": "E:\\Android\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\6f9c160f01baa4d2264506229d2995fb\\res\\layout\\support_simple_spinner_dropdown_item.xml"
     },
     {
-        "merged": "O:\\AndroidStudioProjects\\AMap\\app\\build\\intermediates\\res\\merged\\debug\\drawable_landfront_71.png.flat",
-        "source": "O:\\AndroidStudioProjects\\AMap\\app\\src\\main\\res\\drawable\\landfront_71.png"
-    },
-    {
         "merged": "O:\\AndroidStudioProjects\\AMap\\app\\build\\intermediates\\res\\merged\\debug\\drawable_abc_btn_default_mtrl_shape.xml.flat",
         "source": "E:\\Android\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\6f9c160f01baa4d2264506229d2995fb\\res\\drawable\\abc_btn_default_mtrl_shape.xml"
-    },
-    {
-        "merged": "O:\\AndroidStudioProjects\\AMap\\app\\build\\intermediates\\res\\merged\\debug\\drawable_landback_k.png.flat",
-        "source": "O:\\AndroidStudioProjects\\AMap\\app\\src\\main\\res\\drawable\\landback_k.png"
     },
     {
         "merged": "O:\\AndroidStudioProjects\\AMap\\app\\build\\intermediates\\res\\merged\\debug\\layout_notification_template_part_chronometer.xml.flat",
@@ -232,10 +152,6 @@
         "source": "E:\\Android\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\6f9c160f01baa4d2264506229d2995fb\\res\\drawable-xhdpi-v4\\abc_ic_star_black_48dp.png"
     },
     {
-        "merged": "O:\\AndroidStudioProjects\\AMap\\app\\build\\intermediates\\res\\merged\\debug\\drawable_end.png.flat",
-        "source": "O:\\AndroidStudioProjects\\AMap\\app\\src\\main\\res\\drawable\\end.png"
-    },
-    {
         "merged": "O:\\AndroidStudioProjects\\AMap\\app\\build\\intermediates\\res\\merged\\debug\\color_abc_tint_seek_thumb.xml.flat",
         "source": "E:\\Android\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\6f9c160f01baa4d2264506229d2995fb\\res\\color\\abc_tint_seek_thumb.xml"
     },
@@ -246,10 +162,6 @@
     {
         "merged": "O:\\AndroidStudioProjects\\AMap\\app\\build\\intermediates\\res\\merged\\debug\\drawable_abc_ic_ab_back_material.xml.flat",
         "source": "E:\\Android\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\6f9c160f01baa4d2264506229d2995fb\\res\\drawable\\abc_ic_ab_back_material.xml"
-    },
-    {
-        "merged": "O:\\AndroidStudioProjects\\AMap\\app\\build\\intermediates\\res\\merged\\debug\\drawable_landfront_i5.png.flat",
-        "source": "O:\\AndroidStudioProjects\\AMap\\app\\src\\main\\res\\drawable\\landfront_i5.png"
     },
     {
         "merged": "O:\\AndroidStudioProjects\\AMap\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_list_longpressed_holo.9.png.flat",
@@ -266,10 +178,6 @@
     {
         "merged": "O:\\AndroidStudioProjects\\AMap\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_scrubber_primary_mtrl_alpha.9.png.flat",
         "source": "E:\\Android\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\6f9c160f01baa4d2264506229d2995fb\\res\\drawable-mdpi-v4\\abc_scrubber_primary_mtrl_alpha.9.png"
-    },
-    {
-        "merged": "O:\\AndroidStudioProjects\\AMap\\app\\build\\intermediates\\res\\merged\\debug\\drawable_custtexture_grayred.png.flat",
-        "source": "O:\\AndroidStudioProjects\\AMap\\app\\src\\main\\res\\drawable\\custtexture_grayred.png"
     },
     {
         "merged": "O:\\AndroidStudioProjects\\AMap\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_scrubber_track_mtrl_alpha.9.png.flat",
@@ -320,10 +228,6 @@
         "source": "E:\\Android\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\6f9c160f01baa4d2264506229d2995fb\\res\\drawable-xxhdpi-v4\\abc_textfield_activated_mtrl_alpha.9.png"
     },
     {
-        "merged": "O:\\AndroidStudioProjects\\AMap\\app\\build\\intermediates\\res\\merged\\debug\\drawable_whiteborder.xml.flat",
-        "source": "O:\\AndroidStudioProjects\\AMap\\app\\src\\main\\res\\drawable\\whiteborder.xml"
-    },
-    {
         "merged": "O:\\AndroidStudioProjects\\AMap\\app\\build\\intermediates\\res\\merged\\debug\\layout_notification_template_big_media_narrow.xml.flat",
         "source": "E:\\Android\\.gradle\\caches\\transforms-1\\files-1.1\\support-media-compat-27.1.1.aar\\df915b50e9ab74ee68a2353b383296cd\\res\\layout\\notification_template_big_media_narrow.xml"
     },
@@ -340,24 +244,12 @@
         "source": "E:\\Android\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\6f9c160f01baa4d2264506229d2995fb\\res\\color\\abc_tint_default.xml"
     },
     {
-        "merged": "O:\\AndroidStudioProjects\\AMap\\app\\build\\intermediates\\res\\merged\\debug\\drawable_lanebf.png.flat",
-        "source": "O:\\AndroidStudioProjects\\AMap\\app\\src\\main\\res\\drawable\\lanebf.png"
-    },
-    {
         "merged": "O:\\AndroidStudioProjects\\AMap\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_ic_star_black_48dp.png.flat",
         "source": "E:\\Android\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\6f9c160f01baa4d2264506229d2995fb\\res\\drawable-xxhdpi-v4\\abc_ic_star_black_48dp.png"
     },
     {
         "merged": "O:\\AndroidStudioProjects\\AMap\\app\\build\\intermediates\\res\\merged\\debug\\layout_item_detail.xml.flat",
         "source": "O:\\AndroidStudioProjects\\AMap\\app\\src\\main\\res\\layout\\item_detail.xml"
-    },
-    {
-        "merged": "O:\\AndroidStudioProjects\\AMap\\app\\build\\intermediates\\res\\merged\\debug\\drawable_landback_i.png.flat",
-        "source": "O:\\AndroidStudioProjects\\AMap\\app\\src\\main\\res\\drawable\\landback_i.png"
-    },
-    {
-        "merged": "O:\\AndroidStudioProjects\\AMap\\app\\build\\intermediates\\res\\merged\\debug\\drawable_landfront_0.png.flat",
-        "source": "O:\\AndroidStudioProjects\\AMap\\app\\src\\main\\res\\drawable\\landfront_0.png"
     },
     {
         "merged": "O:\\AndroidStudioProjects\\AMap\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_ic_star_half_black_48dp.png.flat",
@@ -392,10 +284,6 @@
         "source": "E:\\Android\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-27.1.1.aar\\044139be73193d502fae0a576eef912b\\res\\layout-v21\\notification_action.xml"
     },
     {
-        "merged": "O:\\AndroidStudioProjects\\AMap\\app\\build\\intermediates\\res\\merged\\debug\\drawable_landback_1.png.flat",
-        "source": "O:\\AndroidStudioProjects\\AMap\\app\\src\\main\\res\\drawable\\landback_1.png"
-    },
-    {
         "merged": "O:\\AndroidStudioProjects\\AMap\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_btn_check_to_on_mtrl_015.png.flat",
         "source": "E:\\Android\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\6f9c160f01baa4d2264506229d2995fb\\res\\drawable-mdpi-v4\\abc_btn_check_to_on_mtrl_015.png"
     },
@@ -412,20 +300,12 @@
         "source": "O:\\AndroidStudioProjects\\AMap\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher.png"
     },
     {
-        "merged": "O:\\AndroidStudioProjects\\AMap\\app\\build\\intermediates\\res\\merged\\debug\\drawable_lane7f.png.flat",
-        "source": "O:\\AndroidStudioProjects\\AMap\\app\\src\\main\\res\\drawable\\lane7f.png"
-    },
-    {
         "merged": "O:\\AndroidStudioProjects\\AMap\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_ic_menu_selectall_mtrl_alpha.png.flat",
         "source": "E:\\Android\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\6f9c160f01baa4d2264506229d2995fb\\res\\drawable-mdpi-v4\\abc_ic_menu_selectall_mtrl_alpha.png"
     },
     {
         "merged": "O:\\AndroidStudioProjects\\AMap\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_search_poi.xml.flat",
         "source": "O:\\AndroidStudioProjects\\AMap\\app\\src\\main\\res\\layout\\activity_search_poi.xml"
-    },
-    {
-        "merged": "O:\\AndroidStudioProjects\\AMap\\app\\build\\intermediates\\res\\merged\\debug\\drawable_navi_lane_shape_bg_over.xml.flat",
-        "source": "O:\\AndroidStudioProjects\\AMap\\app\\src\\main\\res\\drawable\\navi_lane_shape_bg_over.xml"
     },
     {
         "merged": "O:\\AndroidStudioProjects\\AMap\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_text_select_handle_middle_mtrl_light.png.flat",
@@ -440,10 +320,6 @@
         "source": "E:\\Android\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\6f9c160f01baa4d2264506229d2995fb\\res\\drawable-ldrtl-xxhdpi-v17\\abc_ic_menu_copy_mtrl_am_alpha.png"
     },
     {
-        "merged": "O:\\AndroidStudioProjects\\AMap\\app\\build\\intermediates\\res\\merged\\debug\\drawable_r1.png.flat",
-        "source": "O:\\AndroidStudioProjects\\AMap\\app\\src\\main\\res\\drawable\\r1.png"
-    },
-    {
         "merged": "O:\\AndroidStudioProjects\\AMap\\app\\build\\intermediates\\res\\merged\\debug\\drawable_tooltip_frame_light.xml.flat",
         "source": "E:\\Android\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\6f9c160f01baa4d2264506229d2995fb\\res\\drawable\\tooltip_frame_light.xml"
     },
@@ -452,36 +328,16 @@
         "source": "E:\\Android\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\6f9c160f01baa4d2264506229d2995fb\\res\\drawable-xhdpi-v4\\abc_list_selector_disabled_holo_dark.9.png"
     },
     {
-        "merged": "O:\\AndroidStudioProjects\\AMap\\app\\build\\intermediates\\res\\merged\\debug\\drawable_landback_7.png.flat",
-        "source": "O:\\AndroidStudioProjects\\AMap\\app\\src\\main\\res\\drawable\\landback_7.png"
-    },
-    {
-        "merged": "O:\\AndroidStudioProjects\\AMap\\app\\build\\intermediates\\res\\merged\\debug\\drawable_custtexture.png.flat",
-        "source": "O:\\AndroidStudioProjects\\AMap\\app\\src\\main\\res\\drawable\\custtexture.png"
-    },
-    {
         "merged": "O:\\AndroidStudioProjects\\AMap\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_btn_switch_to_on_mtrl_00012.9.png.flat",
         "source": "E:\\Android\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\6f9c160f01baa4d2264506229d2995fb\\res\\drawable-hdpi-v4\\abc_btn_switch_to_on_mtrl_00012.9.png"
-    },
-    {
-        "merged": "O:\\AndroidStudioProjects\\AMap\\app\\build\\intermediates\\res\\merged\\debug\\drawable_action_end.png.flat",
-        "source": "O:\\AndroidStudioProjects\\AMap\\app\\src\\main\\res\\drawable\\action_end.png"
     },
     {
         "merged": "O:\\AndroidStudioProjects\\AMap\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4_abc_ic_menu_cut_mtrl_alpha.png.flat",
         "source": "E:\\Android\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\6f9c160f01baa4d2264506229d2995fb\\res\\drawable-xxxhdpi-v4\\abc_ic_menu_cut_mtrl_alpha.png"
     },
     {
-        "merged": "O:\\AndroidStudioProjects\\AMap\\app\\build\\intermediates\\res\\merged\\debug\\drawable_caricon.png.flat",
-        "source": "O:\\AndroidStudioProjects\\AMap\\app\\src\\main\\res\\drawable\\caricon.png"
-    },
-    {
         "merged": "O:\\AndroidStudioProjects\\AMap\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4_abc_text_select_handle_left_mtrl_light.png.flat",
         "source": "E:\\Android\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\6f9c160f01baa4d2264506229d2995fb\\res\\drawable-xxxhdpi-v4\\abc_text_select_handle_left_mtrl_light.png"
-    },
-    {
-        "merged": "O:\\AndroidStudioProjects\\AMap\\app\\build\\intermediates\\res\\merged\\debug\\drawable_landback_d.png.flat",
-        "source": "O:\\AndroidStudioProjects\\AMap\\app\\src\\main\\res\\drawable\\landback_d.png"
     },
     {
         "merged": "O:\\AndroidStudioProjects\\AMap\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_scrubber_control_to_pressed_mtrl_005.png.flat",
@@ -508,10 +364,6 @@
         "source": "E:\\Android\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\6f9c160f01baa4d2264506229d2995fb\\res\\drawable-xxxhdpi-v4\\abc_btn_switch_to_on_mtrl_00001.9.png"
     },
     {
-        "merged": "O:\\AndroidStudioProjects\\AMap\\app\\build\\intermediates\\res\\merged\\debug\\drawable_landfront_a8.png.flat",
-        "source": "O:\\AndroidStudioProjects\\AMap\\app\\src\\main\\res\\drawable\\landfront_a8.png"
-    },
-    {
         "merged": "O:\\AndroidStudioProjects\\AMap\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_text_select_handle_right_mtrl_dark.png.flat",
         "source": "E:\\Android\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\6f9c160f01baa4d2264506229d2995fb\\res\\drawable-hdpi-v4\\abc_text_select_handle_right_mtrl_dark.png"
     },
@@ -528,10 +380,6 @@
         "source": "E:\\Android\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\6f9c160f01baa4d2264506229d2995fb\\res\\drawable-xhdpi-v4\\abc_scrubber_control_to_pressed_mtrl_005.png"
     },
     {
-        "merged": "O:\\AndroidStudioProjects\\AMap\\app\\build\\intermediates\\res\\merged\\debug\\drawable_down.png.flat",
-        "source": "O:\\AndroidStudioProjects\\AMap\\app\\src\\main\\res\\drawable\\down.png"
-    },
-    {
         "merged": "O:\\AndroidStudioProjects\\AMap\\app\\build\\intermediates\\res\\merged\\debug\\layout_path_detail.xml.flat",
         "source": "O:\\AndroidStudioProjects\\AMap\\app\\src\\main\\res\\layout\\path_detail.xml"
     },
@@ -542,10 +390,6 @@
     {
         "merged": "O:\\AndroidStudioProjects\\AMap\\app\\build\\intermediates\\res\\merged\\debug\\anim-v21_design_bottom_sheet_slide_out.xml.flat",
         "source": "E:\\Android\\.gradle\\caches\\transforms-1\\files-1.1\\design-27.1.1.aar\\b52749b60a3cefce0ba14dc6344fd02b\\res\\anim-v21\\design_bottom_sheet_slide_out.xml"
-    },
-    {
-        "merged": "O:\\AndroidStudioProjects\\AMap\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_navigate.xml.flat",
-        "source": "O:\\AndroidStudioProjects\\AMap\\app\\src\\main\\res\\layout\\activity_navigate.xml"
     },
     {
         "merged": "O:\\AndroidStudioProjects\\AMap\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldrtl-xxxhdpi-v17_abc_ic_menu_cut_mtrl_alpha.png.flat",
@@ -564,28 +408,12 @@
         "source": "O:\\AndroidStudioProjects\\AMap\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher_round.png"
     },
     {
-        "merged": "O:\\AndroidStudioProjects\\AMap\\app\\build\\intermediates\\res\\merged\\debug\\drawable_navi_start.png.flat",
-        "source": "O:\\AndroidStudioProjects\\AMap\\app\\src\\main\\res\\drawable\\navi_start.png"
-    },
-    {
-        "merged": "O:\\AndroidStudioProjects\\AMap\\app\\build\\intermediates\\res\\merged\\debug\\drawable_lane3f.png.flat",
-        "source": "O:\\AndroidStudioProjects\\AMap\\app\\src\\main\\res\\drawable\\lane3f.png"
-    },
-    {
-        "merged": "O:\\AndroidStudioProjects\\AMap\\app\\build\\intermediates\\res\\merged\\debug\\drawable_lane00.png.flat",
-        "source": "O:\\AndroidStudioProjects\\AMap\\app\\src\\main\\res\\drawable\\lane00.png"
-    },
-    {
         "merged": "O:\\AndroidStudioProjects\\AMap\\app\\build\\intermediates\\res\\merged\\debug\\color-v23_abc_btn_colored_borderless_text_material.xml.flat",
         "source": "E:\\Android\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\6f9c160f01baa4d2264506229d2995fb\\res\\color-v23\\abc_btn_colored_borderless_text_material.xml"
     },
     {
         "merged": "O:\\AndroidStudioProjects\\AMap\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_text_select_handle_middle_mtrl_light.png.flat",
         "source": "E:\\Android\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\6f9c160f01baa4d2264506229d2995fb\\res\\drawable-xhdpi-v4\\abc_text_select_handle_middle_mtrl_light.png"
-    },
-    {
-        "merged": "O:\\AndroidStudioProjects\\AMap\\app\\build\\intermediates\\res\\merged\\debug\\drawable_landfront_b5.png.flat",
-        "source": "O:\\AndroidStudioProjects\\AMap\\app\\src\\main\\res\\drawable\\landfront_b5.png"
     },
     {
         "merged": "O:\\AndroidStudioProjects\\AMap\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_ic_menu_cut_mtrl_alpha.png.flat",
@@ -600,28 +428,12 @@
         "source": "E:\\Android\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\6f9c160f01baa4d2264506229d2995fb\\res\\drawable-xxhdpi-v4\\abc_list_focused_holo.9.png"
     },
     {
-        "merged": "O:\\AndroidStudioProjects\\AMap\\app\\build\\intermediates\\res\\merged\\debug\\drawable_landfront_bb.png.flat",
-        "source": "O:\\AndroidStudioProjects\\AMap\\app\\src\\main\\res\\drawable\\landfront_bb.png"
-    },
-    {
-        "merged": "O:\\AndroidStudioProjects\\AMap\\app\\build\\intermediates\\res\\merged\\debug\\drawable_edog_light_left.png.flat",
-        "source": "O:\\AndroidStudioProjects\\AMap\\app\\src\\main\\res\\drawable\\edog_light_left.png"
-    },
-    {
         "merged": "O:\\AndroidStudioProjects\\AMap\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4_abc_btn_check_to_on_mtrl_015.png.flat",
         "source": "E:\\Android\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\6f9c160f01baa4d2264506229d2995fb\\res\\drawable-xxxhdpi-v4\\abc_btn_check_to_on_mtrl_015.png"
     },
     {
-        "merged": "O:\\AndroidStudioProjects\\AMap\\app\\build\\intermediates\\res\\merged\\debug\\drawable_landfront_c8.png.flat",
-        "source": "O:\\AndroidStudioProjects\\AMap\\app\\src\\main\\res\\drawable\\landfront_c8.png"
-    },
-    {
         "merged": "O:\\AndroidStudioProjects\\AMap\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_spinner_mtrl_am_alpha.9.png.flat",
         "source": "E:\\Android\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\6f9c160f01baa4d2264506229d2995fb\\res\\drawable-xhdpi-v4\\abc_spinner_mtrl_am_alpha.9.png"
-    },
-    {
-        "merged": "O:\\AndroidStudioProjects\\AMap\\app\\build\\intermediates\\res\\merged\\debug\\drawable_landfront_55.png.flat",
-        "source": "O:\\AndroidStudioProjects\\AMap\\app\\src\\main\\res\\drawable\\landfront_55.png"
     },
     {
         "merged": "O:\\AndroidStudioProjects\\AMap\\app\\build\\intermediates\\res\\merged\\debug\\color_abc_btn_colored_borderless_text_material.xml.flat",
@@ -660,14 +472,6 @@
         "source": "E:\\Android\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\6f9c160f01baa4d2264506229d2995fb\\res\\drawable-xhdpi-v4\\abc_textfield_activated_mtrl_alpha.9.png"
     },
     {
-        "merged": "O:\\AndroidStudioProjects\\AMap\\app\\build\\intermediates\\res\\merged\\debug\\drawable_landfront_g3.png.flat",
-        "source": "O:\\AndroidStudioProjects\\AMap\\app\\src\\main\\res\\drawable\\landfront_g3.png"
-    },
-    {
-        "merged": "O:\\AndroidStudioProjects\\AMap\\app\\build\\intermediates\\res\\merged\\debug\\drawable_amap_navi_lbs_sou17.png.flat",
-        "source": "O:\\AndroidStudioProjects\\AMap\\app\\src\\main\\res\\drawable\\amap_navi_lbs_sou17.png"
-    },
-    {
         "merged": "O:\\AndroidStudioProjects\\AMap\\app\\build\\intermediates\\res\\merged\\debug\\layout_design_navigation_item.xml.flat",
         "source": "E:\\Android\\.gradle\\caches\\transforms-1\\files-1.1\\design-27.1.1.aar\\b52749b60a3cefce0ba14dc6344fd02b\\res\\layout\\design_navigation_item.xml"
     },
@@ -676,24 +480,12 @@
         "source": "E:\\Android\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\6f9c160f01baa4d2264506229d2995fb\\res\\drawable-xhdpi-v4\\abc_text_select_handle_left_mtrl_light.png"
     },
     {
-        "merged": "O:\\AndroidStudioProjects\\AMap\\app\\build\\intermediates\\res\\merged\\debug\\drawable_amap_navi_lbs_sou4.png.flat",
-        "source": "O:\\AndroidStudioProjects\\AMap\\app\\src\\main\\res\\drawable\\amap_navi_lbs_sou4.png"
-    },
-    {
-        "merged": "O:\\AndroidStudioProjects\\AMap\\app\\build\\intermediates\\res\\merged\\debug\\drawable_landfront_43.png.flat",
-        "source": "O:\\AndroidStudioProjects\\AMap\\app\\src\\main\\res\\drawable\\landfront_43.png"
-    },
-    {
         "merged": "O:\\AndroidStudioProjects\\AMap\\app\\build\\intermediates\\res\\merged\\debug\\drawable_abc_dialog_material_background.xml.flat",
         "source": "E:\\Android\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\6f9c160f01baa4d2264506229d2995fb\\res\\drawable\\abc_dialog_material_background.xml"
     },
     {
         "merged": "O:\\AndroidStudioProjects\\AMap\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_launcher_round.png.flat",
         "source": "O:\\AndroidStudioProjects\\AMap\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher_round.png"
-    },
-    {
-        "merged": "O:\\AndroidStudioProjects\\AMap\\app\\build\\intermediates\\res\\merged\\debug\\drawable_landfront_ll.png.flat",
-        "source": "O:\\AndroidStudioProjects\\AMap\\app\\src\\main\\res\\drawable\\landfront_ll.png"
     },
     {
         "merged": "O:\\AndroidStudioProjects\\AMap\\app\\build\\intermediates\\res\\merged\\debug\\drawable_abc_list_selector_background_transition_holo_dark.xml.flat",
@@ -708,20 +500,8 @@
         "source": "E:\\Android\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\6f9c160f01baa4d2264506229d2995fb\\res\\drawable-xhdpi-v4\\abc_switch_track_mtrl_alpha.9.png"
     },
     {
-        "merged": "O:\\AndroidStudioProjects\\AMap\\app\\build\\intermediates\\res\\merged\\debug\\drawable_landfront_88.png.flat",
-        "source": "O:\\AndroidStudioProjects\\AMap\\app\\src\\main\\res\\drawable\\landfront_88.png"
-    },
-    {
-        "merged": "O:\\AndroidStudioProjects\\AMap\\app\\build\\intermediates\\res\\merged\\debug\\drawable_action10.png.flat",
-        "source": "O:\\AndroidStudioProjects\\AMap\\app\\src\\main\\res\\drawable\\action10.png"
-    },
-    {
         "merged": "O:\\AndroidStudioProjects\\AMap\\app\\build\\intermediates\\res\\merged\\debug\\drawable_border.xml.flat",
         "source": "O:\\AndroidStudioProjects\\AMap\\app\\src\\main\\res\\drawable\\border.xml"
-    },
-    {
-        "merged": "O:\\AndroidStudioProjects\\AMap\\app\\build\\intermediates\\res\\merged\\debug\\drawable_action1.png.flat",
-        "source": "O:\\AndroidStudioProjects\\AMap\\app\\src\\main\\res\\drawable\\action1.png"
     },
     {
         "merged": "O:\\AndroidStudioProjects\\AMap\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_textfield_activated_mtrl_alpha.9.png.flat",
@@ -732,14 +512,6 @@
         "source": "E:\\Android\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\6f9c160f01baa4d2264506229d2995fb\\res\\anim\\abc_tooltip_enter.xml"
     },
     {
-        "merged": "O:\\AndroidStudioProjects\\AMap\\app\\build\\intermediates\\res\\merged\\debug\\drawable_landfront_e5.png.flat",
-        "source": "O:\\AndroidStudioProjects\\AMap\\app\\src\\main\\res\\drawable\\landfront_e5.png"
-    },
-    {
-        "merged": "O:\\AndroidStudioProjects\\AMap\\app\\build\\intermediates\\res\\merged\\debug\\drawable_edog_unknown_right.png.flat",
-        "source": "O:\\AndroidStudioProjects\\AMap\\app\\src\\main\\res\\drawable\\edog_unknown_right.png"
-    },
-    {
         "merged": "O:\\AndroidStudioProjects\\AMap\\app\\build\\intermediates\\res\\merged\\debug\\drawable_abc_seekbar_tick_mark_material.xml.flat",
         "source": "E:\\Android\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\6f9c160f01baa4d2264506229d2995fb\\res\\drawable\\abc_seekbar_tick_mark_material.xml"
     },
@@ -748,20 +520,8 @@
         "source": "O:\\AndroidStudioProjects\\AMap\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher_round.png"
     },
     {
-        "merged": "O:\\AndroidStudioProjects\\AMap\\app\\build\\intermediates\\res\\merged\\debug\\drawable_landfront_44.png.flat",
-        "source": "O:\\AndroidStudioProjects\\AMap\\app\\src\\main\\res\\drawable\\landfront_44.png"
-    },
-    {
-        "merged": "O:\\AndroidStudioProjects\\AMap\\app\\build\\intermediates\\res\\merged\\debug\\drawable_bubble_car_ferry.png.flat",
-        "source": "O:\\AndroidStudioProjects\\AMap\\app\\src\\main\\res\\drawable\\bubble_car_ferry.png"
-    },
-    {
         "merged": "O:\\AndroidStudioProjects\\AMap\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_design_ic_visibility.png.flat",
         "source": "E:\\Android\\.gradle\\caches\\transforms-1\\files-1.1\\design-27.1.1.aar\\b52749b60a3cefce0ba14dc6344fd02b\\res\\drawable-hdpi-v4\\design_ic_visibility.png"
-    },
-    {
-        "merged": "O:\\AndroidStudioProjects\\AMap\\app\\build\\intermediates\\res\\merged\\debug\\drawable_lanecf.png.flat",
-        "source": "O:\\AndroidStudioProjects\\AMap\\app\\src\\main\\res\\drawable\\lanecf.png"
     },
     {
         "merged": "O:\\AndroidStudioProjects\\AMap\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_textfield_default_mtrl_alpha.9.png.flat",
@@ -786,10 +546,6 @@
     {
         "merged": "O:\\AndroidStudioProjects\\AMap\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4_abc_btn_radio_to_on_mtrl_015.png.flat",
         "source": "E:\\Android\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\6f9c160f01baa4d2264506229d2995fb\\res\\drawable-xxxhdpi-v4\\abc_btn_radio_to_on_mtrl_015.png"
-    },
-    {
-        "merged": "O:\\AndroidStudioProjects\\AMap\\app\\build\\intermediates\\res\\merged\\debug\\drawable_amap_navi_lbs_sou3.png.flat",
-        "source": "O:\\AndroidStudioProjects\\AMap\\app\\src\\main\\res\\drawable\\amap_navi_lbs_sou3.png"
     },
     {
         "merged": "O:\\AndroidStudioProjects\\AMap\\app\\build\\intermediates\\res\\merged\\debug\\color_abc_primary_text_material_light.xml.flat",
@@ -820,10 +576,6 @@
         "source": "E:\\Android\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\6f9c160f01baa4d2264506229d2995fb\\res\\color-v23\\abc_tint_edittext.xml"
     },
     {
-        "merged": "O:\\AndroidStudioProjects\\AMap\\app\\build\\intermediates\\res\\merged\\debug\\drawable_amap_navi_lbs_sou12.png.flat",
-        "source": "O:\\AndroidStudioProjects\\AMap\\app\\src\\main\\res\\drawable\\amap_navi_lbs_sou12.png"
-    },
-    {
         "merged": "O:\\AndroidStudioProjects\\AMap\\app\\build\\intermediates\\res\\merged\\debug\\color_abc_background_cache_hint_selector_material_light.xml.flat",
         "source": "E:\\Android\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\6f9c160f01baa4d2264506229d2995fb\\res\\color\\abc_background_cache_hint_selector_material_light.xml"
     },
@@ -842,10 +594,6 @@
     {
         "merged": "O:\\AndroidStudioProjects\\AMap\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21_abc_action_bar_item_background_material.xml.flat",
         "source": "E:\\Android\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\6f9c160f01baa4d2264506229d2995fb\\res\\drawable-v21\\abc_action_bar_item_background_material.xml"
-    },
-    {
-        "merged": "O:\\AndroidStudioProjects\\AMap\\app\\build\\intermediates\\res\\merged\\debug\\drawable_amap_navi_lbs_sou13.png.flat",
-        "source": "O:\\AndroidStudioProjects\\AMap\\app\\src\\main\\res\\drawable\\amap_navi_lbs_sou13.png"
     },
     {
         "merged": "O:\\AndroidStudioProjects\\AMap\\app\\build\\intermediates\\res\\merged\\debug\\drawable-watch-v20_abc_dialog_material_background.xml.flat",
@@ -880,20 +628,8 @@
         "source": "E:\\Android\\.gradle\\caches\\transforms-1\\files-1.1\\design-27.1.1.aar\\b52749b60a3cefce0ba14dc6344fd02b\\res\\drawable\\design_snackbar_background.xml"
     },
     {
-        "merged": "O:\\AndroidStudioProjects\\AMap\\app\\build\\intermediates\\res\\merged\\debug\\drawable_navi_lane_shape_bg_center.xml.flat",
-        "source": "O:\\AndroidStudioProjects\\AMap\\app\\src\\main\\res\\drawable\\navi_lane_shape_bg_center.xml"
-    },
-    {
-        "merged": "O:\\AndroidStudioProjects\\AMap\\app\\build\\intermediates\\res\\merged\\debug\\drawable_landfront_gg.png.flat",
-        "source": "O:\\AndroidStudioProjects\\AMap\\app\\src\\main\\res\\drawable\\landfront_gg.png"
-    },
-    {
         "merged": "O:\\AndroidStudioProjects\\AMap\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_ic_star_half_black_16dp.png.flat",
         "source": "E:\\Android\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\6f9c160f01baa4d2264506229d2995fb\\res\\drawable-mdpi-v4\\abc_ic_star_half_black_16dp.png"
-    },
-    {
-        "merged": "O:\\AndroidStudioProjects\\AMap\\app\\build\\intermediates\\res\\merged\\debug\\drawable_landfront_33.png.flat",
-        "source": "O:\\AndroidStudioProjects\\AMap\\app\\src\\main\\res\\drawable\\landfront_33.png"
     },
     {
         "merged": "O:\\AndroidStudioProjects\\AMap\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_scrubber_track_mtrl_alpha.9.png.flat",
@@ -908,16 +644,8 @@
         "source": "E:\\Android\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\6f9c160f01baa4d2264506229d2995fb\\res\\drawable-xxxhdpi-v4\\abc_ic_star_black_16dp.png"
     },
     {
-        "merged": "O:\\AndroidStudioProjects\\AMap\\app\\build\\intermediates\\res\\merged\\debug\\drawable_custtexture_slow.png.flat",
-        "source": "O:\\AndroidStudioProjects\\AMap\\app\\src\\main\\res\\drawable\\custtexture_slow.png"
-    },
-    {
         "merged": "O:\\AndroidStudioProjects\\AMap\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_list_focused_holo.9.png.flat",
         "source": "E:\\Android\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\6f9c160f01baa4d2264506229d2995fb\\res\\drawable-hdpi-v4\\abc_list_focused_holo.9.png"
-    },
-    {
-        "merged": "O:\\AndroidStudioProjects\\AMap\\app\\build\\intermediates\\res\\merged\\debug\\drawable_landfront_j8.png.flat",
-        "source": "O:\\AndroidStudioProjects\\AMap\\app\\src\\main\\res\\drawable\\landfront_j8.png"
     },
     {
         "merged": "O:\\AndroidStudioProjects\\AMap\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_list_pressed_holo_dark.9.png.flat",
@@ -968,20 +696,12 @@
         "source": "O:\\AndroidStudioProjects\\AMap\\app\\src\\main\\res\\drawable\\rectangle.xml"
     },
     {
-        "merged": "O:\\AndroidStudioProjects\\AMap\\app\\build\\intermediates\\res\\merged\\debug\\drawable_lane9f.png.flat",
-        "source": "O:\\AndroidStudioProjects\\AMap\\app\\src\\main\\res\\drawable\\lane9f.png"
-    },
-    {
         "merged": "O:\\AndroidStudioProjects\\AMap\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_switch_track_mtrl_alpha.9.png.flat",
         "source": "E:\\Android\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\6f9c160f01baa4d2264506229d2995fb\\res\\drawable-xxhdpi-v4\\abc_switch_track_mtrl_alpha.9.png"
     },
     {
         "merged": "O:\\AndroidStudioProjects\\AMap\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_btn_radio_to_on_mtrl_000.png.flat",
         "source": "E:\\Android\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\6f9c160f01baa4d2264506229d2995fb\\res\\drawable-xhdpi-v4\\abc_btn_radio_to_on_mtrl_000.png"
-    },
-    {
-        "merged": "O:\\AndroidStudioProjects\\AMap\\app\\build\\intermediates\\res\\merged\\debug\\drawable_action0.png.flat",
-        "source": "O:\\AndroidStudioProjects\\AMap\\app\\src\\main\\res\\drawable\\action0.png"
     },
     {
         "merged": "O:\\AndroidStudioProjects\\AMap\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_spinner_mtrl_am_alpha.9.png.flat",
@@ -992,28 +712,12 @@
         "source": "E:\\Android\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\6f9c160f01baa4d2264506229d2995fb\\res\\layout-watch-v20\\abc_alert_dialog_button_bar_material.xml"
     },
     {
-        "merged": "O:\\AndroidStudioProjects\\AMap\\app\\build\\intermediates\\res\\merged\\debug\\drawable_landfront_61.png.flat",
-        "source": "O:\\AndroidStudioProjects\\AMap\\app\\src\\main\\res\\drawable\\landfront_61.png"
-    },
-    {
         "merged": "O:\\AndroidStudioProjects\\AMap\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_list_divider_mtrl_alpha.9.png.flat",
         "source": "E:\\Android\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\6f9c160f01baa4d2264506229d2995fb\\res\\drawable-mdpi-v4\\abc_list_divider_mtrl_alpha.9.png"
     },
     {
-        "merged": "O:\\AndroidStudioProjects\\AMap\\app\\build\\intermediates\\res\\merged\\debug\\drawable_landfront_kk.png.flat",
-        "source": "O:\\AndroidStudioProjects\\AMap\\app\\src\\main\\res\\drawable\\landfront_kk.png"
-    },
-    {
-        "merged": "O:\\AndroidStudioProjects\\AMap\\app\\build\\intermediates\\res\\merged\\debug\\drawable_landfront_d.png.flat",
-        "source": "O:\\AndroidStudioProjects\\AMap\\app\\src\\main\\res\\drawable\\landfront_d.png"
-    },
-    {
         "merged": "O:\\AndroidStudioProjects\\AMap\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_scrubber_control_off_mtrl_alpha.png.flat",
         "source": "E:\\Android\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\6f9c160f01baa4d2264506229d2995fb\\res\\drawable-hdpi-v4\\abc_scrubber_control_off_mtrl_alpha.png"
-    },
-    {
-        "merged": "O:\\AndroidStudioProjects\\AMap\\app\\build\\intermediates\\res\\merged\\debug\\drawable_amap_navi_lbs_sou15.png.flat",
-        "source": "O:\\AndroidStudioProjects\\AMap\\app\\src\\main\\res\\drawable\\amap_navi_lbs_sou15.png"
     },
     {
         "merged": "O:\\AndroidStudioProjects\\AMap\\app\\build\\intermediates\\res\\merged\\debug\\layout-v21_notification_template_custom_big.xml.flat",
@@ -1024,28 +728,12 @@
         "source": "E:\\Android\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\6f9c160f01baa4d2264506229d2995fb\\res\\drawable\\abc_vector_test.xml"
     },
     {
-        "merged": "O:\\AndroidStudioProjects\\AMap\\app\\build\\intermediates\\res\\merged\\debug\\drawable_pressednooutborder.xml.flat",
-        "source": "O:\\AndroidStudioProjects\\AMap\\app\\src\\main\\res\\drawable\\pressednooutborder.xml"
-    },
-    {
         "merged": "O:\\AndroidStudioProjects\\AMap\\app\\build\\intermediates\\res\\merged\\debug\\layout_abc_alert_dialog_button_bar_material.xml.flat",
         "source": "E:\\Android\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\6f9c160f01baa4d2264506229d2995fb\\res\\layout\\abc_alert_dialog_button_bar_material.xml"
     },
     {
-        "merged": "O:\\AndroidStudioProjects\\AMap\\app\\build\\intermediates\\res\\merged\\debug\\drawable_b2.png.flat",
-        "source": "O:\\AndroidStudioProjects\\AMap\\app\\src\\main\\res\\drawable\\b2.png"
-    },
-    {
         "merged": "O:\\AndroidStudioProjects\\AMap\\app\\build\\intermediates\\res\\merged\\debug\\anim-v21_design_bottom_sheet_slide_in.xml.flat",
         "source": "E:\\Android\\.gradle\\caches\\transforms-1\\files-1.1\\design-27.1.1.aar\\b52749b60a3cefce0ba14dc6344fd02b\\res\\anim-v21\\design_bottom_sheet_slide_in.xml"
-    },
-    {
-        "merged": "O:\\AndroidStudioProjects\\AMap\\app\\build\\intermediates\\res\\merged\\debug\\drawable_landback_b.png.flat",
-        "source": "O:\\AndroidStudioProjects\\AMap\\app\\src\\main\\res\\drawable\\landback_b.png"
-    },
-    {
-        "merged": "O:\\AndroidStudioProjects\\AMap\\app\\build\\intermediates\\res\\merged\\debug\\drawable_landfront_99.png.flat",
-        "source": "O:\\AndroidStudioProjects\\AMap\\app\\src\\main\\res\\drawable\\landfront_99.png"
     },
     {
         "merged": "O:\\AndroidStudioProjects\\AMap\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_notification_bg_low_normal.9.png.flat",
@@ -1084,10 +772,6 @@
         "source": "E:\\Android\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\6f9c160f01baa4d2264506229d2995fb\\res\\color\\abc_tint_edittext.xml"
     },
     {
-        "merged": "O:\\AndroidStudioProjects\\AMap\\app\\build\\intermediates\\res\\merged\\debug\\drawable_b1.png.flat",
-        "source": "O:\\AndroidStudioProjects\\AMap\\app\\src\\main\\res\\drawable\\b1.png"
-    },
-    {
         "merged": "O:\\AndroidStudioProjects\\AMap\\app\\build\\intermediates\\res\\merged\\debug\\drawable_search.png.flat",
         "source": "O:\\AndroidStudioProjects\\AMap\\app\\src\\main\\res\\drawable\\search.png"
     },
@@ -1112,20 +796,12 @@
         "source": "E:\\Android\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\6f9c160f01baa4d2264506229d2995fb\\res\\drawable-xxxhdpi-v4\\abc_text_select_handle_left_mtrl_dark.png"
     },
     {
-        "merged": "O:\\AndroidStudioProjects\\AMap\\app\\build\\intermediates\\res\\merged\\debug\\drawable_activity_search_poi.xml.flat",
-        "source": "O:\\AndroidStudioProjects\\AMap\\app\\src\\main\\res\\drawable\\activity_search_poi.xml"
-    },
-    {
         "merged": "O:\\AndroidStudioProjects\\AMap\\app\\build\\intermediates\\res\\merged\\debug\\layout_search_result_item.xml.flat",
         "source": "O:\\AndroidStudioProjects\\AMap\\app\\src\\main\\res\\layout\\search_result_item.xml"
     },
     {
         "merged": "O:\\AndroidStudioProjects\\AMap\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4_design_ic_visibility_off.png.flat",
         "source": "E:\\Android\\.gradle\\caches\\transforms-1\\files-1.1\\design-27.1.1.aar\\b52749b60a3cefce0ba14dc6344fd02b\\res\\drawable-xxxhdpi-v4\\design_ic_visibility_off.png"
-    },
-    {
-        "merged": "O:\\AndroidStudioProjects\\AMap\\app\\build\\intermediates\\res\\merged\\debug\\drawable_whitenooutborder.xml.flat",
-        "source": "O:\\AndroidStudioProjects\\AMap\\app\\src\\main\\res\\drawable\\whitenooutborder.xml"
     },
     {
         "merged": "O:\\AndroidStudioProjects\\AMap\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_btn_switch_to_on_mtrl_00012.9.png.flat",
@@ -1148,10 +824,6 @@
         "source": "E:\\Android\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\6f9c160f01baa4d2264506229d2995fb\\res\\layout\\abc_action_menu_item_layout.xml"
     },
     {
-        "merged": "O:\\AndroidStudioProjects\\AMap\\app\\build\\intermediates\\res\\merged\\debug\\drawable_lane6f.png.flat",
-        "source": "O:\\AndroidStudioProjects\\AMap\\app\\src\\main\\res\\drawable\\lane6f.png"
-    },
-    {
         "merged": "O:\\AndroidStudioProjects\\AMap\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_scrubber_track_mtrl_alpha.9.png.flat",
         "source": "E:\\Android\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\6f9c160f01baa4d2264506229d2995fb\\res\\drawable-hdpi-v4\\abc_scrubber_track_mtrl_alpha.9.png"
     },
@@ -1168,20 +840,8 @@
         "source": "E:\\Android\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\6f9c160f01baa4d2264506229d2995fb\\res\\layout\\abc_tooltip.xml"
     },
     {
-        "merged": "O:\\AndroidStudioProjects\\AMap\\app\\build\\intermediates\\res\\merged\\debug\\drawable_amap_navi_lbs_sou2.png.flat",
-        "source": "O:\\AndroidStudioProjects\\AMap\\app\\src\\main\\res\\drawable\\amap_navi_lbs_sou2.png"
-    },
-    {
-        "merged": "O:\\AndroidStudioProjects\\AMap\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_launcher.png.flat",
-        "source": "O:\\AndroidStudioProjects\\AMap\\app\\src\\main\\res\\drawable\\ic_launcher.png"
-    },
-    {
         "merged": "O:\\AndroidStudioProjects\\AMap\\app\\build\\intermediates\\res\\merged\\debug\\layout_abc_list_menu_item_icon.xml.flat",
         "source": "E:\\Android\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\6f9c160f01baa4d2264506229d2995fb\\res\\layout\\abc_list_menu_item_icon.xml"
-    },
-    {
-        "merged": "O:\\AndroidStudioProjects\\AMap\\app\\build\\intermediates\\res\\merged\\debug\\drawable_landfront_h3.png.flat",
-        "source": "O:\\AndroidStudioProjects\\AMap\\app\\src\\main\\res\\drawable\\landfront_h3.png"
     },
     {
         "merged": "O:\\AndroidStudioProjects\\AMap\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_popup_background_mtrl_mult.9.png.flat",
@@ -1190,14 +850,6 @@
     {
         "merged": "O:\\AndroidStudioProjects\\AMap\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_scrubber_control_off_mtrl_alpha.png.flat",
         "source": "E:\\Android\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\6f9c160f01baa4d2264506229d2995fb\\res\\drawable-xxhdpi-v4\\abc_scrubber_control_off_mtrl_alpha.png"
-    },
-    {
-        "merged": "O:\\AndroidStudioProjects\\AMap\\app\\build\\intermediates\\res\\merged\\debug\\drawable_landfront_ff.png.flat",
-        "source": "O:\\AndroidStudioProjects\\AMap\\app\\src\\main\\res\\drawable\\landfront_ff.png"
-    },
-    {
-        "merged": "O:\\AndroidStudioProjects\\AMap\\app\\build\\intermediates\\res\\merged\\debug\\drawable_landback_a.png.flat",
-        "source": "O:\\AndroidStudioProjects\\AMap\\app\\src\\main\\res\\drawable\\landback_a.png"
     },
     {
         "merged": "O:\\AndroidStudioProjects\\AMap\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_text_select_handle_middle_mtrl_dark.png.flat",
@@ -1240,10 +892,6 @@
         "source": "E:\\Android\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\6f9c160f01baa4d2264506229d2995fb\\res\\drawable-xhdpi-v4\\abc_btn_check_to_on_mtrl_015.png"
     },
     {
-        "merged": "O:\\AndroidStudioProjects\\AMap\\app\\build\\intermediates\\res\\merged\\debug\\drawable_landback_l.png.flat",
-        "source": "O:\\AndroidStudioProjects\\AMap\\app\\src\\main\\res\\drawable\\landback_l.png"
-    },
-    {
         "merged": "O:\\AndroidStudioProjects\\AMap\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4_abc_ic_star_black_48dp.png.flat",
         "source": "E:\\Android\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\6f9c160f01baa4d2264506229d2995fb\\res\\drawable-xxxhdpi-v4\\abc_ic_star_black_48dp.png"
     },
@@ -1264,16 +912,8 @@
         "source": "E:\\Android\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\6f9c160f01baa4d2264506229d2995fb\\res\\drawable-v21\\abc_edit_text_material.xml"
     },
     {
-        "merged": "O:\\AndroidStudioProjects\\AMap\\app\\build\\intermediates\\res\\merged\\debug\\drawable_amap_navi_lbs_sou14.png.flat",
-        "source": "O:\\AndroidStudioProjects\\AMap\\app\\src\\main\\res\\drawable\\amap_navi_lbs_sou14.png"
-    },
-    {
         "merged": "O:\\AndroidStudioProjects\\AMap\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldrtl-xxxhdpi-v17_abc_spinner_mtrl_am_alpha.9.png.flat",
         "source": "E:\\Android\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\6f9c160f01baa4d2264506229d2995fb\\res\\drawable-ldrtl-xxxhdpi-v17\\abc_spinner_mtrl_am_alpha.9.png"
-    },
-    {
-        "merged": "O:\\AndroidStudioProjects\\AMap\\app\\build\\intermediates\\res\\merged\\debug\\drawable_landfront_8.png.flat",
-        "source": "O:\\AndroidStudioProjects\\AMap\\app\\src\\main\\res\\drawable\\landfront_8.png"
     },
     {
         "merged": "O:\\AndroidStudioProjects\\AMap\\app\\build\\intermediates\\res\\merged\\debug\\drawable_abc_btn_borderless_material.xml.flat",
@@ -1288,20 +928,12 @@
         "source": "E:\\Android\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\6f9c160f01baa4d2264506229d2995fb\\res\\drawable-xhdpi-v4\\abc_menu_hardkey_panel_mtrl_mult.9.png"
     },
     {
-        "merged": "O:\\AndroidStudioProjects\\AMap\\app\\build\\intermediates\\res\\merged\\debug\\drawable_lane2f.png.flat",
-        "source": "O:\\AndroidStudioProjects\\AMap\\app\\src\\main\\res\\drawable\\lane2f.png"
-    },
-    {
         "merged": "O:\\AndroidStudioProjects\\AMap\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_scrubber_track_mtrl_alpha.9.png.flat",
         "source": "E:\\Android\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\6f9c160f01baa4d2264506229d2995fb\\res\\drawable-mdpi-v4\\abc_scrubber_track_mtrl_alpha.9.png"
     },
     {
         "merged": "O:\\AndroidStudioProjects\\AMap\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4_abc_ic_menu_share_mtrl_alpha.png.flat",
         "source": "E:\\Android\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\6f9c160f01baa4d2264506229d2995fb\\res\\drawable-xxxhdpi-v4\\abc_ic_menu_share_mtrl_alpha.png"
-    },
-    {
-        "merged": "O:\\AndroidStudioProjects\\AMap\\app\\build\\intermediates\\res\\merged\\debug\\drawable_edog_bus_lane_right.png.flat",
-        "source": "O:\\AndroidStudioProjects\\AMap\\app\\src\\main\\res\\drawable\\edog_bus_lane_right.png"
     },
     {
         "merged": "O:\\AndroidStudioProjects\\AMap\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_list_longpressed_holo.9.png.flat",
@@ -1312,20 +944,12 @@
         "source": "E:\\Android\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\6f9c160f01baa4d2264506229d2995fb\\res\\drawable-xxhdpi-v4\\abc_scrubber_primary_mtrl_alpha.9.png"
     },
     {
-        "merged": "O:\\AndroidStudioProjects\\AMap\\app\\build\\intermediates\\res\\merged\\debug\\drawable_startborder.xml.flat",
-        "source": "O:\\AndroidStudioProjects\\AMap\\app\\src\\main\\res\\drawable\\startborder.xml"
-    },
-    {
         "merged": "O:\\AndroidStudioProjects\\AMap\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_tab_indicator_mtrl_alpha.9.png.flat",
         "source": "E:\\Android\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\6f9c160f01baa4d2264506229d2995fb\\res\\drawable-xhdpi-v4\\abc_tab_indicator_mtrl_alpha.9.png"
     },
     {
         "merged": "O:\\AndroidStudioProjects\\AMap\\app\\build\\intermediates\\res\\merged\\debug\\layout_abc_list_menu_item_layout.xml.flat",
         "source": "E:\\Android\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\6f9c160f01baa4d2264506229d2995fb\\res\\layout\\abc_list_menu_item_layout.xml"
-    },
-    {
-        "merged": "O:\\AndroidStudioProjects\\AMap\\app\\build\\intermediates\\res\\merged\\debug\\drawable_landfront_3.png.flat",
-        "source": "O:\\AndroidStudioProjects\\AMap\\app\\src\\main\\res\\drawable\\landfront_3.png"
     },
     {
         "merged": "O:\\AndroidStudioProjects\\AMap\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_ic_star_half_black_16dp.png.flat",
@@ -1348,24 +972,12 @@
         "source": "O:\\AndroidStudioProjects\\AMap\\app\\src\\main\\res\\layout\\activity_search.xml"
     },
     {
-        "merged": "O:\\AndroidStudioProjects\\AMap\\app\\build\\intermediates\\res\\merged\\debug\\drawable_landfront_h5.png.flat",
-        "source": "O:\\AndroidStudioProjects\\AMap\\app\\src\\main\\res\\drawable\\landfront_h5.png"
-    },
-    {
         "merged": "O:\\AndroidStudioProjects\\AMap\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_menu_hardkey_panel_mtrl_mult.9.png.flat",
         "source": "E:\\Android\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\6f9c160f01baa4d2264506229d2995fb\\res\\drawable-mdpi-v4\\abc_menu_hardkey_panel_mtrl_mult.9.png"
     },
     {
         "merged": "O:\\AndroidStudioProjects\\AMap\\app\\build\\intermediates\\res\\merged\\debug\\layout-sw600dp-v13_design_layout_snackbar.xml.flat",
         "source": "E:\\Android\\.gradle\\caches\\transforms-1\\files-1.1\\design-27.1.1.aar\\b52749b60a3cefce0ba14dc6344fd02b\\res\\layout-sw600dp-v13\\design_layout_snackbar.xml"
-    },
-    {
-        "merged": "O:\\AndroidStudioProjects\\AMap\\app\\build\\intermediates\\res\\merged\\debug\\drawable_landfront_20.png.flat",
-        "source": "O:\\AndroidStudioProjects\\AMap\\app\\src\\main\\res\\drawable\\landfront_20.png"
-    },
-    {
-        "merged": "O:\\AndroidStudioProjects\\AMap\\app\\build\\intermediates\\res\\merged\\debug\\drawable_amap_navi_lbs_sou18.png.flat",
-        "source": "O:\\AndroidStudioProjects\\AMap\\app\\src\\main\\res\\drawable\\amap_navi_lbs_sou18.png"
     },
     {
         "merged": "O:\\AndroidStudioProjects\\AMap\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4_abc_spinner_mtrl_am_alpha.9.png.flat",
@@ -1404,10 +1016,6 @@
         "source": "E:\\Android\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\6f9c160f01baa4d2264506229d2995fb\\res\\drawable-ldrtl-mdpi-v17\\abc_spinner_mtrl_am_alpha.9.png"
     },
     {
-        "merged": "O:\\AndroidStudioProjects\\AMap\\app\\build\\intermediates\\res\\merged\\debug\\drawable_navi_lane_shape_bg_right.xml.flat",
-        "source": "O:\\AndroidStudioProjects\\AMap\\app\\src\\main\\res\\drawable\\navi_lane_shape_bg_right.xml"
-    },
-    {
         "merged": "O:\\AndroidStudioProjects\\AMap\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_text_select_handle_middle_mtrl_dark.png.flat",
         "source": "E:\\Android\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\6f9c160f01baa4d2264506229d2995fb\\res\\drawable-hdpi-v4\\abc_text_select_handle_middle_mtrl_dark.png"
     },
@@ -1424,10 +1032,6 @@
         "source": "E:\\Android\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\6f9c160f01baa4d2264506229d2995fb\\res\\drawable\\abc_ratingbar_indicator_material.xml"
     },
     {
-        "merged": "O:\\AndroidStudioProjects\\AMap\\app\\build\\intermediates\\res\\merged\\debug\\drawable_action9.png.flat",
-        "source": "O:\\AndroidStudioProjects\\AMap\\app\\src\\main\\res\\drawable\\action9.png"
-    },
-    {
         "merged": "O:\\AndroidStudioProjects\\AMap\\app\\build\\intermediates\\res\\merged\\debug\\layout_design_layout_snackbar.xml.flat",
         "source": "E:\\Android\\.gradle\\caches\\transforms-1\\files-1.1\\design-27.1.1.aar\\b52749b60a3cefce0ba14dc6344fd02b\\res\\layout\\design_layout_snackbar.xml"
     },
@@ -1438,22 +1042,6 @@
     {
         "merged": "O:\\AndroidStudioProjects\\AMap\\app\\build\\intermediates\\res\\merged\\debug\\layout_abc_action_menu_layout.xml.flat",
         "source": "E:\\Android\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\6f9c160f01baa4d2264506229d2995fb\\res\\layout\\abc_action_menu_layout.xml"
-    },
-    {
-        "merged": "O:\\AndroidStudioProjects\\AMap\\app\\build\\intermediates\\res\\merged\\debug\\drawable_landback_4.png.flat",
-        "source": "O:\\AndroidStudioProjects\\AMap\\app\\src\\main\\res\\drawable\\landback_4.png"
-    },
-    {
-        "merged": "O:\\AndroidStudioProjects\\AMap\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_all_custom_navi_view.xml.flat",
-        "source": "O:\\AndroidStudioProjects\\AMap\\app\\src\\main\\res\\layout\\activity_all_custom_navi_view.xml"
-    },
-    {
-        "merged": "O:\\AndroidStudioProjects\\AMap\\app\\build\\intermediates\\res\\merged\\debug\\drawable_landfront_ee.png.flat",
-        "source": "O:\\AndroidStudioProjects\\AMap\\app\\src\\main\\res\\drawable\\landfront_ee.png"
-    },
-    {
-        "merged": "O:\\AndroidStudioProjects\\AMap\\app\\build\\intermediates\\res\\merged\\debug\\drawable_landfront_c3.png.flat",
-        "source": "O:\\AndroidStudioProjects\\AMap\\app\\src\\main\\res\\drawable\\landfront_c3.png"
     },
     {
         "merged": "O:\\AndroidStudioProjects\\AMap\\app\\build\\intermediates\\res\\merged\\debug\\color_switch_thumb_material_dark.xml.flat",
@@ -1496,10 +1084,6 @@
         "source": "E:\\Android\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\6f9c160f01baa4d2264506229d2995fb\\res\\drawable\\abc_list_selector_background_transition_holo_light.xml"
     },
     {
-        "merged": "O:\\AndroidStudioProjects\\AMap\\app\\build\\intermediates\\res\\merged\\debug\\drawable_amap_navi_lbs_sou9.png.flat",
-        "source": "O:\\AndroidStudioProjects\\AMap\\app\\src\\main\\res\\drawable\\amap_navi_lbs_sou9.png"
-    },
-    {
         "merged": "O:\\AndroidStudioProjects\\AMap\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_text_select_handle_left_mtrl_light.png.flat",
         "source": "E:\\Android\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\6f9c160f01baa4d2264506229d2995fb\\res\\drawable-hdpi-v4\\abc_text_select_handle_left_mtrl_light.png"
     },
@@ -1524,16 +1108,8 @@
         "source": "E:\\Android\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\6f9c160f01baa4d2264506229d2995fb\\res\\drawable-ldrtl-mdpi-v17\\abc_ic_menu_copy_mtrl_am_alpha.png"
     },
     {
-        "merged": "O:\\AndroidStudioProjects\\AMap\\app\\build\\intermediates\\res\\merged\\debug\\drawable_amap_navi_lbs_sou16.png.flat",
-        "source": "O:\\AndroidStudioProjects\\AMap\\app\\src\\main\\res\\drawable\\amap_navi_lbs_sou16.png"
-    },
-    {
         "merged": "O:\\AndroidStudioProjects\\AMap\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_ic_star_half_black_16dp.png.flat",
         "source": "E:\\Android\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\6f9c160f01baa4d2264506229d2995fb\\res\\drawable-xxhdpi-v4\\abc_ic_star_half_black_16dp.png"
-    },
-    {
-        "merged": "O:\\AndroidStudioProjects\\AMap\\app\\build\\intermediates\\res\\merged\\debug\\drawable_navi_lane_shape_bg_left.xml.flat",
-        "source": "O:\\AndroidStudioProjects\\AMap\\app\\src\\main\\res\\drawable\\navi_lane_shape_bg_left.xml"
     },
     {
         "merged": "O:\\AndroidStudioProjects\\AMap\\app\\build\\intermediates\\res\\merged\\debug\\anim_abc_slide_in_bottom.xml.flat",
@@ -1592,10 +1168,6 @@
         "source": "E:\\Android\\.gradle\\caches\\transforms-1\\files-1.1\\design-27.1.1.aar\\b52749b60a3cefce0ba14dc6344fd02b\\res\\layout\\design_bottom_navigation_item.xml"
     },
     {
-        "merged": "O:\\AndroidStudioProjects\\AMap\\app\\build\\intermediates\\res\\merged\\debug\\drawable_navi_end.png.flat",
-        "source": "O:\\AndroidStudioProjects\\AMap\\app\\src\\main\\res\\drawable\\navi_end.png"
-    },
-    {
         "merged": "O:\\AndroidStudioProjects\\AMap\\app\\build\\intermediates\\res\\merged\\debug\\layout_notification_template_lines_media.xml.flat",
         "source": "E:\\Android\\.gradle\\caches\\transforms-1\\files-1.1\\support-media-compat-27.1.1.aar\\df915b50e9ab74ee68a2353b383296cd\\res\\layout\\notification_template_lines_media.xml"
     },
@@ -1612,10 +1184,6 @@
         "source": "E:\\Android\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\6f9c160f01baa4d2264506229d2995fb\\res\\layout\\abc_activity_chooser_view.xml"
     },
     {
-        "merged": "O:\\AndroidStudioProjects\\AMap\\app\\build\\intermediates\\res\\merged\\debug\\drawable_landfront_1.png.flat",
-        "source": "O:\\AndroidStudioProjects\\AMap\\app\\src\\main\\res\\drawable\\landfront_1.png"
-    },
-    {
         "merged": "O:\\AndroidStudioProjects\\AMap\\app\\build\\intermediates\\res\\merged\\debug\\color_abc_hint_foreground_material_light.xml.flat",
         "source": "E:\\Android\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\6f9c160f01baa4d2264506229d2995fb\\res\\color\\abc_hint_foreground_material_light.xml"
     },
@@ -1628,20 +1196,8 @@
         "source": "E:\\Android\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\6f9c160f01baa4d2264506229d2995fb\\res\\drawable\\abc_ic_arrow_drop_right_black_24dp.xml"
     },
     {
-        "merged": "O:\\AndroidStudioProjects\\AMap\\app\\build\\intermediates\\res\\merged\\debug\\drawable_landback_2.png.flat",
-        "source": "O:\\AndroidStudioProjects\\AMap\\app\\src\\main\\res\\drawable\\landback_2.png"
-    },
-    {
-        "merged": "O:\\AndroidStudioProjects\\AMap\\app\\build\\intermediates\\res\\merged\\debug\\drawable_edog_light_right.png.flat",
-        "source": "O:\\AndroidStudioProjects\\AMap\\app\\src\\main\\res\\drawable\\edog_light_right.png"
-    },
-    {
         "merged": "O:\\AndroidStudioProjects\\AMap\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_scrubber_control_to_pressed_mtrl_005.png.flat",
         "source": "E:\\Android\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\6f9c160f01baa4d2264506229d2995fb\\res\\drawable-xxhdpi-v4\\abc_scrubber_control_to_pressed_mtrl_005.png"
-    },
-    {
-        "merged": "O:\\AndroidStudioProjects\\AMap\\app\\build\\intermediates\\res\\merged\\debug\\drawable_landfront_h1.png.flat",
-        "source": "O:\\AndroidStudioProjects\\AMap\\app\\src\\main\\res\\drawable\\landfront_h1.png"
     },
     {
         "merged": "O:\\AndroidStudioProjects\\AMap\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_cab_background_top_mtrl_alpha.9.png.flat",
@@ -1660,10 +1216,6 @@
         "source": "E:\\Android\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\6f9c160f01baa4d2264506229d2995fb\\res\\drawable-xhdpi-v4\\abc_text_select_handle_right_mtrl_dark.png"
     },
     {
-        "merged": "O:\\AndroidStudioProjects\\AMap\\app\\build\\intermediates\\res\\merged\\debug\\drawable_landback_0.png.flat",
-        "source": "O:\\AndroidStudioProjects\\AMap\\app\\src\\main\\res\\drawable\\landback_0.png"
-    },
-    {
         "merged": "O:\\AndroidStudioProjects\\AMap\\app\\build\\intermediates\\res\\merged\\debug\\layout_abc_select_dialog_material.xml.flat",
         "source": "E:\\Android\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\6f9c160f01baa4d2264506229d2995fb\\res\\layout\\abc_select_dialog_material.xml"
     },
@@ -1676,20 +1228,12 @@
         "source": "E:\\Android\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\6f9c160f01baa4d2264506229d2995fb\\res\\drawable-mdpi-v4\\abc_list_selector_disabled_holo_dark.9.png"
     },
     {
-        "merged": "O:\\AndroidStudioProjects\\AMap\\app\\build\\intermediates\\res\\merged\\debug\\drawable_lane20.png.flat",
-        "source": "O:\\AndroidStudioProjects\\AMap\\app\\src\\main\\res\\drawable\\lane20.png"
-    },
-    {
         "merged": "O:\\AndroidStudioProjects\\AMap\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_btn_switch_to_on_mtrl_00012.9.png.flat",
         "source": "E:\\Android\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\6f9c160f01baa4d2264506229d2995fb\\res\\drawable-xxhdpi-v4\\abc_btn_switch_to_on_mtrl_00012.9.png"
     },
     {
         "merged": "O:\\AndroidStudioProjects\\AMap\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_notification_bg_normal_pressed.9.png.flat",
         "source": "E:\\Android\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-27.1.1.aar\\044139be73193d502fae0a576eef912b\\res\\drawable-hdpi-v4\\notification_bg_normal_pressed.9.png"
-    },
-    {
-        "merged": "O:\\AndroidStudioProjects\\AMap\\app\\build\\intermediates\\res\\merged\\debug\\drawable_landfront_70.png.flat",
-        "source": "O:\\AndroidStudioProjects\\AMap\\app\\src\\main\\res\\drawable\\landfront_70.png"
     },
     {
         "merged": "O:\\AndroidStudioProjects\\AMap\\app\\build\\intermediates\\res\\merged\\debug\\color_abc_tint_spinner.xml.flat",
@@ -1736,10 +1280,6 @@
         "source": "E:\\Android\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\6f9c160f01baa4d2264506229d2995fb\\res\\drawable\\abc_list_selector_holo_dark.xml"
     },
     {
-        "merged": "O:\\AndroidStudioProjects\\AMap\\app\\build\\intermediates\\res\\merged\\debug\\drawable_custtexture_no.png.flat",
-        "source": "O:\\AndroidStudioProjects\\AMap\\app\\src\\main\\res\\drawable\\custtexture_no.png"
-    },
-    {
         "merged": "O:\\AndroidStudioProjects\\AMap\\app\\build\\intermediates\\res\\merged\\debug\\anim_design_bottom_sheet_slide_in.xml.flat",
         "source": "E:\\Android\\.gradle\\caches\\transforms-1\\files-1.1\\design-27.1.1.aar\\b52749b60a3cefce0ba14dc6344fd02b\\res\\anim\\design_bottom_sheet_slide_in.xml"
     },
@@ -1752,16 +1292,8 @@
         "source": "E:\\Android\\.gradle\\caches\\transforms-1\\files-1.1\\design-27.1.1.aar\\b52749b60a3cefce0ba14dc6344fd02b\\res\\layout\\design_navigation_item_subheader.xml"
     },
     {
-        "merged": "O:\\AndroidStudioProjects\\AMap\\app\\build\\intermediates\\res\\merged\\debug\\drawable_landback_c.png.flat",
-        "source": "O:\\AndroidStudioProjects\\AMap\\app\\src\\main\\res\\drawable\\landback_c.png"
-    },
-    {
         "merged": "O:\\AndroidStudioProjects\\AMap\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_text_select_handle_right_mtrl_light.png.flat",
         "source": "E:\\Android\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\6f9c160f01baa4d2264506229d2995fb\\res\\drawable-xhdpi-v4\\abc_text_select_handle_right_mtrl_light.png"
-    },
-    {
-        "merged": "O:\\AndroidStudioProjects\\AMap\\app\\build\\intermediates\\res\\merged\\debug\\drawable_landfront_63.png.flat",
-        "source": "O:\\AndroidStudioProjects\\AMap\\app\\src\\main\\res\\drawable\\landfront_63.png"
     },
     {
         "merged": "O:\\AndroidStudioProjects\\AMap\\app\\build\\intermediates\\res\\merged\\debug\\drawable_notification_tile_bg.xml.flat",
@@ -1780,14 +1312,6 @@
         "source": "E:\\Android\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\6f9c160f01baa4d2264506229d2995fb\\res\\drawable-mdpi-v4\\abc_text_select_handle_middle_mtrl_light.png"
     },
     {
-        "merged": "O:\\AndroidStudioProjects\\AMap\\app\\build\\intermediates\\res\\merged\\debug\\drawable_edog_unknown_left.png.flat",
-        "source": "O:\\AndroidStudioProjects\\AMap\\app\\src\\main\\res\\drawable\\edog_unknown_left.png"
-    },
-    {
-        "merged": "O:\\AndroidStudioProjects\\AMap\\app\\build\\intermediates\\res\\merged\\debug\\drawable_landfront_f5.png.flat",
-        "source": "O:\\AndroidStudioProjects\\AMap\\app\\src\\main\\res\\drawable\\landfront_f5.png"
-    },
-    {
         "merged": "O:\\AndroidStudioProjects\\AMap\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4_abc_switch_track_mtrl_alpha.9.png.flat",
         "source": "E:\\Android\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\6f9c160f01baa4d2264506229d2995fb\\res\\drawable-xxxhdpi-v4\\abc_switch_track_mtrl_alpha.9.png"
     },
@@ -1798,10 +1322,6 @@
     {
         "merged": "O:\\AndroidStudioProjects\\AMap\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_ic_star_half_black_48dp.png.flat",
         "source": "E:\\Android\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\6f9c160f01baa4d2264506229d2995fb\\res\\drawable-xhdpi-v4\\abc_ic_star_half_black_48dp.png"
-    },
-    {
-        "merged": "O:\\AndroidStudioProjects\\AMap\\app\\build\\intermediates\\res\\merged\\debug\\drawable_landback_j.png.flat",
-        "source": "O:\\AndroidStudioProjects\\AMap\\app\\src\\main\\res\\drawable\\landback_j.png"
     },
     {
         "merged": "O:\\AndroidStudioProjects\\AMap\\app\\build\\intermediates\\res\\merged\\debug\\drawable_abc_ic_menu_overflow_material.xml.flat",
@@ -1836,16 +1356,8 @@
         "source": "E:\\Android\\.gradle\\caches\\transforms-1\\files-1.1\\design-27.1.1.aar\\b52749b60a3cefce0ba14dc6344fd02b\\res\\layout\\design_text_input_password_icon.xml"
     },
     {
-        "merged": "O:\\AndroidStudioProjects\\AMap\\app\\build\\intermediates\\res\\merged\\debug\\drawable_lane1f.png.flat",
-        "source": "O:\\AndroidStudioProjects\\AMap\\app\\src\\main\\res\\drawable\\lane1f.png"
-    },
-    {
         "merged": "O:\\AndroidStudioProjects\\AMap\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_btn_switch_to_on_mtrl_00001.9.png.flat",
         "source": "E:\\Android\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\6f9c160f01baa4d2264506229d2995fb\\res\\drawable-xxhdpi-v4\\abc_btn_switch_to_on_mtrl_00001.9.png"
-    },
-    {
-        "merged": "O:\\AndroidStudioProjects\\AMap\\app\\build\\intermediates\\res\\merged\\debug\\drawable_landfront_5.png.flat",
-        "source": "O:\\AndroidStudioProjects\\AMap\\app\\src\\main\\res\\drawable\\landfront_5.png"
     },
     {
         "merged": "O:\\AndroidStudioProjects\\AMap\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_text_select_handle_right_mtrl_light.png.flat",
@@ -1860,14 +1372,6 @@
         "source": "E:\\Android\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\6f9c160f01baa4d2264506229d2995fb\\res\\layout\\abc_activity_chooser_view_list_item.xml"
     },
     {
-        "merged": "O:\\AndroidStudioProjects\\AMap\\app\\build\\intermediates\\res\\merged\\debug\\drawable_landback_6.png.flat",
-        "source": "O:\\AndroidStudioProjects\\AMap\\app\\src\\main\\res\\drawable\\landback_6.png"
-    },
-    {
-        "merged": "O:\\AndroidStudioProjects\\AMap\\app\\build\\intermediates\\res\\merged\\debug\\drawable_landfront_22.png.flat",
-        "source": "O:\\AndroidStudioProjects\\AMap\\app\\src\\main\\res\\drawable\\landfront_22.png"
-    },
-    {
         "merged": "O:\\AndroidStudioProjects\\AMap\\app\\build\\intermediates\\res\\merged\\debug\\drawable_lbs_navi_tmcbar_bg.9.png.flat",
         "source": "O:\\AndroidStudioProjects\\AMap\\app\\src\\main\\res\\drawable\\lbs_navi_tmcbar_bg.9.png"
     },
@@ -1878,10 +1382,6 @@
     {
         "merged": "O:\\AndroidStudioProjects\\AMap\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4_abc_ic_menu_copy_mtrl_am_alpha.png.flat",
         "source": "E:\\Android\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\6f9c160f01baa4d2264506229d2995fb\\res\\drawable-xxxhdpi-v4\\abc_ic_menu_copy_mtrl_am_alpha.png"
-    },
-    {
-        "merged": "O:\\AndroidStudioProjects\\AMap\\app\\build\\intermediates\\res\\merged\\debug\\drawable_landfront_j1.png.flat",
-        "source": "O:\\AndroidStudioProjects\\AMap\\app\\src\\main\\res\\drawable\\landfront_j1.png"
     },
     {
         "merged": "O:\\AndroidStudioProjects\\AMap\\app\\build\\intermediates\\res\\merged\\debug\\layout_abc_screen_content_include.xml.flat",
@@ -1908,16 +1408,8 @@
         "source": "E:\\Android\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\6f9c160f01baa4d2264506229d2995fb\\res\\drawable-hdpi-v4\\abc_ic_menu_share_mtrl_alpha.png"
     },
     {
-        "merged": "O:\\AndroidStudioProjects\\AMap\\app\\build\\intermediates\\res\\merged\\debug\\drawable_action7.png.flat",
-        "source": "O:\\AndroidStudioProjects\\AMap\\app\\src\\main\\res\\drawable\\action7.png"
-    },
-    {
         "merged": "O:\\AndroidStudioProjects\\AMap\\app\\build\\intermediates\\res\\merged\\debug\\drawable_lbs_navi_tmcbar_cursor.png.flat",
         "source": "O:\\AndroidStudioProjects\\AMap\\app\\src\\main\\res\\drawable\\lbs_navi_tmcbar_cursor.png"
-    },
-    {
-        "merged": "O:\\AndroidStudioProjects\\AMap\\app\\build\\intermediates\\res\\merged\\debug\\drawable_action11.png.flat",
-        "source": "O:\\AndroidStudioProjects\\AMap\\app\\src\\main\\res\\drawable\\action11.png"
     },
     {
         "merged": "O:\\AndroidStudioProjects\\AMap\\app\\build\\intermediates\\res\\merged\\debug\\color-v23_abc_tint_btn_checkable.xml.flat",
@@ -1932,24 +1424,8 @@
         "source": "O:\\AndroidStudioProjects\\AMap\\app\\src\\main\\res\\layout\\item_path.xml"
     },
     {
-        "merged": "O:\\AndroidStudioProjects\\AMap\\app\\build\\intermediates\\res\\merged\\debug\\drawable_custtexture_bad.png.flat",
-        "source": "O:\\AndroidStudioProjects\\AMap\\app\\src\\main\\res\\drawable\\custtexture_bad.png"
-    },
-    {
         "merged": "O:\\AndroidStudioProjects\\AMap\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_text_select_handle_left_mtrl_light.png.flat",
         "source": "E:\\Android\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\6f9c160f01baa4d2264506229d2995fb\\res\\drawable-xxhdpi-v4\\abc_text_select_handle_left_mtrl_light.png"
-    },
-    {
-        "merged": "O:\\AndroidStudioProjects\\AMap\\app\\build\\intermediates\\res\\merged\\debug\\drawable_landfront_90.png.flat",
-        "source": "O:\\AndroidStudioProjects\\AMap\\app\\src\\main\\res\\drawable\\landfront_90.png"
-    },
-    {
-        "merged": "O:\\AndroidStudioProjects\\AMap\\app\\build\\intermediates\\res\\merged\\debug\\drawable_edog_bus_lane_left.png.flat",
-        "source": "O:\\AndroidStudioProjects\\AMap\\app\\src\\main\\res\\drawable\\edog_bus_lane_left.png"
-    },
-    {
-        "merged": "O:\\AndroidStudioProjects\\AMap\\app\\build\\intermediates\\res\\merged\\debug\\drawable_edog_emergency_left.png.flat",
-        "source": "O:\\AndroidStudioProjects\\AMap\\app\\src\\main\\res\\drawable\\edog_emergency_left.png"
     },
     {
         "merged": "O:\\AndroidStudioProjects\\AMap\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_text_select_handle_middle_mtrl_light.png.flat",
@@ -1984,14 +1460,6 @@
         "source": "O:\\AndroidStudioProjects\\AMap\\app\\src\\main\\res\\drawable\\shape.xml"
     },
     {
-        "merged": "O:\\AndroidStudioProjects\\AMap\\app\\build\\intermediates\\res\\merged\\debug\\drawable_amap_navi_lbs_sou5.png.flat",
-        "source": "O:\\AndroidStudioProjects\\AMap\\app\\src\\main\\res\\drawable\\amap_navi_lbs_sou5.png"
-    },
-    {
-        "merged": "O:\\AndroidStudioProjects\\AMap\\app\\build\\intermediates\\res\\merged\\debug\\drawable_landfront_f0.png.flat",
-        "source": "O:\\AndroidStudioProjects\\AMap\\app\\src\\main\\res\\drawable\\landfront_f0.png"
-    },
-    {
         "merged": "O:\\AndroidStudioProjects\\AMap\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_ic_menu_copy_mtrl_am_alpha.png.flat",
         "source": "E:\\Android\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\6f9c160f01baa4d2264506229d2995fb\\res\\drawable-xxhdpi-v4\\abc_ic_menu_copy_mtrl_am_alpha.png"
     },
@@ -2010,10 +1478,6 @@
     {
         "merged": "O:\\AndroidStudioProjects\\AMap\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_textfield_default_mtrl_alpha.9.png.flat",
         "source": "E:\\Android\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\6f9c160f01baa4d2264506229d2995fb\\res\\drawable-mdpi-v4\\abc_textfield_default_mtrl_alpha.9.png"
-    },
-    {
-        "merged": "O:\\AndroidStudioProjects\\AMap\\app\\build\\intermediates\\res\\merged\\debug\\drawable_landback_f.png.flat",
-        "source": "O:\\AndroidStudioProjects\\AMap\\app\\src\\main\\res\\drawable\\landback_f.png"
     },
     {
         "merged": "O:\\AndroidStudioProjects\\AMap\\app\\build\\intermediates\\res\\merged\\debug\\layout_design_layout_tab_text.xml.flat",
@@ -2038,10 +1502,6 @@
     {
         "merged": "O:\\AndroidStudioProjects\\AMap\\app\\build\\intermediates\\res\\merged\\debug\\color_abc_primary_text_disable_only_material_light.xml.flat",
         "source": "E:\\Android\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\6f9c160f01baa4d2264506229d2995fb\\res\\color\\abc_primary_text_disable_only_material_light.xml"
-    },
-    {
-        "merged": "O:\\AndroidStudioProjects\\AMap\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_index.xml.flat",
-        "source": "O:\\AndroidStudioProjects\\AMap\\app\\src\\main\\res\\layout\\activity_index.xml"
     },
     {
         "merged": "O:\\AndroidStudioProjects\\AMap\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldrtl-xhdpi-v17_abc_spinner_mtrl_am_alpha.9.png.flat",
@@ -2080,24 +1540,12 @@
         "source": "E:\\Android\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\6f9c160f01baa4d2264506229d2995fb\\res\\drawable-mdpi-v4\\abc_list_longpressed_holo.9.png"
     },
     {
-        "merged": "O:\\AndroidStudioProjects\\AMap\\app\\build\\intermediates\\res\\merged\\debug\\drawable_amap_navi_lbs_sou11.png.flat",
-        "source": "O:\\AndroidStudioProjects\\AMap\\app\\src\\main\\res\\drawable\\amap_navi_lbs_sou11.png"
-    },
-    {
         "merged": "O:\\AndroidStudioProjects\\AMap\\app\\build\\intermediates\\res\\merged\\debug\\drawable_abc_edit_text_material.xml.flat",
         "source": "E:\\Android\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\6f9c160f01baa4d2264506229d2995fb\\res\\drawable\\abc_edit_text_material.xml"
     },
     {
-        "merged": "O:\\AndroidStudioProjects\\AMap\\app\\build\\intermediates\\res\\merged\\debug\\drawable_lane8f.png.flat",
-        "source": "O:\\AndroidStudioProjects\\AMap\\app\\src\\main\\res\\drawable\\lane8f.png"
-    },
-    {
         "merged": "O:\\AndroidStudioProjects\\AMap\\app\\build\\intermediates\\res\\merged\\debug\\drawable_side_nav_bar.xml.flat",
         "source": "O:\\AndroidStudioProjects\\AMap\\app\\src\\main\\res\\drawable\\side_nav_bar.xml"
-    },
-    {
-        "merged": "O:\\AndroidStudioProjects\\AMap\\app\\build\\intermediates\\res\\merged\\debug\\drawable_landfront_95.png.flat",
-        "source": "O:\\AndroidStudioProjects\\AMap\\app\\src\\main\\res\\drawable\\landfront_95.png"
     },
     {
         "merged": "O:\\AndroidStudioProjects\\AMap\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_scrubber_control_off_mtrl_alpha.png.flat",
@@ -2108,28 +1556,12 @@
         "source": "E:\\Android\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-27.1.1.aar\\044139be73193d502fae0a576eef912b\\res\\drawable-hdpi-v4\\notification_bg_normal.9.png"
     },
     {
-        "merged": "O:\\AndroidStudioProjects\\AMap\\app\\build\\intermediates\\res\\merged\\debug\\drawable_landfront_a0.png.flat",
-        "source": "O:\\AndroidStudioProjects\\AMap\\app\\src\\main\\res\\drawable\\landfront_a0.png"
-    },
-    {
         "merged": "O:\\AndroidStudioProjects\\AMap\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldrtl-xxxhdpi-v17_abc_ic_menu_copy_mtrl_am_alpha.png.flat",
         "source": "E:\\Android\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\6f9c160f01baa4d2264506229d2995fb\\res\\drawable-ldrtl-xxxhdpi-v17\\abc_ic_menu_copy_mtrl_am_alpha.png"
     },
     {
         "merged": "O:\\AndroidStudioProjects\\AMap\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_btn_radio_to_on_mtrl_015.png.flat",
         "source": "E:\\Android\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\6f9c160f01baa4d2264506229d2995fb\\res\\drawable-hdpi-v4\\abc_btn_radio_to_on_mtrl_015.png"
-    },
-    {
-        "merged": "O:\\AndroidStudioProjects\\AMap\\app\\build\\intermediates\\res\\merged\\debug\\drawable_landback_g.png.flat",
-        "source": "O:\\AndroidStudioProjects\\AMap\\app\\src\\main\\res\\drawable\\landback_g.png"
-    },
-    {
-        "merged": "O:\\AndroidStudioProjects\\AMap\\app\\build\\intermediates\\res\\merged\\debug\\drawable_way.png.flat",
-        "source": "O:\\AndroidStudioProjects\\AMap\\app\\src\\main\\res\\drawable\\way.png"
-    },
-    {
-        "merged": "O:\\AndroidStudioProjects\\AMap\\app\\build\\intermediates\\res\\merged\\debug\\drawable_landfront_cc.png.flat",
-        "source": "O:\\AndroidStudioProjects\\AMap\\app\\src\\main\\res\\drawable\\landfront_cc.png"
     },
     {
         "merged": "O:\\AndroidStudioProjects\\AMap\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_notification_bg_normal_pressed.9.png.flat",
@@ -2140,20 +1572,12 @@
         "source": "E:\\Android\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\6f9c160f01baa4d2264506229d2995fb\\res\\drawable-xxhdpi-v4\\abc_spinner_mtrl_am_alpha.9.png"
     },
     {
-        "merged": "O:\\AndroidStudioProjects\\AMap\\app\\build\\intermediates\\res\\merged\\debug\\drawable_action2.png.flat",
-        "source": "O:\\AndroidStudioProjects\\AMap\\app\\src\\main\\res\\drawable\\action2.png"
-    },
-    {
         "merged": "O:\\AndroidStudioProjects\\AMap\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_list_selector_disabled_holo_dark.9.png.flat",
         "source": "E:\\Android\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\6f9c160f01baa4d2264506229d2995fb\\res\\drawable-hdpi-v4\\abc_list_selector_disabled_holo_dark.9.png"
     },
     {
         "merged": "O:\\AndroidStudioProjects\\AMap\\app\\build\\intermediates\\res\\merged\\debug\\layout_search_header_layout.xml.flat",
         "source": "O:\\AndroidStudioProjects\\AMap\\app\\src\\main\\res\\layout\\search_header_layout.xml"
-    },
-    {
-        "merged": "O:\\AndroidStudioProjects\\AMap\\app\\build\\intermediates\\res\\merged\\debug\\drawable_lanedf.png.flat",
-        "source": "O:\\AndroidStudioProjects\\AMap\\app\\src\\main\\res\\drawable\\lanedf.png"
     },
     {
         "merged": "O:\\AndroidStudioProjects\\AMap\\app\\build\\intermediates\\res\\merged\\debug\\drawable_black_click_selector.xml.flat",
@@ -2196,20 +1620,12 @@
         "source": "O:\\AndroidStudioProjects\\AMap\\app\\src\\main\\res\\layout\\activity_basic_navi.xml"
     },
     {
-        "merged": "O:\\AndroidStudioProjects\\AMap\\app\\build\\intermediates\\res\\merged\\debug\\drawable_action12.png.flat",
-        "source": "O:\\AndroidStudioProjects\\AMap\\app\\src\\main\\res\\drawable\\action12.png"
-    },
-    {
         "merged": "O:\\AndroidStudioProjects\\AMap\\app\\build\\intermediates\\res\\merged\\debug\\color_switch_thumb_material_light.xml.flat",
         "source": "E:\\Android\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\6f9c160f01baa4d2264506229d2995fb\\res\\color\\switch_thumb_material_light.xml"
     },
     {
         "merged": "O:\\AndroidStudioProjects\\AMap\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_textfield_search_activated_mtrl_alpha.9.png.flat",
         "source": "E:\\Android\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\6f9c160f01baa4d2264506229d2995fb\\res\\drawable-xhdpi-v4\\abc_textfield_search_activated_mtrl_alpha.9.png"
-    },
-    {
-        "merged": "O:\\AndroidStudioProjects\\AMap\\app\\build\\intermediates\\res\\merged\\debug\\drawable_landback_h.png.flat",
-        "source": "O:\\AndroidStudioProjects\\AMap\\app\\src\\main\\res\\drawable\\landback_h.png"
     },
     {
         "merged": "O:\\AndroidStudioProjects\\AMap\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21_avd_hide_password.xml.flat",
@@ -2228,20 +1644,12 @@
         "source": "E:\\Android\\.gradle\\caches\\transforms-1\\files-1.1\\design-27.1.1.aar\\b52749b60a3cefce0ba14dc6344fd02b\\res\\drawable\\design_bottom_navigation_item_background.xml"
     },
     {
-        "merged": "O:\\AndroidStudioProjects\\AMap\\app\\build\\intermediates\\res\\merged\\debug\\drawable_custtexture_aolr.png.flat",
-        "source": "O:\\AndroidStudioProjects\\AMap\\app\\src\\main\\res\\drawable\\custtexture_aolr.png"
-    },
-    {
         "merged": "O:\\AndroidStudioProjects\\AMap\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_ic_commit_search_api_mtrl_alpha.png.flat",
         "source": "E:\\Android\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\6f9c160f01baa4d2264506229d2995fb\\res\\drawable-xhdpi-v4\\abc_ic_commit_search_api_mtrl_alpha.png"
     },
     {
         "merged": "O:\\AndroidStudioProjects\\AMap\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_text_select_handle_left_mtrl_dark.png.flat",
         "source": "E:\\Android\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\6f9c160f01baa4d2264506229d2995fb\\res\\drawable-mdpi-v4\\abc_text_select_handle_left_mtrl_dark.png"
-    },
-    {
-        "merged": "O:\\AndroidStudioProjects\\AMap\\app\\build\\intermediates\\res\\merged\\debug\\drawable_action_start.png.flat",
-        "source": "O:\\AndroidStudioProjects\\AMap\\app\\src\\main\\res\\drawable\\action_start.png"
     },
     {
         "merged": "O:\\AndroidStudioProjects\\AMap\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_notify_panel_notification_icon_bg.png.flat",
@@ -2252,28 +1660,12 @@
         "source": "E:\\Android\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\6f9c160f01baa4d2264506229d2995fb\\res\\drawable-hdpi-v4\\abc_ic_menu_selectall_mtrl_alpha.png"
     },
     {
-        "merged": "O:\\AndroidStudioProjects\\AMap\\app\\build\\intermediates\\res\\merged\\debug\\drawable_landfront_hh.png.flat",
-        "source": "O:\\AndroidStudioProjects\\AMap\\app\\src\\main\\res\\drawable\\landfront_hh.png"
-    },
-    {
-        "merged": "O:\\AndroidStudioProjects\\AMap\\app\\build\\intermediates\\res\\merged\\debug\\drawable_landfront_f1.png.flat",
-        "source": "O:\\AndroidStudioProjects\\AMap\\app\\src\\main\\res\\drawable\\landfront_f1.png"
-    },
-    {
-        "merged": "O:\\AndroidStudioProjects\\AMap\\app\\build\\intermediates\\res\\merged\\debug\\drawable_amap_navi_lbs_sou6.png.flat",
-        "source": "O:\\AndroidStudioProjects\\AMap\\app\\src\\main\\res\\drawable\\amap_navi_lbs_sou6.png"
-    },
-    {
         "merged": "O:\\AndroidStudioProjects\\AMap\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4_abc_ic_star_black_36dp.png.flat",
         "source": "E:\\Android\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\6f9c160f01baa4d2264506229d2995fb\\res\\drawable-xxxhdpi-v4\\abc_ic_star_black_36dp.png"
     },
     {
         "merged": "O:\\AndroidStudioProjects\\AMap\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_popup_background_mtrl_mult.9.png.flat",
         "source": "E:\\Android\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\6f9c160f01baa4d2264506229d2995fb\\res\\drawable-xxhdpi-v4\\abc_popup_background_mtrl_mult.9.png"
-    },
-    {
-        "merged": "O:\\AndroidStudioProjects\\AMap\\app\\build\\intermediates\\res\\merged\\debug\\drawable_amap_navi_lbs_sou20.png.flat",
-        "source": "O:\\AndroidStudioProjects\\AMap\\app\\src\\main\\res\\drawable\\amap_navi_lbs_sou20.png"
     },
     {
         "merged": "O:\\AndroidStudioProjects\\AMap\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_list_selector_disabled_holo_light.9.png.flat",
@@ -2292,16 +1684,8 @@
         "source": "E:\\Android\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\6f9c160f01baa4d2264506229d2995fb\\res\\drawable-hdpi-v4\\abc_btn_check_to_on_mtrl_000.png"
     },
     {
-        "merged": "O:\\AndroidStudioProjects\\AMap\\app\\build\\intermediates\\res\\merged\\debug\\drawable_edog_emergency_right.png.flat",
-        "source": "O:\\AndroidStudioProjects\\AMap\\app\\src\\main\\res\\drawable\\edog_emergency_right.png"
-    },
-    {
         "merged": "O:\\AndroidStudioProjects\\AMap\\app\\build\\intermediates\\res\\merged\\debug\\drawable_route_search.png.flat",
         "source": "O:\\AndroidStudioProjects\\AMap\\app\\src\\main\\res\\drawable\\route_search.png"
-    },
-    {
-        "merged": "O:\\AndroidStudioProjects\\AMap\\app\\build\\intermediates\\res\\merged\\debug\\drawable_amap_navi_lbs_sou10.png.flat",
-        "source": "O:\\AndroidStudioProjects\\AMap\\app\\src\\main\\res\\drawable\\amap_navi_lbs_sou10.png"
     },
     {
         "merged": "O:\\AndroidStudioProjects\\AMap\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_btn_radio_to_on_mtrl_015.png.flat",
@@ -2310,22 +1694,6 @@
     {
         "merged": "O:\\AndroidStudioProjects\\AMap\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_list_divider_mtrl_alpha.9.png.flat",
         "source": "E:\\Android\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\6f9c160f01baa4d2264506229d2995fb\\res\\drawable-xhdpi-v4\\abc_list_divider_mtrl_alpha.9.png"
-    },
-    {
-        "merged": "O:\\AndroidStudioProjects\\AMap\\app\\build\\intermediates\\res\\merged\\debug\\drawable_landfront_dd.png.flat",
-        "source": "O:\\AndroidStudioProjects\\AMap\\app\\src\\main\\res\\drawable\\landfront_dd.png"
-    },
-    {
-        "merged": "O:\\AndroidStudioProjects\\AMap\\app\\build\\intermediates\\res\\merged\\debug\\drawable_start.png.flat",
-        "source": "O:\\AndroidStudioProjects\\AMap\\app\\src\\main\\res\\drawable\\start.png"
-    },
-    {
-        "merged": "O:\\AndroidStudioProjects\\AMap\\app\\build\\intermediates\\res\\merged\\debug\\drawable_action3.png.flat",
-        "source": "O:\\AndroidStudioProjects\\AMap\\app\\src\\main\\res\\drawable\\action3.png"
-    },
-    {
-        "merged": "O:\\AndroidStudioProjects\\AMap\\app\\build\\intermediates\\res\\merged\\debug\\drawable_navi_way.png.flat",
-        "source": "O:\\AndroidStudioProjects\\AMap\\app\\src\\main\\res\\drawable\\navi_way.png"
     },
     {
         "merged": "O:\\AndroidStudioProjects\\AMap\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21_abc_btn_colored_material.xml.flat",
@@ -2340,10 +1708,6 @@
         "source": "O:\\AndroidStudioProjects\\AMap\\app\\src\\main\\res\\drawable\\drive.png"
     },
     {
-        "merged": "O:\\AndroidStudioProjects\\AMap\\app\\build\\intermediates\\res\\merged\\debug\\drawable_landfront_00.png.flat",
-        "source": "O:\\AndroidStudioProjects\\AMap\\app\\src\\main\\res\\drawable\\landfront_00.png"
-    },
-    {
         "merged": "O:\\AndroidStudioProjects\\AMap\\app\\build\\intermediates\\res\\merged\\debug\\color_abc_search_url_text.xml.flat",
         "source": "E:\\Android\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\6f9c160f01baa4d2264506229d2995fb\\res\\color\\abc_search_url_text.xml"
     },
@@ -2356,10 +1720,6 @@
         "source": "E:\\Android\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\6f9c160f01baa4d2264506229d2995fb\\res\\drawable\\abc_cab_background_top_material.xml"
     },
     {
-        "merged": "O:\\AndroidStudioProjects\\AMap\\app\\build\\intermediates\\res\\merged\\debug\\drawable_landback_e.png.flat",
-        "source": "O:\\AndroidStudioProjects\\AMap\\app\\src\\main\\res\\drawable\\landback_e.png"
-    },
-    {
         "merged": "O:\\AndroidStudioProjects\\AMap\\app\\build\\intermediates\\res\\merged\\debug\\drawable_abc_seekbar_thumb_material.xml.flat",
         "source": "E:\\Android\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\6f9c160f01baa4d2264506229d2995fb\\res\\drawable\\abc_seekbar_thumb_material.xml"
     },
@@ -2368,24 +1728,12 @@
         "source": "E:\\Android\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\6f9c160f01baa4d2264506229d2995fb\\res\\drawable\\abc_list_selector_holo_light.xml"
     },
     {
-        "merged": "O:\\AndroidStudioProjects\\AMap\\app\\build\\intermediates\\res\\merged\\debug\\drawable_action14.png.flat",
-        "source": "O:\\AndroidStudioProjects\\AMap\\app\\src\\main\\res\\drawable\\action14.png"
-    },
-    {
         "merged": "O:\\AndroidStudioProjects\\AMap\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_ic_star_black_16dp.png.flat",
         "source": "E:\\Android\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\6f9c160f01baa4d2264506229d2995fb\\res\\drawable-mdpi-v4\\abc_ic_star_black_16dp.png"
     },
     {
-        "merged": "O:\\AndroidStudioProjects\\AMap\\app\\build\\intermediates\\res\\merged\\debug\\drawable_landfront_77.png.flat",
-        "source": "O:\\AndroidStudioProjects\\AMap\\app\\src\\main\\res\\drawable\\landfront_77.png"
-    },
-    {
         "merged": "O:\\AndroidStudioProjects\\AMap\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_tab_indicator_mtrl_alpha.9.png.flat",
         "source": "E:\\Android\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\6f9c160f01baa4d2264506229d2995fb\\res\\drawable-mdpi-v4\\abc_tab_indicator_mtrl_alpha.9.png"
-    },
-    {
-        "merged": "O:\\AndroidStudioProjects\\AMap\\app\\build\\intermediates\\res\\merged\\debug\\drawable_landfront_e1.png.flat",
-        "source": "O:\\AndroidStudioProjects\\AMap\\app\\src\\main\\res\\drawable\\landfront_e1.png"
     },
     {
         "merged": "O:\\AndroidStudioProjects\\AMap\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_textfield_search_activated_mtrl_alpha.9.png.flat",
@@ -2400,20 +1748,8 @@
         "source": "E:\\Android\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\6f9c160f01baa4d2264506229d2995fb\\res\\drawable-hdpi-v4\\abc_ic_star_half_black_36dp.png"
     },
     {
-        "merged": "O:\\AndroidStudioProjects\\AMap\\app\\build\\intermediates\\res\\merged\\debug\\drawable_laneef.png.flat",
-        "source": "O:\\AndroidStudioProjects\\AMap\\app\\src\\main\\res\\drawable\\laneef.png"
-    },
-    {
         "merged": "O:\\AndroidStudioProjects\\AMap\\app\\build\\intermediates\\res\\merged\\debug\\layout_abc_action_mode_bar.xml.flat",
         "source": "E:\\Android\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\6f9c160f01baa4d2264506229d2995fb\\res\\layout\\abc_action_mode_bar.xml"
-    },
-    {
-        "merged": "O:\\AndroidStudioProjects\\AMap\\app\\build\\intermediates\\res\\merged\\debug\\drawable_landfront_b1.png.flat",
-        "source": "O:\\AndroidStudioProjects\\AMap\\app\\src\\main\\res\\drawable\\landfront_b1.png"
-    },
-    {
-        "merged": "O:\\AndroidStudioProjects\\AMap\\app\\build\\intermediates\\res\\merged\\debug\\drawable_amap_navi_lbs_sou8.png.flat",
-        "source": "O:\\AndroidStudioProjects\\AMap\\app\\src\\main\\res\\drawable\\amap_navi_lbs_sou8.png"
     },
     {
         "merged": "O:\\AndroidStudioProjects\\AMap\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_list_divider_mtrl_alpha.9.png.flat",
@@ -2432,28 +1768,12 @@
         "source": "E:\\Android\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\6f9c160f01baa4d2264506229d2995fb\\res\\layout\\select_dialog_singlechoice_material.xml"
     },
     {
-        "merged": "O:\\AndroidStudioProjects\\AMap\\app\\build\\intermediates\\res\\merged\\debug\\drawable_lane0f.png.flat",
-        "source": "O:\\AndroidStudioProjects\\AMap\\app\\src\\main\\res\\drawable\\lane0f.png"
-    },
-    {
-        "merged": "O:\\AndroidStudioProjects\\AMap\\app\\build\\intermediates\\res\\merged\\debug\\drawable_action4.png.flat",
-        "source": "O:\\AndroidStudioProjects\\AMap\\app\\src\\main\\res\\drawable\\action4.png"
-    },
-    {
         "merged": "O:\\AndroidStudioProjects\\AMap\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_list_selector_disabled_holo_light.9.png.flat",
         "source": "E:\\Android\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\6f9c160f01baa4d2264506229d2995fb\\res\\drawable-mdpi-v4\\abc_list_selector_disabled_holo_light.9.png"
     },
     {
-        "merged": "O:\\AndroidStudioProjects\\AMap\\app\\build\\intermediates\\res\\merged\\debug\\drawable_landback_8.png.flat",
-        "source": "O:\\AndroidStudioProjects\\AMap\\app\\src\\main\\res\\drawable\\landback_8.png"
-    },
-    {
         "merged": "O:\\AndroidStudioProjects\\AMap\\app\\build\\intermediates\\res\\merged\\debug\\drawable_about.png.flat",
         "source": "O:\\AndroidStudioProjects\\AMap\\app\\src\\main\\res\\drawable\\about.png"
-    },
-    {
-        "merged": "O:\\AndroidStudioProjects\\AMap\\app\\build\\intermediates\\res\\merged\\debug\\drawable_action13.png.flat",
-        "source": "O:\\AndroidStudioProjects\\AMap\\app\\src\\main\\res\\drawable\\action13.png"
     },
     {
         "merged": "O:\\AndroidStudioProjects\\AMap\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_notification_bg_low_normal.9.png.flat",
@@ -2476,28 +1796,12 @@
         "source": "E:\\Android\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\6f9c160f01baa4d2264506229d2995fb\\res\\drawable-xxxhdpi-v4\\abc_ic_menu_selectall_mtrl_alpha.png"
     },
     {
-        "merged": "O:\\AndroidStudioProjects\\AMap\\app\\build\\intermediates\\res\\merged\\debug\\drawable_landfront_40.png.flat",
-        "source": "O:\\AndroidStudioProjects\\AMap\\app\\src\\main\\res\\drawable\\landfront_40.png"
-    },
-    {
-        "merged": "O:\\AndroidStudioProjects\\AMap\\app\\build\\intermediates\\res\\merged\\debug\\drawable_amap_navi_lbs_sou7.png.flat",
-        "source": "O:\\AndroidStudioProjects\\AMap\\app\\src\\main\\res\\drawable\\amap_navi_lbs_sou7.png"
-    },
-    {
         "merged": "O:\\AndroidStudioProjects\\AMap\\app\\build\\intermediates\\res\\merged\\debug\\color-v23_abc_tint_switch_track.xml.flat",
         "source": "E:\\Android\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\6f9c160f01baa4d2264506229d2995fb\\res\\color-v23\\abc_tint_switch_track.xml"
     },
     {
         "merged": "O:\\AndroidStudioProjects\\AMap\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_text_select_handle_left_mtrl_dark.png.flat",
         "source": "E:\\Android\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\6f9c160f01baa4d2264506229d2995fb\\res\\drawable-hdpi-v4\\abc_text_select_handle_left_mtrl_dark.png"
-    },
-    {
-        "merged": "O:\\AndroidStudioProjects\\AMap\\app\\build\\intermediates\\res\\merged\\debug\\drawable_navi_arrow_leftline.png.flat",
-        "source": "O:\\AndroidStudioProjects\\AMap\\app\\src\\main\\res\\drawable\\navi_arrow_leftline.png"
-    },
-    {
-        "merged": "O:\\AndroidStudioProjects\\AMap\\app\\build\\intermediates\\res\\merged\\debug\\drawable_edog_camera_left.png.flat",
-        "source": "O:\\AndroidStudioProjects\\AMap\\app\\src\\main\\res\\drawable\\edog_camera_left.png"
     },
     {
         "merged": "O:\\AndroidStudioProjects\\AMap\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_textfield_search_default_mtrl_alpha.9.png.flat",
@@ -2512,22 +1816,6 @@
         "source": "E:\\Android\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\6f9c160f01baa4d2264506229d2995fb\\res\\drawable-xhdpi-v4\\abc_ic_menu_selectall_mtrl_alpha.png"
     },
     {
-        "merged": "O:\\AndroidStudioProjects\\AMap\\app\\build\\intermediates\\res\\merged\\debug\\drawable_action5.png.flat",
-        "source": "O:\\AndroidStudioProjects\\AMap\\app\\src\\main\\res\\drawable\\action5.png"
-    },
-    {
-        "merged": "O:\\AndroidStudioProjects\\AMap\\app\\build\\intermediates\\res\\merged\\debug\\drawable_lbs_custtexture_dott_gray.png.flat",
-        "source": "O:\\AndroidStudioProjects\\AMap\\app\\src\\main\\res\\drawable\\lbs_custtexture_dott_gray.png"
-    },
-    {
-        "merged": "O:\\AndroidStudioProjects\\AMap\\app\\build\\intermediates\\res\\merged\\debug\\drawable_cameraicon.png.flat",
-        "source": "O:\\AndroidStudioProjects\\AMap\\app\\src\\main\\res\\drawable\\cameraicon.png"
-    },
-    {
-        "merged": "O:\\AndroidStudioProjects\\AMap\\app\\build\\intermediates\\res\\merged\\debug\\drawable_landback_9.png.flat",
-        "source": "O:\\AndroidStudioProjects\\AMap\\app\\src\\main\\res\\drawable\\landback_9.png"
-    },
-    {
         "merged": "O:\\AndroidStudioProjects\\AMap\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_menu_hardkey_panel_mtrl_mult.9.png.flat",
         "source": "E:\\Android\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\6f9c160f01baa4d2264506229d2995fb\\res\\drawable-xxhdpi-v4\\abc_menu_hardkey_panel_mtrl_mult.9.png"
     },
@@ -2538,10 +1826,6 @@
     {
         "merged": "O:\\AndroidStudioProjects\\AMap\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_ic_star_black_48dp.png.flat",
         "source": "E:\\Android\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\6f9c160f01baa4d2264506229d2995fb\\res\\drawable-mdpi-v4\\abc_ic_star_black_48dp.png"
-    },
-    {
-        "merged": "O:\\AndroidStudioProjects\\AMap\\app\\build\\intermediates\\res\\merged\\debug\\drawable_laneaf.png.flat",
-        "source": "O:\\AndroidStudioProjects\\AMap\\app\\src\\main\\res\\drawable\\laneaf.png"
     },
     {
         "merged": "O:\\AndroidStudioProjects\\AMap\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_launcher.png.flat",
@@ -2556,20 +1840,12 @@
         "source": "E:\\Android\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\6f9c160f01baa4d2264506229d2995fb\\res\\drawable-xxhdpi-v4\\abc_textfield_search_activated_mtrl_alpha.9.png"
     },
     {
-        "merged": "O:\\AndroidStudioProjects\\AMap\\app\\build\\intermediates\\res\\merged\\debug\\drawable_up.png.flat",
-        "source": "O:\\AndroidStudioProjects\\AMap\\app\\src\\main\\res\\drawable\\up.png"
-    },
-    {
         "merged": "O:\\AndroidStudioProjects\\AMap\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_textfield_search_default_mtrl_alpha.9.png.flat",
         "source": "E:\\Android\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\6f9c160f01baa4d2264506229d2995fb\\res\\drawable-xxhdpi-v4\\abc_textfield_search_default_mtrl_alpha.9.png"
     },
     {
         "merged": "O:\\AndroidStudioProjects\\AMap\\app\\build\\intermediates\\res\\merged\\debug\\drawable_default_generalsearch_sugg_searchicon_normal.png.flat",
         "source": "O:\\AndroidStudioProjects\\AMap\\app\\src\\main\\res\\drawable\\default_generalsearch_sugg_searchicon_normal.png"
-    },
-    {
-        "merged": "O:\\AndroidStudioProjects\\AMap\\app\\build\\intermediates\\res\\merged\\debug\\drawable_landfront_11.png.flat",
-        "source": "O:\\AndroidStudioProjects\\AMap\\app\\src\\main\\res\\drawable\\landfront_11.png"
     },
     {
         "merged": "O:\\AndroidStudioProjects\\AMap\\app\\build\\intermediates\\res\\merged\\debug\\color_abc_background_cache_hint_selector_material_dark.xml.flat",
@@ -2588,24 +1864,12 @@
         "source": "E:\\Android\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\6f9c160f01baa4d2264506229d2995fb\\res\\drawable-mdpi-v4\\abc_list_pressed_holo_dark.9.png"
     },
     {
-        "merged": "O:\\AndroidStudioProjects\\AMap\\app\\build\\intermediates\\res\\merged\\debug\\drawable_landfront_i0.png.flat",
-        "source": "O:\\AndroidStudioProjects\\AMap\\app\\src\\main\\res\\drawable\\landfront_i0.png"
-    },
-    {
-        "merged": "O:\\AndroidStudioProjects\\AMap\\app\\build\\intermediates\\res\\merged\\debug\\drawable_lane4f.png.flat",
-        "source": "O:\\AndroidStudioProjects\\AMap\\app\\src\\main\\res\\drawable\\lane4f.png"
-    },
-    {
         "merged": "O:\\AndroidStudioProjects\\AMap\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_ic_menu_cut_mtrl_alpha.png.flat",
         "source": "E:\\Android\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\6f9c160f01baa4d2264506229d2995fb\\res\\drawable-mdpi-v4\\abc_ic_menu_cut_mtrl_alpha.png"
     },
     {
         "merged": "O:\\AndroidStudioProjects\\AMap\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_notification_bg_normal.9.png.flat",
         "source": "E:\\Android\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-27.1.1.aar\\044139be73193d502fae0a576eef912b\\res\\drawable-xhdpi-v4\\notification_bg_normal.9.png"
-    },
-    {
-        "merged": "O:\\AndroidStudioProjects\\AMap\\app\\build\\intermediates\\res\\merged\\debug\\drawable_custtexture_green.png.flat",
-        "source": "O:\\AndroidStudioProjects\\AMap\\app\\src\\main\\res\\drawable\\custtexture_green.png"
     },
     {
         "merged": "O:\\AndroidStudioProjects\\AMap\\app\\build\\intermediates\\res\\merged\\debug\\drawable_icon.png.flat",
@@ -2618,14 +1882,6 @@
     {
         "merged": "O:\\AndroidStudioProjects\\AMap\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_btn_switch_to_on_mtrl_00012.9.png.flat",
         "source": "E:\\Android\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\6f9c160f01baa4d2264506229d2995fb\\res\\drawable-xhdpi-v4\\abc_btn_switch_to_on_mtrl_00012.9.png"
-    },
-    {
-        "merged": "O:\\AndroidStudioProjects\\AMap\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_rest_calculate.xml.flat",
-        "source": "O:\\AndroidStudioProjects\\AMap\\app\\src\\main\\res\\layout\\activity_rest_calculate.xml"
-    },
-    {
-        "merged": "O:\\AndroidStudioProjects\\AMap\\app\\build\\intermediates\\res\\merged\\debug\\drawable_landfront_ii.png.flat",
-        "source": "O:\\AndroidStudioProjects\\AMap\\app\\src\\main\\res\\drawable\\landfront_ii.png"
     },
     {
         "merged": "O:\\AndroidStudioProjects\\AMap\\app\\build\\intermediates\\res\\merged\\debug\\layout_notification_template_icon_group.xml.flat",

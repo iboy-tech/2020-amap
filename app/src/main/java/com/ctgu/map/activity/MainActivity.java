@@ -43,6 +43,7 @@ import com.amap.api.maps.model.Marker;
 import com.amap.api.maps.model.MarkerOptions;
 import com.amap.api.maps.model.MyLocationStyle;
 import com.amap.api.maps.model.Poi;
+import com.amap.api.navi.view.PoiInputItemWidget;
 import com.amap.api.services.core.LatLonPoint;
 import com.amap.api.services.core.PoiItem;
 import com.amap.api.services.geocoder.GeocodeResult;
@@ -298,7 +299,7 @@ public class MainActivity extends AppCompatActivity implements LocationSource, A
         if (marker != null) {
             marker.remove();
         }
-
+        marker_title=name;
         MarkerOptions markerOption = new MarkerOptions();
         markerOption.position(location);
 //        textName.setText(marker_title);
@@ -447,6 +448,7 @@ public class MainActivity extends AppCompatActivity implements LocationSource, A
             case R.id.fab_plan:
                 //路径规划
                 if(marker!=null) {
+                    System.out.println("标记地点存在"+marker);
                     //标记点目的地
                     RouteActivity.startActivity(this, curLocation, marker.getPosition(),
                             marker_title, city);
@@ -459,8 +461,14 @@ public class MainActivity extends AppCompatActivity implements LocationSource, A
             case R.id.search:
             case R.id.search_ico:
                 //调用静态方法搜索
-                SearchActivity.startActivity(MainActivity.this,
-                        Constants.REQUEST_MAIN_ACTIVITY, city);
+//                SearchActivity.startActivity(MainActivity.this,
+//                        Constants.REQUEST_MAIN_ACTIVITY, city);
+                Intent intent=new Intent(this,SearchPoiActivity.class);
+                Bundle bundle = new Bundle();
+                bundle.putInt("pointType", PoiInputItemWidget.TYPE_START);
+                bundle.putString("city",city);
+                intent.putExtras(bundle);
+                startActivityForResult(intent, Constants.REQUEST_MAIN_ACTIVITY);
                 break;
             case R.id.expanded_menu:
                 drawerLayout.openDrawer(GravityCompat.START);
@@ -536,19 +544,22 @@ public class MainActivity extends AppCompatActivity implements LocationSource, A
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         switch (requestCode){
             case Constants.REQUEST_MAIN_ACTIVITY:
+                //接受从搜索页返回的数据
                 if(resultCode==RESULT_OK){
                     if(data.getIntExtra("resultType", 1)==Constants.RESULT_TIP) {
                         Tip tip=data.getParcelableExtra("result");
                         POIIdSearch(tip.getPoiID());
+                        marker_title=tip.getName();
                         setMarkerLayout(MapUtils.convertToLatLng(tip.getPoint()), tip.getName(),tip.getPoiID());
                         isOnResultBack=true;
-                    } else {
-                        PoiItem poiItem=data.getParcelableExtra("result");
-                        city=poiItem.getCityName();
-                        setMarkerLayout(MapUtils.convertToLatLng(poiItem.getLatLonPoint()),
-                                poiItem.getTitle(),poiItem.getPoiId());
-                        isOnResultBack=true;
-                    }
+                 }
+                    //   else {
+//                        PoiItem poiItem=data.getParcelableExtra("result");
+//                        city=poiItem.getCityName();
+//                        setMarkerLayout(MapUtils.convertToLatLng(poiItem.getLatLonPoint()),
+//                                poiItem.getTitle(),poiItem.getPoiId());
+//                        isOnResultBack=true;
+//                    }
                 }
                 break;
             default:

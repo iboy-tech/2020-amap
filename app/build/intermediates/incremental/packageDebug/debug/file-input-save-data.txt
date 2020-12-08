@@ -1,5 +1,5 @@
 #Internal package file, do not edit.
-#Mon Dec 07 21:44:06 SGT 2020
+#Mon Dec 07 23:32:21 SGT 2020
 4.path=lib/x86/libneonuijni.so
 8.set=NATIVE_RESOURCE
 6.path=lib/x86_64/libAMapSDK_NAVI_v7_7_1.so

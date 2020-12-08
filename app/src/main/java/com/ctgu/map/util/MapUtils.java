@@ -66,6 +66,8 @@ public class MapUtils {
     }
 
 
+
+    //提示图标转化成汉字
     public static String getActionStr(int iconType){
         switch (iconType){
             case IconType.ARRIVED_DESTINATION:

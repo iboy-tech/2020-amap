@@ -3,6 +3,7 @@ package com.ctgu.map.activity;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.text.Editable;
 import android.text.TextUtils;
 import android.text.TextWatcher;
@@ -27,6 +28,7 @@ import com.amap.api.services.poisearch.PoiResult;
 import com.amap.api.services.poisearch.PoiSearch;
 import com.ctgu.map.R;
 import com.ctgu.map.adapter.SearchResultAdapter;
+import com.ctgu.map.util.Constants;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -39,10 +41,15 @@ public class SearchPoiActivity extends Activity implements TextWatcher,
     private SearchResultAdapter resultAdapter;
     private ProgressBar loadingBar;
     private TextView tvMsg;
-    private Poi selectedPoi;
     private String city = "宜昌";
     private int pointType;
-
+    //从main跳转活动跳转函数
+    public static void startActivity(AppCompatActivity activity, int REQUEST_CODE, String city){
+        Intent intent=new Intent(activity, SearchPoiActivity.class);
+        intent.putExtra("city", city);
+        //获取搜索结果
+        activity.startActivityForResult(intent, REQUEST_CODE);
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -81,6 +88,7 @@ public class SearchPoiActivity extends Activity implements TextWatcher,
                 String newText = s.toString().trim();
                 if (!TextUtils.isEmpty(newText)) {
                     setLoadingVisible(true);
+//                    文本变化自动搜索
                     InputtipsQuery inputquery = new InputtipsQuery(newText, city);
                     Inputtips inputTips = new Inputtips(getApplicationContext(), inputquery);
                     inputTips.setInputtipsListener(this);
@@ -109,25 +117,24 @@ public class SearchPoiActivity extends Activity implements TextWatcher,
 
     @Override
     public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+        System.out.println("点击的位置："+position);
         //点击提示后再次进行搜索，获取POI出入口信息
         if (mCurrentTipList != null) {
             Tip tip = (Tip) parent.getItemAtPosition(position);
-            selectedPoi = new Poi(tip.getName(), new LatLng(tip.getPoint().getLatitude(), tip.getPoint().getLongitude()), tip.getPoiID());
-            if (!TextUtils.isEmpty(selectedPoi.getPoiId())) {
-                PoiSearch.Query query = new PoiSearch.Query(selectedPoi.getName(), "", city);
-                query.setDistanceSort(false);
-                query.requireSubPois(true);
-                PoiSearch poiSearch = new PoiSearch(getApplicationContext(), query);
-                poiSearch.setOnPoiSearchListener(this);
-                poiSearch.searchPOIIdAsyn(selectedPoi.getPoiId());
+            Intent intent=new Intent();
+            intent.putExtra("resultType", Constants.RESULT_TIP);
+            intent.putExtra("result", tip);
+            this.setResult(AppCompatActivity.RESULT_OK, intent);
+            this.finish();
             }
         }
-    }
+
 
     @Override
     public void onGetInputtips(List<Tip> tipList, int rCode) {
         setLoadingVisible(false);
         try {
+            //搜索成功
             if (rCode == 1000) {
                 mCurrentTipList = new ArrayList<Tip>();
                 for (Tip tip : tipList) {
@@ -168,51 +175,13 @@ public class SearchPoiActivity extends Activity implements TextWatcher,
         return false;
     }
 
+
     @Override
     public void onPoiSearched(PoiResult poiResult, int i) {
-
     }
 
     @Override
     public void onPoiItemSearched(PoiItem poiItem, int errorCode) {
-        try {
-            LatLng latLng = null;
-            int code = 0;
-            if (errorCode == AMapException.CODE_AMAP_SUCCESS) {
-                if (poiItem == null) {
-                    return;
-                }
-                LatLonPoint exitP = poiItem.getExit();
-                LatLonPoint enterP = poiItem.getEnter();
-                if (pointType == PoiInputItemWidget.TYPE_START) {
-                    code = 100;
-                    if (exitP != null) {
-                        latLng = new LatLng(exitP.getLatitude(), exitP.getLongitude());
-                    } else {
-                        if (enterP != null) {
-                            latLng = new LatLng(enterP.getLatitude(), enterP.getLongitude());
-                        }
-                    }
-                }
-                if (pointType == PoiInputItemWidget.TYPE_DEST) {
-                    code = 200;
-                    if (enterP != null) {
-                        latLng = new LatLng(enterP.getLatitude(), enterP.getLongitude());
-                    }
-                }
-            }
-            Poi poi;
-            if (latLng != null) {
-                poi = new Poi(selectedPoi.getName(), latLng, selectedPoi.getPoiId());
-            } else {
-                poi = selectedPoi;
-            }
-            Intent intent = new Intent(this, RestRouteShowActivity.class);
-            intent.putExtra("poi", poi);
-            setResult(code, intent);
-            finish();
-        } catch (Throwable e) {
-            e.printStackTrace();
-        }
+
     }
 }

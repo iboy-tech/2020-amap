@@ -12,6 +12,8 @@ import android.widget.SimpleAdapter;
 import android.widget.Toast;
 
 import com.ctgu.map.R;
+import com.ctgu.map.adapter.LogDetailAdapter;
+import com.ctgu.map.adapter.SearchResultAdapter;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -28,7 +30,7 @@ import java.util.Map;
 public class LogActivity extends AppCompatActivity {
 
 
-    private static final String[] logs={"1.0.0 显示静态地图","1.0.1 加入侧边栏","1.0.2 加入导航"};
+    private static final String[] logs={"1.0.0 显示静态地图","1.0.1 加入侧边栏","1.0.2 统一图标和风格","1.0.3 加入导航"};
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
 
@@ -48,8 +50,13 @@ public class LogActivity extends AppCompatActivity {
             list.add(map);
         }
         System.out.println("更新日志"+list);
-        SimpleAdapter simpleAdapter=new SimpleAdapter(this,list,R.layout.item_log,new String[]{"text"},new int[]{R.id.item_log_detail});
-        listView.setAdapter(simpleAdapter);
+//        SimpleAdapter simpleAdapter=new SimpleAdapter(this,list,R.layout.item_log,new String[]{"text"},new int[]{R.id.item_log_detail});
+//        listView.setAdapter(simpleAdapter);
+
+//        listView.setVisibility(View.VISIBLE);
+        LogDetailAdapter logDetailAdapter = new LogDetailAdapter(getApplicationContext(), logs);
+        listView.setAdapter(logDetailAdapter);
+        logDetailAdapter.notifyDataSetChanged();
 
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
@@ -67,21 +74,6 @@ public class LogActivity extends AppCompatActivity {
                 // 点击返回按钮，退回上一层Activity
                 if (NavUtils.getParentActivityName(LogActivity.this) != null) {
                     finish();
-                    // 启动父Activity
-//                    NavUtils.navigateUpFromSameTask(LogActivity.this);
-//                    new Thread () {
-//                        public void run () {
-//                            try {
-//                                Instrumentation inst= new Instrumentation();
-//                                inst.sendKeyDownUpSync(KeyEvent. KEYCODE_BACK);
-//                            } catch(Exception e) {
-//                                e.printStackTrace();
-//                            }
-//                        }
-//                    }.start();
-//                    drawerLayout.openDrawer(Gravity.LEFT);
-//                    drawerLayout.openDrawer(navigationView);
-//                    navigationView.setCheckedItem(R.id.map_standard);
                     System.out.println("从日志页面返回");
                 }
                 return true;
