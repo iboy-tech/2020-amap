@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from O:\AndroidStudioProjects\AMap\app\src\main\AndroidManifest.xml:2:1-92:12
-INJECTED from O:\AndroidStudioProjects\AMap\app\src\main\AndroidManifest.xml:2:1-92:12
-INJECTED from O:\AndroidStudioProjects\AMap\app\src\main\AndroidManifest.xml:2:1-92:12
-INJECTED from O:\AndroidStudioProjects\AMap\app\src\main\AndroidManifest.xml:2:1-92:12
+ADDED from O:\AndroidStudioProjects\AMap\app\src\main\AndroidManifest.xml:2:1-83:12
+INJECTED from O:\AndroidStudioProjects\AMap\app\src\main\AndroidManifest.xml:2:1-83:12
+INJECTED from O:\AndroidStudioProjects\AMap\app\src\main\AndroidManifest.xml:2:1-83:12
+INJECTED from O:\AndroidStudioProjects\AMap\app\src\main\AndroidManifest.xml:2:1-83:12
 MERGED from [com.android.support:design:27.1.1] E:\Android\.gradle\caches\transforms-1\files-1.1\design-27.1.1.aar\b52749b60a3cefce0ba14dc6344fd02b\AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:appcompat-v7:27.1.1] E:\Android\.gradle\caches\transforms-1\files-1.1\appcompat-v7-27.1.1.aar\6f9c160f01baa4d2264506229d2995fb\AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:recyclerview-v7:27.1.1] E:\Android\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-27.1.1.aar\b106cea43a8fc2972dba37ad7a8dcce4\AndroidManifest.xml:17:1-22:12
@@ -21,22 +21,22 @@ MERGED from [android.arch.lifecycle:livedata-core:1.1.0] E:\Android\.gradle\cach
 MERGED from [android.arch.lifecycle:viewmodel:1.1.0] E:\Android\.gradle\caches\transforms-1\files-1.1\viewmodel-1.1.0.aar\b65c3daa82fa75b080607be0584b421b\AndroidManifest.xml:17:1-22:12
 MERGED from [android.arch.lifecycle:runtime:1.1.0] E:\Android\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\c37a8bebf6b3dbb39b9aef4cb8a6cce7\AndroidManifest.xml:17:1-22:12
 MERGED from [android.arch.core:runtime:1.1.0] E:\Android\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\61488db2902af17871076d40e8cc45b8\AndroidManifest.xml:17:1-22:12
-INJECTED from O:\AndroidStudioProjects\AMap\app\src\main\AndroidManifest.xml:2:1-92:12
-INJECTED from O:\AndroidStudioProjects\AMap\app\src\main\AndroidManifest.xml:2:1-92:12
-INJECTED from O:\AndroidStudioProjects\AMap\app\src\main\AndroidManifest.xml:2:1-92:12
+INJECTED from O:\AndroidStudioProjects\AMap\app\src\main\AndroidManifest.xml:2:1-83:12
+INJECTED from O:\AndroidStudioProjects\AMap\app\src\main\AndroidManifest.xml:2:1-83:12
+INJECTED from O:\AndroidStudioProjects\AMap\app\src\main\AndroidManifest.xml:2:1-83:12
 	package
 		ADDED from O:\AndroidStudioProjects\AMap\app\src\main\AndroidManifest.xml:4:5-27
 		INJECTED from O:\AndroidStudioProjects\AMap\app\src\main\AndroidManifest.xml
 		INJECTED from O:\AndroidStudioProjects\AMap\app\src\main\AndroidManifest.xml
 	android:versionName
 		INJECTED from O:\AndroidStudioProjects\AMap\app\src\main\AndroidManifest.xml
-		ADDED from O:\AndroidStudioProjects\AMap\app\src\main\AndroidManifest.xml:2:1-92:12
+		ADDED from O:\AndroidStudioProjects\AMap\app\src\main\AndroidManifest.xml:2:1-83:12
 		INJECTED from O:\AndroidStudioProjects\AMap\app\src\main\AndroidManifest.xml
 	xmlns:tools
 		ADDED from O:\AndroidStudioProjects\AMap\app\src\main\AndroidManifest.xml:3:5-51
 	android:versionCode
 		INJECTED from O:\AndroidStudioProjects\AMap\app\src\main\AndroidManifest.xml
-		ADDED from O:\AndroidStudioProjects\AMap\app\src\main\AndroidManifest.xml:2:1-92:12
+		ADDED from O:\AndroidStudioProjects\AMap\app\src\main\AndroidManifest.xml:2:1-83:12
 		INJECTED from O:\AndroidStudioProjects\AMap\app\src\main\AndroidManifest.xml
 	xmlns:android
 		ADDED from O:\AndroidStudioProjects\AMap\app\src\main\AndroidManifest.xml:2:11-69
@@ -103,7 +103,7 @@ ADDED from O:\AndroidStudioProjects\AMap\app\src\main\AndroidManifest.xml:20:5-2
 	android:name
 		ADDED from O:\AndroidStudioProjects\AMap\app\src\main\AndroidManifest.xml:20:22-70
 application
-ADDED from O:\AndroidStudioProjects\AMap\app\src\main\AndroidManifest.xml:23:5-90:19
+ADDED from O:\AndroidStudioProjects\AMap\app\src\main\AndroidManifest.xml:23:5-81:19
 MERGED from [com.android.support.constraint:constraint-layout:1.0.2] E:\Android\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.0.2.aar\6e2c55bd272a1ab3aa572956dedcb97f\AndroidManifest.xml:9:5-20
 MERGED from [com.android.support.constraint:constraint-layout:1.0.2] E:\Android\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.0.2.aar\6e2c55bd272a1ab3aa572956dedcb97f\AndroidManifest.xml:9:5-20
 	android:supportsRtl
@@ -196,36 +196,16 @@ ADDED from O:\AndroidStudioProjects\AMap\app\src\main\AndroidManifest.xml:72:9-7
 		ADDED from O:\AndroidStudioProjects\AMap\app\src\main\AndroidManifest.xml:76:13-66
 	android:name
 		ADDED from O:\AndroidStudioProjects\AMap\app\src\main\AndroidManifest.xml:73:13-55
-activity#com.ctgu.map.activity.SingleRouteCalculateActivity
-ADDED from O:\AndroidStudioProjects\AMap\app\src\main\AndroidManifest.xml:77:9-81:69
-	android:label
-		ADDED from O:\AndroidStudioProjects\AMap\app\src\main\AndroidManifest.xml:80:13-45
-	android:configChanges
-		ADDED from O:\AndroidStudioProjects\AMap\app\src\main\AndroidManifest.xml:79:13-74
-	android:theme
-		ADDED from O:\AndroidStudioProjects\AMap\app\src\main\AndroidManifest.xml:81:13-66
-	android:name
-		ADDED from O:\AndroidStudioProjects\AMap\app\src\main\AndroidManifest.xml:78:13-66
-activity#com.ctgu.map.activity.WalkRouteCalculateActivity
-ADDED from O:\AndroidStudioProjects\AMap\app\src\main\AndroidManifest.xml:82:9-86:69
-	android:label
-		ADDED from O:\AndroidStudioProjects\AMap\app\src\main\AndroidManifest.xml:85:13-45
-	android:configChanges
-		ADDED from O:\AndroidStudioProjects\AMap\app\src\main\AndroidManifest.xml:84:13-74
-	android:theme
-		ADDED from O:\AndroidStudioProjects\AMap\app\src\main\AndroidManifest.xml:86:13-66
-	android:name
-		ADDED from O:\AndroidStudioProjects\AMap\app\src\main\AndroidManifest.xml:83:13-64
 activity#com.ctgu.map.activity.SearchPoiActivity
-ADDED from O:\AndroidStudioProjects\AMap\app\src\main\AndroidManifest.xml:87:9-64
+ADDED from O:\AndroidStudioProjects\AMap\app\src\main\AndroidManifest.xml:78:9-64
 	android:name
-		ADDED from O:\AndroidStudioProjects\AMap\app\src\main\AndroidManifest.xml:87:19-61
+		ADDED from O:\AndroidStudioProjects\AMap\app\src\main\AndroidManifest.xml:78:19-61
 service#com.amap.api.location.APSService
-ADDED from O:\AndroidStudioProjects\AMap\app\src\main\AndroidManifest.xml:88:9-89:51
+ADDED from O:\AndroidStudioProjects\AMap\app\src\main\AndroidManifest.xml:79:9-80:51
 	tools:ignore
-		ADDED from O:\AndroidStudioProjects\AMap\app\src\main\AndroidManifest.xml:89:13-40
+		ADDED from O:\AndroidStudioProjects\AMap\app\src\main\AndroidManifest.xml:80:13-40
 	android:name
-		ADDED from O:\AndroidStudioProjects\AMap\app\src\main\AndroidManifest.xml:88:18-65
+		ADDED from O:\AndroidStudioProjects\AMap\app\src\main\AndroidManifest.xml:79:18-65
 uses-sdk
 INJECTED from O:\AndroidStudioProjects\AMap\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from O:\AndroidStudioProjects\AMap\app\src\main\AndroidManifest.xml
