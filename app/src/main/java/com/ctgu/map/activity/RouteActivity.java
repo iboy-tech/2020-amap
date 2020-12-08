@@ -317,6 +317,7 @@
     public boolean onKeyDown(int keyCode, KeyEvent event) {
         if(keyCode==KeyEvent.KEYCODE_BACK){
             BottomSheetBehavior behavior=BottomSheetBehavior.from(bottomSheet);
+            //返回时如果底部是展开就将其折叠
             if(behavior.getState()==BottomSheetBehavior.STATE_EXPANDED){
                 behavior.setState(BottomSheetBehavior.STATE_COLLAPSED);
             } else {
@@ -537,6 +538,7 @@
                String timeStr=MapUtils.getTimeStr(path.getAllTime());
                textDistance.setText(distanceStr);
                textTime.setText(timeStr);
+               System.out.println("出行方案："+path);
                //渲染出行方案详情
                RouteDetailAdapter adapter=new RouteDetailAdapter(aMapNavi.getNaviGuideList());
                detailList.setAdapter(adapter);

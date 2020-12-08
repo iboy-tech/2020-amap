@@ -15,11 +15,6 @@ import android.widget.ListView;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 
-import com.amap.api.maps.model.LatLng;
-import com.amap.api.maps.model.Poi;
-import com.amap.api.navi.view.PoiInputItemWidget;
-import com.amap.api.services.core.AMapException;
-import com.amap.api.services.core.LatLonPoint;
 import com.amap.api.services.core.PoiItem;
 import com.amap.api.services.help.Inputtips;
 import com.amap.api.services.help.InputtipsQuery;
@@ -42,7 +37,7 @@ public class SearchPoiActivity extends Activity implements TextWatcher,
     private ProgressBar loadingBar;
     private TextView tvMsg;
     private String city = "宜昌";
-//    private int pointType;
+
     //从main跳转活动跳转函数
     public static void startActivity(AppCompatActivity activity, int REQUEST_CODE, String city){
         Intent intent=new Intent(activity, SearchPoiActivity.class);
@@ -61,8 +56,6 @@ public class SearchPoiActivity extends Activity implements TextWatcher,
         tvMsg.setVisibility(View.GONE);
         mKeywordText.addTextChangedListener(this);
         mKeywordText.requestFocus();
-//        Bundle bundle = getIntent().getExtras();
-//        pointType = bundle.getInt("pointType", -1);
     }
 
 
@@ -88,7 +81,7 @@ public class SearchPoiActivity extends Activity implements TextWatcher,
                 String newText = s.toString().trim();
                 if (!TextUtils.isEmpty(newText)) {
                     setLoadingVisible(true);
-//                    文本变化自动搜索，在宜昌范围内进行搜索
+                    //地点关键字输入提示 本变化自动搜索，在宜昌范围内进行搜索
                     InputtipsQuery inputquery = new InputtipsQuery(newText, city);
                     Inputtips inputTips = new Inputtips(getApplicationContext(), inputquery);
                     inputTips.setInputtipsListener(this);
@@ -129,14 +122,14 @@ public class SearchPoiActivity extends Activity implements TextWatcher,
             }
         }
 
-
+     //搜索成功的回调
     @Override
     public void onGetInputtips(List<Tip> tipList, int rCode) {
         setLoadingVisible(false);
         try {
             //搜索成功
             if (rCode == 1000) {
-                mCurrentTipList = new ArrayList<Tip>();
+                mCurrentTipList = new ArrayList<>();
                 for (Tip tip : tipList) {
                     if (null == tip.getPoint()) {
                         continue;

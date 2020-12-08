@@ -42,6 +42,7 @@ public class RouteDetailAdapter extends RecyclerView.Adapter<RouteDetailAdapter.
 
     @Override
     public void onBindViewHolder(ViewHolder holder, int position) {
+        //渲染导航的路径详情
         AMapNaviGuide guide=aMapNaviGuideList.get(position);
         StringBuilder stringBuilder=new StringBuilder();
         if(!guide.getName().equals("无名道路"))
