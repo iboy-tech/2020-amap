@@ -58,8 +58,7 @@
    import java.util.List;
 
    public class RouteActivity extends AppCompatActivity implements View.OnClickListener,
-        AMapNaviListener, TabLayout.OnTabSelectedListener, RouteSearch.OnRouteSearchListener
-        {
+        AMapNaviListener, TabLayout.OnTabSelectedListener, RouteSearch.OnRouteSearchListener {
 
     private static final String MY_LOCATION="我的位置";
     private static final String DRIVE_TAB="驾驶";

@@ -159,11 +159,8 @@ public class MainActivity extends AppCompatActivity implements AMap.OnPOIClickLi
         //myLocationStyle.myLocationType(MyLocationStyle.LOCATION_TYPE_LOCATION_ROTATE);//连续定位、且将视角移动到地图中心点，定位点依照设备方向旋转，并且会跟随设备移动。（1秒1次定位）默认执行此种模式。
         Bitmap bitmap= BitmapFactory.decodeResource(getResources(),R.drawable.direction);
         myLocationStyle.myLocationIcon(BitmapDescriptorFactory.fromBitmap(scaleBitmap(bitmap,0.12f)));
-
         myLocationStyle.strokeColor(Color.argb(100, 255, 144, 147));// 设置圆形的边框颜色
-
         myLocationStyle.radiusFillColor(Color.argb(100, 255, 144, 233));// 设置圆形的填充颜色
-
         //定位频率
         myLocationStyle.interval(1000);
         //精度圈边框宽度自定义方法如下
